@@ -5,3 +5,14 @@
   /* ...?픽셀? em ? rem?  */
   font-size: 100px;
 }
+
+/* 
+scss로 작성하는 법ex.
+.parent > .chhil
+
+.parent {
+  .child {
+
+  }
+}
+ */
