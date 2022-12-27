@@ -1,4 +1,4 @@
-import "./Introduction.css";
+import "../Components/Introduction.css";
 
 function Introduction() {
   return (
@@ -31,6 +31,8 @@ function Introduction() {
         Bebefit 스마트 베이비 케어 제품군
         <br />
       </div>
+      <hr className="임시"></hr>
+
       <hr className="임시"></hr>
       {/* //1. 네모 -> 동그라미. 2. 차트가져오기?? 👉 내 선택*/}
       <div>띄어쓰기 테스트//&nbsp;테스트2&ensp;테스트3&emsp;테스트4</div>
