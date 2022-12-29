@@ -1,9 +1,9 @@
-import Introduction from "./Components/Introduction";
+import History from "./Components/History";
 
 function App() {
   return (
     <>
-      <Introduction />
+      <History />
     </>
   );
 }
