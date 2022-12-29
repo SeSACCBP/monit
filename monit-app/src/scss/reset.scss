@@ -349,3 +349,20 @@ template {
 [hidden] {
   display: none;
 }
+
+/*
+src : 사용할 폰트의 위치 및 형식
+Modern Browsrs => woff
+
+20221229_폰트추가_taehee
+*/
+
+@font-face {
+  font-family: "AppleSDGothicNeoUL";
+  src: local("AppleSDGothicNeoUL") url("./font/AppleSDGothicNeoUL.woff")
+    format("woff");
+
+  /*사용할 폰트의 기본 스타일*/
+  font-weight: 400;
+  font-style: normal;
+}
