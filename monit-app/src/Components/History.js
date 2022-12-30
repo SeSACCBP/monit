@@ -1,10 +1,4 @@
 import React from "react";
-import {
-  createBrowserRouter,
-  Link,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
 import "./History.scss";
 
 const History = () => {
