@@ -1,17 +1,17 @@
 import React from "react";
-import {
-  createBrowserRouter,
-  Link,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import "./History.scss";
+import History2017 from "./History2017";
+import History2018 from "./History2018";
+import History2019 from "./History2019";
+import History2020 from "./History2020";
+import History2021 from "./History2021";
 
 const History = () => {
   return (
     <div className="History-container">
       <div>
-        <h3>2022</h3>
+        <Link to="/">2022</Link>
         <ol>
           <li>11월 건강보험공단 복지용구등록진행 </li>
           <li>11월 카톨릭대학 성빈센트병원 MOU체결</li>
@@ -24,20 +24,26 @@ const History = () => {
         </ol>
       </div>
       <div>
-        <h3>2021</h3>
+        <Link to="/2021">2021</Link>
       </div>
       <div>
-        <h3>2020</h3>
+        <Link to="/2020">2020</Link>
       </div>
       <div>
-        <h3>2019</h3>
+        <Link to="/2019">2019</Link>
       </div>
       <div>
-        <h3>2018</h3>
+        <Link to="/2018">2018</Link>
       </div>
       <div>
-        <h3>2017</h3>
+        <Link to="/2017">2017</Link>
       </div>
+      <Route path="/" exact={true} component={History} />
+      <Route path="/2021" component={History2021} />
+      <Route path="/2020" component={History2020} />
+      <Route path="/2019" component={History2019} />
+      <Route path="/2018" component={History2018} />
+      <Route path="/2017" component={History2017} />
     </div>
   );
 };
