@@ -1,5 +1,5 @@
 import React from "react";
-import "./vision.scss";
+import "./Vision.scss";
 
 const Vision = () => {
   return (

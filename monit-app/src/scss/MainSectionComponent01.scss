@@ -1,0 +1,21 @@
+// 가이드 라인
+.main_section_component01,
+.main_section_wrapper,
+.main_section_text_wrapper {
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+.main_section_component01 {
+  width: 100vw;
+  height: calc(99vh - 79px);
+  position: relative;
+  top: 79px;
+
+  .main_section_wrapper {
+    position: absolute;
+    top: 0;
+  }
+}
+
+// header 79
