@@ -12,7 +12,6 @@ function App() {
       {/* <Vision /> */}
 
       {/* 수아 작업용 */}
-      {/* <MainSectionComponent01 /> */}
     </>
   );
 }
