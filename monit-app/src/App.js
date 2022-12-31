@@ -1,4 +1,5 @@
 import Introduction from "./Components/Introduction";
+import MainSectionComponent01 from "./Components/MainSectionComponent01";
 import Vision from "./Components/Vision";
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
       {/* <Introduction /> */}
 
       {/* 율 작업용 */}
-      <Vision />
+      {/* <Vision /> */}
+
+      {/* 수아 작업용 */}
+      {/* <MainSectionComponent01 /> */}
     </>
   );
 }
