@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const MainSectionComponent03 = () => {
-  return (
-    <div>
-      
-    </div>
-  );
+  return <div>SDF</div>;
 };
 
 export default MainSectionComponent03;
