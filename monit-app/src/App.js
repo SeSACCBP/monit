@@ -1,5 +1,5 @@
-import Introduction from "./Components/Introduction";
-import Vision from "./Components/Vision";
+import Introduction from './Components/Introduction';
+import Vision from './Components/Vision';
 
 function App() {
   return (
