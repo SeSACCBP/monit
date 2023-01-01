@@ -9,7 +9,7 @@ function App() {
       {/* <Introduction /> */}
 
       {/* 율 작업용 */}
-      {/* <Vision /> */}
+      <Vision />
 
       {/* 수아 작업용 */}
     </>
