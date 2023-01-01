@@ -1,0 +1,99 @@
+@import "../scss/style.scss";
+
+.overview-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+  .overivew-bg {
+    width: 600px;
+    height: 80%;
+    background: #4a7094;
+    opacity: 7%;
+    border: 60px solid #96bde3;
+    border-radius: 50%;
+    position: absolute;
+    right: -300px;
+    z-index: -1;
+  }
+  .overview-middlebar {
+    width: 90%;
+    border: 0.5px solid rgb(195, 195, 195);
+    margin: 0 auto;
+  }
+}
+
+.overview {
+  // 타이틀 영역
+  display: flex;
+  margin: 70px 0 70px 0;
+  .overview-title {
+    display: flex;
+    width: 360px;
+    height: 60px;
+    margin-left: 10px;
+    position: relative;
+    // 타이틀 강조 원
+    .overview-title-circle {
+      width: 15px;
+      height: 15px;
+      background: #789abf;
+      border-radius: 50%;
+      margin-right: 3px;
+    }
+    // 타이틀 문구
+    .overview-title-text {
+      margin-top: 6px;
+      color: #496895;
+      font-family: "AppleSDGothicNeoUL";
+      font-weight: 800;
+      font-size: 50px;
+    }
+    // 타이블 배경이미지
+    .overview-title-bg {
+      background-image: url(../imgs/Vision_img/vision_bg.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      background-size: cover;
+      top: 30px;
+      z-index: -1;
+      width: 330px;
+      height: 120px;
+      border-radius: 30px;
+    }
+  }
+  .overview-bar {
+    margin-left: 10px;
+    display: flex;
+    margin-top: 15px;
+    .overview-bar {
+      display: flex;
+      width: 80px;
+      height: 2px;
+      background: #cacaca;
+    }
+    .overview-bar-circle {
+      width: 15px;
+      height: 16px;
+      border: 2px solid #cacaca;
+      border-radius: 50%;
+      margin-right: 3px;
+      margin-top: 5px;
+    }
+  }
+  .overview-content {
+    margin-left: 40px;
+    font-family: "AppleSDGothicNeoUL";
+    font-size: 30px;
+    color: #545353;
+    font-weight: 600;
+    line-height: 40px;
+    .overview-content-b {
+      color: #7e9fc5;
+      font-size: 40px;
+      font-weight: 900;
+      font-family: "AppleSDGothicNeoUL";
+    }
+  }
+}
