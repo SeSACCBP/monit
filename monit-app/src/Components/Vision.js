@@ -4,10 +4,10 @@ import "./Vision.scss";
 const Vision = () => {
   return (
     <div className="vision">
-      <div className="vision_title">
-        <div className="vision_outline_circle"></div>
-        <div className="vision_title_text">Vision</div>
-        <h1>dfdf</h1>
+      <div className="vision-title">
+        <div className="vision-title-circle"></div>
+        <div className="vision-title-text">Vision</div>
+        <div className="vision-title-bg"></div>
       </div>
     </div>
   );

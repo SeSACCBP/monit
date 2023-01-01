@@ -1,18 +1,39 @@
 @import "../scss/style.scss";
 
 .vision {
-  .vision_title {
+  .vision-title {
     display: flex;
-    .vision_outline_circle {
-      width: 4px;
-      height: 5px;
+    margin-left: 10px;
+    position: relative;
+    .vision-title-circle {
+      width: 9px;
+      height: 10px;
       background: #25435f;
       border-right: 1px solid #25435f;
       border-radius: 50%;
       margin-right: 3px;
     }
+<<<<<<< Updated upstream
     .vision_title_text {
+=======
+    .vision-title-text {
+      color: #25435f;
+>>>>>>> Stashed changes
       font-family: "AppleSDGothicNeoUL";
+      font-weight: 800;
+      font-size: 40px;
+    }
+    .vision-title-bg {
+      background-image: url(../imgs/Vision_img/vision_bg.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: -1;
+      width: 180px;
+      height: 70px;
+      border-radius: 10px;
     }
   }
 }
