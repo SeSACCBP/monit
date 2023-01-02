@@ -1,6 +1,6 @@
 //--color-white
 //--color-black
-@import "../scss/normalize.scss";
+@import "./normalize.scss";
 
 $color-white: #fcfdff;
 $color-main-blue: #255889;
@@ -35,4 +35,8 @@ $animation-duration: 300ms;
 @mixin semi-title {
   color: var(--color-font-skyblue);
   font-size: 2em;
+}
+
+html {
+  font-size: 10px;
 }
