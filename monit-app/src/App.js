@@ -10,10 +10,10 @@ function App() {
       {/* <Introduction /> */}
 
       {/* 율 작업용 */}
-      <Overview />
+      {/* <Overview /> */}
 
       {/* 수아 작업용 */}
-      {/* <MainSectionComponent02 /> */}
+      <MainSectionComponent02 />
     </>
   );
 }
