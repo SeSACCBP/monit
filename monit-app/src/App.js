@@ -1,5 +1,6 @@
 import Introduction from "./Components/Introduction";
 import MainSectionComponent01 from "./Components/MainSectionComponent01";
+import MainSectionComponent02 from "./Components/MainSectionComponent02";
 import Overview from "./Components/Overview";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Overview />
 
       {/* 수아 작업용 */}
+      {/* <MainSectionComponent02 /> */}
     </>
   );
 }

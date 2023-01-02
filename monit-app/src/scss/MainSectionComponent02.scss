@@ -1,0 +1,90 @@
+@import "./style.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// 부모 가이드
+.main-section02-text-wrapper,
+.circle-transparent {
+  border: 1px solid red;
+}
+
+.main-section02-component {
+  background-color: #496895;
+  box-sizing: border-box;
+  width: 100vw;
+  height: calc(100vh - 4.9375rem);
+  position: relative;
+  top: 4.9375rem;
+  .main-section02-text-wrapper {
+    position: absolute;
+    // top: 5.125rem;
+    top: 7.7%;
+    // left: 210px;
+    // left: 13.125rem;
+    left: 16.5%;
+
+    p {
+      font-size: 2.5rem;
+      color: #cbcbcb;
+    }
+    h3 {
+      font-size: 3.125rem;
+      color: $color-white;
+    }
+    h4 {
+      font-size: 1.875rem;
+      color: $color-white;
+      margin-top: 1.3rem;
+    }
+  }
+
+  .main-section02-circle-wrapper {
+    // top: 370px;
+    // top: 34%;
+    // left: 78px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    padding-top: 28.125rem;
+    .circle-transparent {
+      width: 36.25rem;
+      height: 36.25rem;
+      border-radius: 50%;
+      background-color: rgba(#fff, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+      position: relative;
+      .circle-inner {
+        width: 25rem;
+        height: 25rem;
+        background-color: $color-white;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #4d4d4d;
+
+        img {
+          width: 78px;
+          height: 97px;
+        }
+        h4 {
+          font-size: 1.875rem;
+          padding: 1.5rem;
+        }
+        p {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
