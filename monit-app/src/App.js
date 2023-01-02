@@ -7,13 +7,13 @@ function App() {
   return (
     <>
       {/* 태희 작업용 */}
-      {/* <Introduction /> */}
+      <Introduction />
 
       {/* 율 작업용 */}
       {/* <Overview /> */}
 
       {/* 수아 작업용 */}
-      <MainSectionComponent02 />
+      {/* <MainSectionComponent02 /> */}
     </>
   );
 }
