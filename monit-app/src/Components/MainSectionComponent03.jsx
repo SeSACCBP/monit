@@ -1,5 +1,8 @@
 import React from "react";
 import "../scss/MainSectionComponent03.scss";
+import "../scss/MainSectionCommon.scss";
+import "../scss/style.scss";
+
 const MainSectionComponent03 = () => {
   return (
     <div>
