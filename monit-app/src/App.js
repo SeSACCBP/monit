@@ -1,6 +1,8 @@
 import Introduction from "./Components/Introduction";
 import MainSectionComponent01 from "./Components/MainSectionComponent01";
 import MainSectionComponent02 from "./Components/MainSectionComponent02";
+import MainSectionComponent03 from "./Components/MainSectionComponent03";
+import MainSectionComponent04 from "./Components/MainSectionComponent04";
 import Overview from "./Components/Overview";
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
 
       {/* 수아 작업용 */}
       <MainSectionComponent02 />
+      {/* <MainSectionComponent03 /> */}
+      {/* <MainSectionComponent04 /> */}
     </>
   );
 }
