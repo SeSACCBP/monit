@@ -1,6 +1,7 @@
 import React from "react";
 import "../scss/MainSectionComponent02.scss";
-// import "../scss/style.scss";
+import "../scss/MainSectionCommon.scss";
+import "../scss/style.scss";
 
 const MainSectionComponent02 = () => {
   return (

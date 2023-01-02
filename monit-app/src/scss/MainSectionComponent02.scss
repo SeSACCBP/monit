@@ -16,10 +16,10 @@
   justify-content: center;
   background-color: #496895;
   box-sizing: border-box;
-  width: 100vw;
-  height: calc(100vh - 4.9375rem);
-  position: relative;
-  top: 4.9375rem;
+  width: 100%;
+  height: calc(100% - 6.25rem);
+  position: absolute;
+  top: 6.25rem;
 
   .main-section02-text-wrapper {
     position: absolute;
