@@ -10,8 +10,8 @@
 .main-section-component03-text-wrapper,
 .main-section-component03-text,
 .main-section-component03-circle-wrapper {
-  border: 1px solid red;
-  box-sizing: border-box;
+  // border: 1px solid red;
+  // box-sizing: border-box;
 }
 
 //자식 가이드
@@ -21,17 +21,17 @@
 // }
 // style start
 .main-section-component03 {
-  width: 100vw;
-  height: calc(100vh - 4.9375rem);
+  width: 100%;
+  height: calc(100% - 6.25rem);
   position: absolute;
-  top: 4.9375rem;
+  top: 6.25rem;
 
   .main-section-component03-text-wrapper {
     text-align: center;
     margin-top: 2rem;
 
     .main-section-component03-text {
-      padding: 5rem;
+      padding: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -62,19 +62,19 @@
   .main-section-component03-circle-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
     background-color: $color-white;
 
     .main-section-component03-circle01 {
-      min-width: 22.5rem;
-      min-height: 22.5rem;
+      min-width: 22rem;
+      min-height: 22rem;
       background-color: #496895;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       justify-content: space-around;
-      margin: 0 2rem;
+      margin: 0 1rem;
 
       .main-section-component03-circle01-inner {
         border: 0.05rem solid $color-white;
