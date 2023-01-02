@@ -5,16 +5,39 @@
   margin: 0;
   padding: 0;
 }
+
+/*introduction-title*/
+
 .introduction-title {
   color: $color-index-blue;
+  font-size: 4rem;
 }
 .introduction-title-discription {
   color: black;
+  font-size: 2rem;
 }
 
+
+/*introduction-index*/
+
+.introductin-index-wrapper {
+  font-size: 2rem;
+}
 .introduction-title-discription-fontcolor {
   color: $color-monitLogo;
+  font-size: 2rem;
 }
+
+/*introduction-cicles*/
+
+
+
+
+
+
+
+
+
 .임시 {
   background-color: #a3cca2;
   height: 10px;
@@ -23,9 +46,6 @@
   color: $color-index-blue;
 }
 
-.blue {
-  color: blue;
-}
 .Introduction {
   /* ...?픽셀? em ? rem?  */
   font-size: 3rem;
