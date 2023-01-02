@@ -1,18 +1,18 @@
 // 가이드 라인 d
-.main_section_component01,
-.main_section_wrapper,
-.main_section_text_wrapper {
+.main-section-component01,
+.main-section-wrapper,
+.main-section-text_wrapper {
   box-sizing: border-box;
   border: 1px solid red;
 }
 
-.main_section_component01 {
+.main_section-component01 {
   width: 100vw;
   height: calc(99vh - 79px);
   position: relative;
   top: 79px;
 
-  .main_section_wrapper {
+  .main-section-wrapper {
     position: absolute;
     top: 0;
   }
