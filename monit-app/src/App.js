@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       {/* 태희 작업용 */}
-      {/* <Introduction /> */}
+      <Introduction />
 
       {/* 율 작업용 */}
       {/* <Overview /> */}
@@ -19,6 +19,7 @@ function App() {
       {/* <MainSectionComponent02 /> */}
       {/* <MainSectionComponent03 /> */}
       {/* <MainSectionComponent04 /> */}
+
     </>
   );
 }
