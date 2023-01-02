@@ -1,7 +1,7 @@
 import Introduction from "./Components/Introduction";
 import MainSectionComponent01 from "./Components/MainSectionComponent01";
 import MainSectionComponent02 from "./Components/MainSectionComponent02";
-import Vision from "./Components/Vision";
+import Overview from "./Components/Overview";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       {/* <Introduction /> */}
 
       {/* 율 작업용 */}
-      {/* <Vision /> */}
+      <Overview />
 
       {/* 수아 작업용 */}
       {/* <MainSectionComponent02 /> */}
