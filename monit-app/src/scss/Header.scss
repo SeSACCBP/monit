@@ -1,0 +1,33 @@
+@import '../scss/style.scss';
+
+.header-area {
+  display: flex;
+  padding: 0 150px 0 150px;
+}
+.header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+.header-sub-title {
+  list-style: none;
+  display: none;
+}
+
+.header-imgArea {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  background: url('../imgs/Header_img/monitLogo_black.png') no-repeat;
+  background-size: 100% auto;
+  background-position-y: center;
+}
+
+.header-list .header-title {
+  font-size: $font-regular; // 24px 추천
+}
