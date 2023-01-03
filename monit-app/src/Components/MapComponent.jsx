@@ -1,5 +1,8 @@
 import React from "react";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
+import "../scss/MapComponent.scss";
+import "../scss/style.scss";
+import logo from "../imgs/Fragment_img/monitLogo_white.png";
 
 const containerStyle = {
   width: "100%",
@@ -31,11 +34,24 @@ function MyComponent() {
   return isLoaded ? (
     <div>
       오시는 길 초안
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
         <>
           <Marker onLoad={onLoad} position={position} />
         </>
       </GoogleMap>
+      <div className="mapBox">
+        <img src={logo} alt="" />
+        <div className="mapAdd">
+          <div className="mapAddLine">
+            <p>서울시 서초구 방배로 40, 기탄빌딩 3층</p>
+            <p>070-4349-0184</p>
+          </div>
+          <div className="mapAddLine">
+            <p>사당역 14번 출구로부터 도보 11분</p>
+            <p>support@goodmonit.com</p>
+          </div>
+        </div>
+      </div>
     </div>
   ) : (
     <></>
