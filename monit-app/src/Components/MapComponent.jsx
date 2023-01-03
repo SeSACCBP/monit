@@ -40,13 +40,16 @@ function MyComponent() {
         </>
       </GoogleMap>
       <div className="map-Box-One">
-        <img src={logo} alt="" />
-        <div className="mapAdd">
-          <div className="mapAddLine">
+        <div className="map-Box-One-right">
+          <img src={logo} alt="" />
+          <p>주식회사 모닛</p>
+        </div>
+        <div className="map-Box-One-left">
+          <div className="map-Box-One-left-line">
             <p>서울시 서초구 방배로 40, 기탄빌딩 3층</p>
             <p>사당역 14번 출구로부터 도보 11분</p>
           </div>
-          <div className="mapAddLine">
+          <div className="map-Box-One-left-line">
             <p>070-4349-0184</p>
             <p>support@goodmonit.com</p>
           </div>
