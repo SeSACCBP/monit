@@ -6,25 +6,24 @@
 }
 
 // 부모 가이드
-.main-section02-text-wrapper,
-.circle-transparent {
-  border: 1px solid red;
-}
+// .main-section02-text-wrapper,
+// .circle-transparent {
+//   border: 1px solid red;
+// }
 
 .main-section02-component {
+  display: flex;
+  justify-content: center;
   background-color: #496895;
   box-sizing: border-box;
-  width: 100vw;
-  height: calc(100vh - 4.9375rem);
-  position: relative;
-  top: 4.9375rem;
+  width: 100%;
+  height: calc(100% - 6.25rem);
+  position: absolute;
+  top: 6.25rem;
+
   .main-section02-text-wrapper {
     position: absolute;
-    // top: 5.125rem;
-    top: 7.7%;
-    // left: 210px;
-    // left: 13.125rem;
-    left: 16.5%;
+    margin-top: 4.5rem;
 
     p {
       font-size: 2.5rem;
@@ -42,28 +41,33 @@
   }
 
   .main-section02-circle-wrapper {
-    // top: 370px;
-    // top: 34%;
-    // left: 78px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 100px;
-    padding-top: 28.125rem;
+    padding-top: 22rem;
+
+    .transparent01 {
+      position: relative;
+      right: -3.5rem;
+    }
+
+    .transparent03 {
+      position: relative;
+      left: -3.5rem;
+    }
+
     .circle-transparent {
-      width: 36.25rem;
-      height: 36.25rem;
-      border-radius: 50%;
+      padding: 3.5rem;
+      border-radius: 20rem;
       background-color: rgba(#fff, 0.3);
       display: flex;
       justify-content: center;
       align-items: center;
       align-items: center;
-      position: relative;
+
       .circle-inner {
-        width: 25rem;
-        height: 25rem;
+        width: 15.5rem;
+        height: 15rem;
         background-color: $color-white;
         border-radius: 50%;
         display: flex;
@@ -71,17 +75,18 @@
         align-items: center;
         justify-content: center;
         color: #4d4d4d;
+        padding: 1.5rem;
 
         img {
-          width: 78px;
-          height: 97px;
+          width: 3rem;
+          height: 4.5rem;
         }
         h4 {
-          font-size: 1.875rem;
-          padding: 1.5rem;
+          font-size: 1.5rem;
+          padding: 0.5rem;
         }
         p {
-          font-size: 1.5rem;
+          font-size: 1rem;
           text-align: center;
         }
       }

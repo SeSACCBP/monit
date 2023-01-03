@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 
-@import "../scss/reset.scss";
+@import "./normalize.scss";
 
   $color-white:#FCFDFF;
   $color-main-blue: #255889;
-  $color-font-gray: #3e3e3e;#636363;
+  $color-font-gray: #3e3e3e;
   $color-font-skyblue: #3487d4;
   $color-button: #517ea7;
   $color-monitLogo: #789abf;
@@ -32,7 +31,6 @@
 
   /* Animation */
   $animation-duration: 300ms;
-=======
 //--color-white
 //--color-black
 @import "./normalize.scss";
@@ -45,6 +43,9 @@ $color-button: #517ea7;
 $color-monitLogo: #789abf;
 $color-samsungLogo: #0d4393;
 $color-line-gray: #d9d9d9;
+
+$color-index-blue:#496895;
+
 
 $color-contact-yellow: #ffb400;
 $color-history-orange: #ff9600;
@@ -66,13 +67,10 @@ $size-border-radius: 4px;
 
 /* Animation */
 $animation-duration: 300ms;
->>>>>>> 42f2380209d5672dbc001a9464efc9a662f6ee5a
 
 @mixin semi-title {
   color: var(--color-font-skyblue);
   font-size: 2em;
 }
 
-html {
-  font-size: 10px;
-}
+
