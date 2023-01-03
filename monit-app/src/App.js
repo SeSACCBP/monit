@@ -21,10 +21,10 @@ function App(props) {
       {/* 율 작업용 */}
       {/* <Overview /> */}
       {/* 수아 작업용 */}
-      {/* <MainSectionComponent01 /> */}
+      <MainSectionComponent01 />
       <MainSectionComponent02 />
-      {/* <MainSectionComponent03 /> */}
-      {/* <MainSectionComponent04 /> */}
+      <MainSectionComponent03 />
+      <MainSectionComponent04 />
       {/* 나은 */}
       {/* <MapComponent /> */}
       {/* 동교 작업용 season 2 */}
