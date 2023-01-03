@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  padding: 50px;
+}
+.History-container h3 {
+  position: relative;
+  color: #000;
+  line-height: 1;
+  display: inline;
+}
+.History-container h3::after {
+  content: "";
+  position: absolute;
+  left: 150%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #fff;
+  border: 7px solid lightgrey;
+  box-sizing: border-box;
+  z-index: 99;
+}
+
+.History-container li {
+  font-size: 1.3em;
+  color: #000;
+  line-height: 29px;
+}
+.History-container ol {
+  //   padding: 20px 0 70px;
+  margin-left: 8em;
+}
+.History-container div {
+  position: relative;
+  padding: 0 0 0 50px;
+}
+h3:after:first-child {
+  border: 7px solid #ff9600;
+}
+.History-container div::after {
+  content: "";
+  position: absolute;
+  left: 8em;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: lightgray;
+  z-index: 1;
+}
+.History-container div:first-child::before {
+  top: 10px;
+  height: calc(100% - 10px);
+}
