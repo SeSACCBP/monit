@@ -69,3 +69,31 @@ $animation-duration: 300ms;
   color: var(--color-font-skyblue);
   font-size: 2em;
 }
+
+//1280~1440 짱 큰 화면
+@media all and (min-width: 1360px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+//1280~1440 큰 화면
+@media all and (min-width: 1280px) and (max-width: 1359px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+// 1024~1279 (기본!!)
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+// 태블릿
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 14px;
+  }
+}

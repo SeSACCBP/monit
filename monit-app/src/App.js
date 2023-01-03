@@ -22,6 +22,14 @@ function App(props) {
       {/* <Overview /> */}
 
       {/* 수아 작업용 */}
+<<<<<<< HEAD
+      {/* <MainSectionComponent01 /> */}
+      {/* <MainSectionComponent02 /> */}
+      {/* <MainSectionComponent03 /> */}
+      {/* <MainSectionComponent04 /> */}
+      {/* 나은 */}
+      <MapComponent />
+=======
       <MainSectionComponent01 />
       <MainSectionComponent02 />
       <MainSectionComponent03 />
@@ -32,6 +40,7 @@ function App(props) {
       
       {/*은기 */}
 
+>>>>>>> f2f35bfcc8e31543d7e6733e1442aa8179c035c4
       {/* 동교 작업용 season 2 */}
       {/* <Footer /> */}
     </>

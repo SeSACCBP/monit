@@ -1,0 +1,45 @@
+.map-Box-One {
+  width: 60rem;
+  height: 8rem;
+  background-color: #8298ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 0.9375rem;
+  margin: 0 auto;
+}
+
+.map-Box-One-right {
+  margin: 0 auto;
+}
+.map-Box-One-right img {
+  width: 6.25rem;
+  height: 1.5625rem;
+}
+.map-Box-One-right p {
+  color: white;
+}
+
+.map-Box-One-left {
+  width: 35rem;
+  height: 6.5rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map-Box-One-left .map-Box-One-left-line {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.map-Box-One-left .map-Box-One-left-line p {
+  margin: 0 0 0 1rem;
+}
