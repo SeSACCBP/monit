@@ -26,7 +26,6 @@ function App(props) {
       {/* <MainSectionComponent03 /> */}
       {/* <MainSectionComponent04 /> */}
       {/* 나은 */}
-      {/* <MapComponent /> */}
       <MapComponent />
       {/* 동교 작업용 season 2 */}
       {/* <Footer /> */}
