@@ -24,6 +24,7 @@ function App(props) {
 
       {/* 나은 */}
       <MapComponent />
+      {/*은기 */}
     </>
   );
 }
