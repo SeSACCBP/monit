@@ -1,9 +1,6 @@
 @import "./style.scss";
 
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 // 부모 가이드
 // .main-section02-text-wrapper,
@@ -16,10 +13,7 @@
   justify-content: center;
   background-color: #496895;
   box-sizing: border-box;
-  width: 100%;
-  height: calc(100% - 6.25rem);
-  position: absolute;
-  top: 6.25rem;
+  height: 100%;
 
   .main-section02-text-wrapper {
     position: absolute;
