@@ -1,5 +1,10 @@
 @import "../scss/style.scss";
 
+.임시 {
+  background-color: #a3cca2;
+  height: 10px;
+}
+
 * {
   font-family: "AppleSDGothicNeoUL";
   margin: 0;
@@ -16,39 +21,44 @@
   color: black;
   font-size: 2rem;
 }
-
+.introduction-title-discription-fontcolor {
+  color: $color-monitLogo;
+  font-size: 2rem;
+}
 
 /*introduction-index*/
 
 .introductin-index-wrapper {
   font-size: 2rem;
 }
-.introduction-title-discription-fontcolor {
-  color: $color-monitLogo;
-  font-size: 2rem;
-}
 
-/*introduction-cicles*/
-
-
-
-
-
-
-
-
-
-.임시 {
-  background-color: #a3cca2;
-  height: 10px;
-}
 .introductin-index-fontcolor {
   color: $color-index-blue;
 }
 
-.Introduction {
-  /* ...?픽셀? em ? rem?  */
-  font-size: 3rem;
+/*introduction-cicles*/
+.introduction-circles-wrapper,
+.introduction-circle,
+.introduction-circle-inner,
+.introduction-center-circle-content {
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.introduction-circle {
+  width: 100vw;
+  height: calc(100vh - 4.9375rem);
+  position: absolute;
+  top: 4.9375rem;
+
+  .introduction-circle-inner {
+    text-align: center;
+    margin-top: 2rem;
+
+    .introduction-center-circle-content {
+      
+    }
+  }
 }
 
 /* 
