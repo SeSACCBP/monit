@@ -1,6 +1,6 @@
 //--color-white
 //--color-black
-@import "../scss/normalize.scss";
+@import "./normalize.scss";
 
 $color-white: #fcfdff;
 $color-main-blue: #255889;
@@ -10,6 +10,9 @@ $color-button: #517ea7;
 $color-monitLogo: #789abf;
 $color-samsungLogo: #0d4393;
 $color-line-gray: #d9d9d9;
+
+$color-index-blue:#496895;
+
 
 $color-contact-yellow: #ffb400;
 $color-history-orange: #ff9600;
@@ -36,3 +39,5 @@ $animation-duration: 300ms;
   color: var(--color-font-skyblue);
   font-size: 2em;
 }
+
+
