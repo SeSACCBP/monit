@@ -32,7 +32,7 @@ function MyComponent() {
   });
 
   return isLoaded ? (
-    <div>
+    <div className="MapComponent">
       오시는 길 초안
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
         <>
