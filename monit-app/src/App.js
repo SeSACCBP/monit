@@ -1,13 +1,15 @@
 import Introduction from "./Components/Introduction";
 import MainSectionComponent01 from "./Components/MainSectionComponent01";
 import MainSectionComponent02 from "./Components/MainSectionComponent02";
-import MainSectionComponent03 from "./Components/MainSectionComponent03";
-import MainSectionComponent04 from "./Components/MainSectionComponent04";
+import MapComponent from "./Components/MapComponent";
 import Overview from "./Components/Overview";
 
-function App() {
+function App(props) {
+  console.log(props);
+
   return (
     <>
+      {/* <Introduction /> */}
       {/* 태희 작업용 */}
       <Introduction />
 
@@ -20,6 +22,8 @@ function App() {
       {/* <MainSectionComponent03 /> */}
       {/* <MainSectionComponent04 /> */}
 
+      {/* 나은 */}
+      <MapComponent />
     </>
   );
 }
