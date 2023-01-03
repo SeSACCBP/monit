@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HistoryRoot from "./Components/HistoryRoot";
@@ -6,10 +6,16 @@ import History2020 from "./Components/History2020";
 import History2021 from "./Components/History2021";
 import History2022 from "./Components/History2022";
 import History2019 from "./Components/History2019";
-=======
-import Introduction from "./Components/Introduction";
-import Vision from "./Components/Vision";
->>>>>>> 1e38483a0fb6f1ef3534b8b3d0548a1d7f65925a
+// =======
+// import Introduction from "./Components/Introduction";
+// <<<<<<< HEAD
+// import Vision from "./Components/Vision";
+// >>>>>>> 1e38483a0fb6f1ef3534b8b3d0548a1d7f65925a
+// =======
+// import MainSectionComponent01 from "./Components/MainSectionComponent01";
+// import MainSectionComponent02 from "./Components/MainSectionComponent02";
+// import Overview from "./Components/Overview";
+// >>>>>>> 42f2380209d5672dbc001a9464efc9a662f6ee5a
 
 const router = createBrowserRouter([
   {
@@ -18,27 +24,26 @@ const router = createBrowserRouter([
     errorElement: <div>page not found</div>,
     children: [
       { index: true, element: <History2022 /> },
-      { path: "/:2021", element: <History2021 /> },
-      { path: "/:2020", element: <History2020 /> },
-      { path: "/:2019", element: <History2019 /> },
+      { path: "/:years", element: <History2021 /> },
     ],
   },
 ]);
 const App = () => {
   return (
-<<<<<<< HEAD
+    <>
     <div>
       <RouterProvider router={router} />
     </div>
-=======
-    <>
+    
       {/* 태희 작업용 */}
       {/* <Introduction /> */}
 
       {/* 율 작업용 */}
-      <Vision />
+      {/* <Overview /> */}
+
+      {/* 수아 작업용 */}
+      {/* <MainSectionComponent02 /> */}
     </>
->>>>>>> 1e38483a0fb6f1ef3534b8b3d0548a1d7f65925a
   );
 };
 
