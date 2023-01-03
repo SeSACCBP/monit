@@ -18,12 +18,12 @@ function App(props) {
 
       {/* 수아 작업용 */}
       {/* <MainSectionComponent01 /> */}
-      <MainSectionComponent02 />
+      {/* <MainSectionComponent02 /> */}
       {/* <MainSectionComponent03 /> */}
       {/* <MainSectionComponent04 /> */}
 
       {/* 나은 */}
-      {/* <MapComponent /> */}
+      <MapComponent />
     </>
   );
 }
