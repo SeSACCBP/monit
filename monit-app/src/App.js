@@ -1,13 +1,10 @@
 import Introduction from './Components/Introduction';
-import MainSectionComponent01 from './Components/MainSectionComponent01';
 import Overview from './Components/Overview';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Introduction from './Components/Introduction';
 import MainSectionComponent01 from './Components/MainSectionComponent01';
 import MainSectionComponent02 from './Components/MainSectionComponent02';
 import MapComponent from './Components/MapComponent';
-import Overview from './Components/Overview';
 
 function App(props) {
   console.log(props);
