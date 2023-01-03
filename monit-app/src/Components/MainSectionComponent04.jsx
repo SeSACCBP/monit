@@ -5,7 +5,7 @@ import "../scss/style.scss";
 
 const MainSectionComponent04 = () => {
   return (
-    <div>
+    <div className='main-section-component04-container'>
       <section className="main-section-component04">
         <div className="main-section-component04-contact-wrapper">
           <h2 className="main-section-component04-contact">Contact Us</h2>

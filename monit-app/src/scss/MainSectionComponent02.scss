@@ -1,7 +1,5 @@
 @import "./style.scss";
 
-
-
 // 부모 가이드
 // .main-section02-text-wrapper,
 // .circle-transparent {
@@ -17,7 +15,7 @@
 
   .main-section02-text-wrapper {
     position: absolute;
-    margin-top: 4.5rem;
+    margin-top: 10%;
 
     p {
       font-size: 2.5rem;
@@ -38,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 22rem;
+    padding-top: 15rem;
 
     .transparent01 {
       position: relative;
@@ -60,8 +58,8 @@
       align-items: center;
 
       .circle-inner {
-        width: 15.5rem;
-        height: 15rem;
+        width: 17rem;
+        height: 17rem;
         background-color: $color-white;
         border-radius: 50%;
         display: flex;
