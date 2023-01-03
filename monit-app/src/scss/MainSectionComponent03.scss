@@ -1,10 +1,10 @@
 @import "./style.scss";
 
 * {
-  margin: 0;
-  padding: 0;
-  // box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+
 // 부모가이드
 .main-section-component03,
 .main-section-component03-text-wrapper,
@@ -20,15 +20,18 @@
 //   border: 1px solid blue;
 // }
 // style start
+
+.main-section-component03-container,
 .main-section-component03 {
   width: 100%;
-  height: calc(100% - 6.25rem);
-  position: absolute;
-  top: 6.25rem;
+  height: 100%;
+}
+.main-section-component03 {
+  width: 100%;
 
   .main-section-component03-text-wrapper {
     text-align: center;
-    margin-top: 2rem;
+    padding-top: 10rem;
 
     .main-section-component03-text {
       padding: 1rem;
@@ -37,8 +40,8 @@
       align-items: center;
 
       .main-section-component03-title {
-        font-size: 4rem;
-        line-height: 6.5rem;
+        font-size: 3.5rem;
+        line-height: 6rem;
         color: #4d4d4d;
 
         span {
@@ -54,7 +57,7 @@
         color: #fff;
         font-weight: bold;
         font-size: 1.8rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
       }
     }
   }
@@ -66,8 +69,8 @@
     background-color: $color-white;
 
     .main-section-component03-circle01 {
-      min-width: 22rem;
-      min-height: 22rem;
+      min-width: 18rem;
+      min-height: 18rem;
       background-color: #496895;
       border-radius: 50%;
       display: flex;
@@ -98,10 +101,10 @@
         }
 
         h3 {
-          font-size: 1.8rem;
+          font-size: 1.5em;
           text-align: center;
           margin-bottom: 3rem;
-          line-height: 3rem;
+          line-height: 2rem;
         }
       }
     }
