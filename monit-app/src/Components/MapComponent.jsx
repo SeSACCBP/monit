@@ -39,15 +39,15 @@ function MyComponent() {
           <Marker onLoad={onLoad} position={position} />
         </>
       </GoogleMap>
-      <div className="mapBox">
+      <div className="map-Box-One">
         <img src={logo} alt="" />
         <div className="mapAdd">
           <div className="mapAddLine">
             <p>서울시 서초구 방배로 40, 기탄빌딩 3층</p>
-            <p>070-4349-0184</p>
+            <p>사당역 14번 출구로부터 도보 11분</p>
           </div>
           <div className="mapAddLine">
-            <p>사당역 14번 출구로부터 도보 11분</p>
+            <p>070-4349-0184</p>
             <p>support@goodmonit.com</p>
           </div>
         </div>
