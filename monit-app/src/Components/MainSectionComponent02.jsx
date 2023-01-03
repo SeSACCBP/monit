@@ -1,6 +1,7 @@
 import React from "react";
 import "../scss/MainSectionComponent02.scss";
-// import "../scss/style.scss";
+import "../scss/MainSectionCommon.scss";
+import "../scss/style.scss";
 
 const MainSectionComponent02 = () => {
   return (
@@ -14,7 +15,7 @@ const MainSectionComponent02 = () => {
         </h4>
       </div>
       <div className="main-section02-circle-wrapper">
-        <div className="circle-transparent">
+        <div className="circle-transparent transparent01">
           <div className="circle-inner">
             <img src="" alt="" />
             <h4>기저귀 질환 예방</h4>
@@ -25,7 +26,7 @@ const MainSectionComponent02 = () => {
             </p>
           </div>
         </div>
-        <div className="circle-transparent">
+        <div className="circle-transparent transparent02">
           <div className="circle-inner">
             <img src="" alt="" />
             <h4>간병 업무 경감</h4>
@@ -36,7 +37,7 @@ const MainSectionComponent02 = () => {
             </p>
           </div>
         </div>
-        <div className="circle-transparent">
+        <div className="circle-transparent transparent03">
           <div className="circle-inner">
             <img src="" alt="" />
             <h4>간병 비용 경감</h4>
