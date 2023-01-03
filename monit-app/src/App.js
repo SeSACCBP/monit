@@ -1,4 +1,3 @@
-import Introduction from "./Components/Introduction";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import MainSectionComponent01 from "./Components/MainSectionComponent01";
