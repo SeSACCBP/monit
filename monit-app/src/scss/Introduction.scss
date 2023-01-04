@@ -11,25 +11,35 @@
   padding: 0;
 }
 
+.introduction-title-n-index-wrapper {
+  margin: 3rem;
+  padding: 3rem;
+}
+
 /*introduction-title*/
+
+.introduction-title-wrapper {
+  margin-bottom: 10rem;
+}
 
 .introduction-title {
   color: $color-index-blue;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .introduction-title-discription {
   color: black;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .introduction-title-discription-fontcolor {
   color: $color-monitLogo;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 /*introduction-index*/
 
 .introductin-index-wrapper {
-  font-size: 2rem;
+  margin-bottom: 10rem;
+  font-size: 1rem;
 }
 
 .introductin-index-fontcolor {
@@ -48,7 +58,7 @@
 .introduction-circle {
   width: 100vw;
   height: calc(100vh - 4.9375rem);
-  position: absolute;
+  // position: absolute;
   top: 4.9375rem;
 
   .introduction-circle-inner {
@@ -56,7 +66,6 @@
     margin-top: 2rem;
 
     .introduction-center-circle-content {
-      
     }
   }
 }
