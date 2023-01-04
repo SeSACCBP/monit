@@ -1,12 +1,18 @@
 import React from "react";
 import "../../scss/style.scss";
 import "../../scss/SubHeader.scss";
+import { AiOutlineRight } from "react-icons/ai";
 
 const HeaderLo = () => {
   return (
-    <div className="HeaderLo">
-      <div className="HeaderLo-Img">오시는 길</div>
-      <div className="HeaderLo-word">회사 소개 &gt; 오시는 길</div>
+    <div className="SubHeader">
+      <div className="SubHeader-Img">
+        <p>오시는 길</p>
+      </div>
+      <div className="SubHeader-word">
+        회사 소개 <AiOutlineRight className="SubHeader-icon" />
+        오시는 길
+      </div>
     </div>
   );
 };
