@@ -94,6 +94,12 @@ $animation-duration: 300ms;
 // 태블릿
 @media all and (min-width: 768px) and (max-width: 1023px) {
   html {
-    font-size: 14px;
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 768px)  {
+  html {
+    font-size: 10px;
   }
 }
