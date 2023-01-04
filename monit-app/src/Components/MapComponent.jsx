@@ -38,7 +38,7 @@ function MyComponent() {
       <HeaderLo />
       <div className="map-title">
         Location <br />
-        <span>오시는 길</span>
+        <p>오시는 길</p>
       </div>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
         <>
