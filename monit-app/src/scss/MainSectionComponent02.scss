@@ -9,19 +9,20 @@
 html {
   // max-width: 87.5rem;
 }
+* {
+  box-sizing: border-box;
+}
 
 .main-section02-component {
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 5rem;
   background-color: #496895;
   box-sizing: border-box;
-  min-height: 100%;
-  min-width: 100%;
+
   flex-direction: column;
 
   .main-section02-text-wrapper {
-    padding: 0 0 6rem 2.5rem;
     p {
       font-size: 2.5rem;
       color: #cbcbcb;
@@ -34,14 +35,17 @@ html {
       font-size: 1.875rem;
       color: $color-white;
       margin-top: 1.3rem;
+      word-break: normal;
+      word-break: keep-all;
     }
   }
 
   .main-section02-circle-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
-    width: 100%;
+
+    min-width: 100%;
+    padding-top: 10rem;
     .transparent01 {
       position: relative;
       right: -2.5rem;
@@ -53,8 +57,8 @@ html {
     }
 
     .circle-transparent {
-      width: 20rem;
-      height: 20rem;
+      width: 19rem;
+      height: 19rem;
       border-radius: 50%;
       background-color: rgba(#fff, 0.3);
       display: flex;
@@ -62,8 +66,8 @@ html {
       align-items: center;
 
       .circle-inner {
-        width: 16rem;
-        height: 16rem;
+        width: 15rem;
+        height: 15rem;
         background-color: $color-white;
         border-radius: 50%;
         display: flex;
@@ -89,30 +93,8 @@ html {
     }
   }
 }
-//1280~1440 짱 큰 화면
-@media all and (min-width: 1360px) {
+@media all and (max-width: 578px) {
   html {
-    font-size: 20px;
-  }
-}
-
-//1280~1440 큰 화면
-@media all and (min-width: 1280px) and (max-width: 1359px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-// 1024~1279 (기본!!)
-@media all and (min-width: 1024px) and (max-width: 1279px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-// 태블릿
-@media all and (min-width: 768px) and (max-width: 1023px) {
-  html {
-    font-size: 10px;
+    overflow-x: hidden;
   }
 }
