@@ -8,6 +8,7 @@ import Introduction from "./Components/Introduction";
 import Overview from "./Components/Overview";
 import MapComponent from "./Components/MapComponent";
 import History from "./Components/History";
+import Contact from "./Components/Contact";
 
 function App(props) {
   console.log(props);
@@ -29,13 +30,14 @@ function App(props) {
       {/* <MainSectionComponent04 /> */}
 
       {/* 나은 */}
-      <MapComponent />
+      {/* <MapComponent /> */}
+      <Contact />
 
       {/*은기 */}
       {/* <History /> */}
 
       {/* 동교 작업용 season 2 */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
