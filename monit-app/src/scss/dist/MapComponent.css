@@ -1,3 +1,16 @@
+.map-title {
+  width: 50rem;
+  height: 10rem;
+  font-size: 1rem;
+  color: #0061bb;
+  font-weight: 900;
+  padding: 3rem 10rem;
+}
+.map-title span {
+  font-size: 1.5rem;
+  color: #2f2f2f;
+}
+
 .map-Box-One {
   width: 52rem;
   height: 8rem;

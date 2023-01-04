@@ -4,6 +4,7 @@ import "../scss/MapComponent.scss";
 import "../scss/style.scss";
 import logo from "../imgs/Fragment_img/monitLogo_white.png";
 import { RiNumber2, RiNumber4, RiMailLine, RiPhoneLine } from "react-icons/ri";
+import HeaderLo from "./SubHeader/HeaderLo";
 
 const containerStyle = {
   width: "100%",
@@ -34,7 +35,11 @@ function MyComponent() {
 
   return isLoaded ? (
     <div className="MapComponent">
-      오시는 길
+      <HeaderLo />
+      <div className="map-title">
+        Location <br />
+        <span>오시는 길</span>
+      </div>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
         <>
           <Marker onLoad={onLoad} position={position} />
