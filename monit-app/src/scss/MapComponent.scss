@@ -1,5 +1,5 @@
 .map-Box-One {
-  width: 60rem;
+  width: 59rem;
   height: 8rem;
   background-color: #8298ba;
   display: flex;
@@ -7,28 +7,34 @@
   justify-content: center;
   border-radius: 20px;
   padding: 0.9375rem;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 .map-Box-One-right {
-  margin: 0 auto;
+  width: 14rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   img {
-    width: 6.25rem;
-    height: 1.5625rem;
+    width: 8rem;
+    height: 2rem;
   }
   p {
     color: white;
+    font-size: 0.9rem;
   }
 }
 
 .map-Box-One-left {
-  width: 35rem;
+  width: 45rem;
   height: 6.5rem;
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   .map-Box-One-left-line {
@@ -38,10 +44,83 @@
     font-weight: bold;
     display: flex;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    p {
-      margin: 0 0 0 1rem;
+    .map-Box-One-left-line-big {
+      font-size: 1.5rem;
     }
   }
+}
+
+// 여기서부터 대중교통
+
+.map-Box-Two {
+  width: 62rem;
+  height: 10rem;
+  // border: 2px red solid;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  .map-Box-Two-Box {
+    // width: 50%;
+    display: flex;
+    margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+
+    .map-Box-Two-bus,
+    .map-Box-Two-sub {
+      width: 7rem;
+      height: 7rem;
+      background-color: #d9d9d9;
+      border-radius: 50%;
+    }
+    .map-Box-Two-bus {
+      background-image: url(../imgs/Map_img/bus.png);
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .map-Box-Two-sub {
+      background-image: url(../imgs/Map_img/subway.png);
+      background-size: 80%;
+      background-position: center;
+    }
+    .map-Box-Two-arr {
+      height: 7rem;
+      font-size: 1.22rem;
+      margin-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        margin-top: 0.5rem;
+      }
+      .map-Box-Two-arr-circle2 {
+        font-size: 1.3rem;
+        padding: 0.1rem;
+        color: white;
+        background-color: #00a34b;
+        border-radius: 50%;
+        margin-bottom: -0.2rem;
+      }
+      .map-Box-Two-arr-circle4 {
+        font-size: 1.3rem;
+        padding: 0.1rem;
+        color: white;
+        background-color: #009fdc;
+        border-radius: 50%;
+        margin-bottom: -0.2rem;
+      }
+    }
+    .map-Box-Two-arr-B {
+      font-weight: bold;
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+      color: #979797;
+    }
+  }
+}
+.map-Box-Two .map-Box-Two-Box:first-child {
+  border-right: 1.5px solid #979797;
+  padding-right: 1.2rem;
 }
