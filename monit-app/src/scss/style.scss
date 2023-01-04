@@ -1,0 +1,105 @@
+@import "./normalize.scss";
+
+$color-white: #fcfdff;
+$color-main-blue: #255889;
+$color-font-gray: #3e3e3e;
+$color-font-skyblue: #3487d4;
+$color-button: #517ea7;
+$color-monitLogo: #789abf;
+$color-samsungLogo: #0d4393;
+$color-line-gray: #d9d9d9;
+
+$color-contact-yellow: #ffb400;
+$color-history-orange: #ff9600;
+
+/* Font size */
+$font-large: 48px;
+$font-medium: 32px;
+$font-regular: 18px;
+$font-small: 16px;
+$font-micro: 14px;
+
+/* Font weight */
+$--weight-bold: 700;
+$--weight-semi-bold: 600;
+$--weight-regular: 400;
+
+/* Size */
+$size-border-radius: 4px;
+
+/* Animation */
+$animation-duration: 300ms;
+//--color-white
+//--color-black
+@import "./normalize.scss";
+
+$color-white: #fcfdff;
+$color-main-blue: #255889;
+$color-font-gray: #3e3e3e;
+$color-font-skyblue: #3487d4;
+$color-button: #517ea7;
+$color-monitLogo: #789abf;
+$color-samsungLogo: #0d4393;
+$color-line-gray: #d9d9d9;
+
+$color-index-blue: #496895;
+
+$color-contact-yellow: #ffb400;
+$color-history-orange: #ff9600;
+
+/* Font size */
+$font-large: 48px;
+$font-medium: 32px;
+$font-regular: 18px;
+$font-small: 16px;
+$font-micro: 14px;
+
+/* Font weight */
+$weight-bold: 700;
+$weight-semi-bold: 600;
+$weight-regular: 400;
+
+/* Size */
+$size-border-radius: 4px;
+
+/* Animation */
+$animation-duration: 300ms;
+
+@mixin semi-title {
+  color: var(--color-font-skyblue);
+  font-size: 2em;
+}
+
+//1280~1440 짱 큰 화면
+@media all and (min-width: 1360px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+//1280~1440 큰 화면
+@media all and (min-width: 1280px) and (max-width: 1359px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+// 1024~1279 (기본!!)
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+// 태블릿
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 768px)  {
+  html {
+    font-size: 10px;
+  }
+}
