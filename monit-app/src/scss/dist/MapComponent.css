@@ -1,5 +1,5 @@
 .map-Box-One {
-  width: 59rem;
+  width: 52rem;
   height: 8rem;
   background-color: #8298ba;
   display: flex;
@@ -25,20 +25,22 @@
 .map-Box-One-right p {
   color: white;
   font-size: 0.9rem;
+  font-weight: 800;
 }
 
 .map-Box-One-left {
   width: 45rem;
   height: 6.5rem;
   border-radius: 20px;
-  font-size: 1.2rem;
-  background-color: white;
+  font-size: 1rem;
+  background-color: #f4f8ff;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: #545353;
 }
 .map-Box-One-left .map-Box-One-left-line {
-  height: 4rem;
+  height: 3.3rem;
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -47,11 +49,16 @@
   justify-content: space-between;
 }
 .map-Box-One-left .map-Box-One-left-line .map-Box-One-left-line-big {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+.map-Box-One-left .map-Box-One-left-line .map-Box-One-Icon {
+  font-size: 1.2rem;
+  margin-bottom: -0.3rem;
+  margin-right: 0.5rem;
 }
 
 .map-Box-Two {
-  width: 62rem;
+  width: 52rem;
   height: 10rem;
   margin: 0 auto;
   display: flex;
@@ -59,14 +66,15 @@
 }
 .map-Box-Two .map-Box-Two-Box {
   display: flex;
-  margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+  margin: 0.5rem 0.5rem 2.3rem 0.5rem;
 }
 .map-Box-Two .map-Box-Two-Box .map-Box-Two-bus,
 .map-Box-Two .map-Box-Two-Box .map-Box-Two-sub {
-  width: 7rem;
-  height: 7rem;
+  width: 3rem;
+  height: 3rem;
   background-color: #d9d9d9;
   border-radius: 50%;
+  box-shadow: 1px 1px 1px gray;
 }
 .map-Box-Two .map-Box-Two-Box .map-Box-Two-bus {
   background-image: url(../imgs/Map_img/bus.png);
@@ -81,7 +89,7 @@
 }
 .map-Box-Two .map-Box-Two-Box .map-Box-Two-arr {
   height: 7rem;
-  font-size: 1.22rem;
+  font-size: 1rem;
   margin-left: 1rem;
   display: flex;
   flex-direction: column;
@@ -96,7 +104,7 @@
   color: white;
   background-color: #00a34b;
   border-radius: 50%;
-  margin-bottom: -0.2rem;
+  margin-bottom: -0.25rem;
 }
 .map-Box-Two .map-Box-Two-Box .map-Box-Two-arr .map-Box-Two-arr-circle4 {
   font-size: 1.3rem;
@@ -104,16 +112,20 @@
   color: white;
   background-color: #009fdc;
   border-radius: 50%;
-  margin-bottom: -0.2rem;
+  margin-bottom: -0.25rem;
 }
 .map-Box-Two .map-Box-Two-Box .map-Box-Two-arr-B {
   font-weight: bold;
   margin-bottom: 0.6rem;
   font-size: 1rem;
-  color: #979797;
+  color: #575757;
 }
 
 .map-Box-Two .map-Box-Two-Box:first-child {
-  border-right: 1.5px solid #979797;
-  padding-right: 1.2rem;
+  border-right: 1.6px solid #c8c8c8;
+  padding-right: 8%;
+}
+
+.map-Box-Two .map-Box-Two-Box:last-child {
+  margin-left: 4%;
 }
