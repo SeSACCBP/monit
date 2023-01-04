@@ -31,10 +31,10 @@ function App(props) {
 
       {/* 나은 */}
       {/* <MapComponent /> */}
-      <Contact />
+      {/* <Contact /> */}
 
       {/*은기 */}
-      <History />
+      {/* <History /> */}
 
       {/* 동교 작업용 season 2 */}
       {/* <Footer /> */}
