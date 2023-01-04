@@ -29,7 +29,7 @@ function App(props) {
       <MainSectionComponent04 />
 
       {/* 나은 */}
-      {/* <MapComponent /> */}
+      <MapComponent />
 
       {/*은기 */}
       {/* <History /> */}
