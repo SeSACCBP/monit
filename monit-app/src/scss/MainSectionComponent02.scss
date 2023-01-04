@@ -6,17 +6,22 @@
 //   border: 1px solid red;
 // }
 
+html {
+  // max-width: 87.5rem;
+}
+
 .main-section02-component {
   display: flex;
+  align-items: center;
   justify-content: center;
   background-color: #496895;
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  flex-direction: column;
 
   .main-section02-text-wrapper {
-    position: absolute;
-    margin-top: 10%;
-
+    padding: 0 0 6rem 2.5rem;
     p {
       font-size: 2.5rem;
       color: #cbcbcb;
@@ -35,31 +40,30 @@
   .main-section02-circle-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 15rem;
-
+    margin-bottom: 3rem;
+    width: 100%;
     .transparent01 {
       position: relative;
-      right: -3.5rem;
+      right: -2.5rem;
     }
 
     .transparent03 {
       position: relative;
-      left: -3.5rem;
+      left: -2.5rem;
     }
 
     .circle-transparent {
-      padding: 3.5rem;
-      border-radius: 20rem;
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
       background-color: rgba(#fff, 0.3);
       display: flex;
       justify-content: center;
       align-items: center;
-      align-items: center;
 
       .circle-inner {
-        width: 17rem;
-        height: 17rem;
+        width: 16rem;
+        height: 16rem;
         background-color: $color-white;
         border-radius: 50%;
         display: flex;
@@ -67,7 +71,7 @@
         align-items: center;
         justify-content: center;
         color: #4d4d4d;
-        padding: 1.5rem;
+        padding: 1rem;
 
         img {
           width: 3rem;
@@ -83,5 +87,32 @@
         }
       }
     }
+  }
+}
+//1280~1440 짱 큰 화면
+@media all and (min-width: 1360px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+//1280~1440 큰 화면
+@media all and (min-width: 1280px) and (max-width: 1359px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+// 1024~1279 (기본!!)
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+// 태블릿
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 10px;
   }
 }
