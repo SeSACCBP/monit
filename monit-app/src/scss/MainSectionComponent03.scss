@@ -20,16 +20,11 @@
 // }
 // style start
 
-.main-section-component03-container,
 .main-section-component03 {
-  width: 100%;
-  height: 100%;
-}
-.main-section-component03 {
+  padding: 5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   .main-section-component03-text-wrapper {
     text-align: center;
@@ -65,12 +60,12 @@
   .main-section-component03-circle-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    padding: 3rem 0;
     background-color: $color-white;
 
     .main-section-component03-circle01 {
-      min-width: 18rem;
-      min-height: 18rem;
+      min-width: 17rem;
+      min-height: 17rem;
       background-color: #496895;
       border-radius: 50%;
       display: flex;
