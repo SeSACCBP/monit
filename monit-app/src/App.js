@@ -29,6 +29,13 @@ function App(props) {
 
       {/* 나은 */}
       {/* <MapComponent /> */}
+      {/* <MainSectionComponent01 />
+      <MainSectionComponent02 />
+      <MainSectionComponent03 />
+      <MainSectionComponent04 /> */}
+
+      {/* 나은 */}
+      <MapComponent />
 
       {/*은기 */}
 
