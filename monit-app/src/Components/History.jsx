@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../scss/History.scss";
 
 //첫화면에서 2022 연혁 나오게 만들기
 //월-설명 글씨체 굵기 다르게..,.,.,.,,.,..,,,..,,,,,,.,,..,,..,,.
