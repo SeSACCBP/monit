@@ -32,10 +32,10 @@ function App(props) {
       <MapComponent />
 
       {/*은기 */}
-      {/* <History /> */}
+      <History />
 
       {/* 동교 작업용 season 2 */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
