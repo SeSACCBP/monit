@@ -5,21 +5,22 @@
   flex-direction: column;
   position: relative;
   overflow-x: hidden;
-  height: 100vh;
+  height: 40rem;
   .overivew-bg {
-    width: 600px;
-    height: 80%;
+    width: 34.5rem;
+    height: 35rem;
+    margin-top: 2rem;
     background: #4a7094;
     opacity: 7%;
-    border: 60px solid #96bde3;
+    border: 3.75rem solid #96bde3;
     border-radius: 50%;
     position: absolute;
-    right: -300px;
+    right: -18.75rem;
     z-index: -1;
   }
   .overview-middlebar {
-    width: 90%;
-    border: 0.5px solid rgb(195, 195, 195);
+    width: 65rem;
+    border: 0.0313rem solid rgb(195, 195, 195);
     margin: 0 auto;
   }
 }
@@ -27,28 +28,31 @@
 .overview {
   // 타이틀 영역
   display: flex;
-  margin: 70px 0 70px 0;
+  height: 23rem;
+  margin: 6.375rem auto 2.375rem auto;
+  width: 56rem;
   .overview-title {
     display: flex;
-    width: 360px;
-    height: 60px;
-    margin-left: 10px;
+    width: 14.5rem;
+    height: -20rem;
+    margin-left: 0.625rem;
     position: relative;
     // 타이틀 강조 원
     .overview-title-circle {
-      width: 15px;
-      height: 15px;
+      width: 0.9375rem;
+      height: 0.9375rem;
       background: #789abf;
       border-radius: 50%;
-      margin-right: 3px;
+      margin-right: 0.18rem;
     }
     // 타이틀 문구
     .overview-title-text {
-      margin-top: 6px;
+      width: 13rem;
+      margin-top: 0.375rem;
       color: #496895;
       font-family: "AppleSDGothicNeoUL";
       font-weight: 800;
-      font-size: 50px;
+      font-size: 1.9rem;
     }
     // 타이블 배경이미지
     .overview-title-bg {
@@ -56,42 +60,42 @@
       background-repeat: no-repeat;
       position: absolute;
       background-size: cover;
-      top: 30px;
+      top: 1.3rem;
       z-index: -1;
-      width: 330px;
-      height: 120px;
-      border-radius: 30px;
+      width: 13.625rem;
+      height: 5.8rem;
+      border-radius: 1.875rem;
     }
   }
   .overview-bar {
-    margin-left: 10px;
+    margin-left: 0.625rem;
     display: flex;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     .overview-bar {
       display: flex;
-      width: 80px;
-      height: 2px;
+      width: 3rem;
+      height: 0.07rem;
       background: #cacaca;
     }
     .overview-bar-circle {
-      width: 15px;
-      height: 16px;
-      border: 2px solid #cacaca;
+      width: 0.9375rem;
+      height: 1rem;
+      border: 0.07rem solid #cacaca;
       border-radius: 50%;
-      margin-right: 3px;
-      margin-top: 5px;
+      margin-right: 0.1875rem;
+      margin-top: 0.5rem;
     }
   }
   .overview-content {
-    margin-left: 40px;
+    margin-left: 2.5rem;
     font-family: "AppleSDGothicNeoUL";
-    font-size: 30px;
     color: #545353;
+    font-size: 1.1rem;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 1.8rem;
     .overview-content-b {
       color: #7e9fc5;
-      font-size: 40px;
+      font-size: 1.8rem;
       font-weight: 900;
       font-family: "AppleSDGothicNeoUL";
     }

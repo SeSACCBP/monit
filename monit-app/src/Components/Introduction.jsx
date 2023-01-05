@@ -1,5 +1,8 @@
 import "../scss/Introduction.scss";
 import logo from "../imgs/Fragment_img/monitLogo_white.png";
+import HeaderIntro from "./SubHeader/HeaderIntro";
+
+
 
 function Introduction() {
   return (
@@ -74,6 +77,7 @@ function Introduction() {
                 <p> 디지털 헬스케어 플랫폼</p>
               </div>
             </div>
+
             <div className="cicle01">
               <div className="circle circle-c01-up"></div>
               <div className="circle circle-c01-down">베이비 모니터</div>
@@ -88,11 +92,13 @@ function Introduction() {
               <div className="circle circle-c03-up"></div>
               <div className="circle circle-c03-down">베베핏 스마트 기어</div>
             </div>
+
             <div className="circle04">
               <div className="circle circle-c04-up"></div>
               <div className="circle circle-c04-down">시니어 케어 시스템</div>
             </div>
           </div>
+
           <hr className="임시"></hr>
 
           {/* ---------testing--------- */}
