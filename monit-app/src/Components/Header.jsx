@@ -53,8 +53,8 @@ const Header = () => {
         <li className="header-samsung">
           Accelerated by
           <div className="header-samsung-logo" />
-          </li>
-          </ul>
+        </li>
+      </ul>
     </div>
   );
 };
