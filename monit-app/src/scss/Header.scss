@@ -1,4 +1,4 @@
-@import "../scss/style.scss";
+@import '../scss/style.scss';
 
 .header-line {
   position: absolute;
@@ -64,7 +64,7 @@
 }
 
 .header-title > a:after {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   bottom: -2px;
@@ -139,7 +139,7 @@
   align-items: center;
   width: 100px;
   height: 50px;
-  background: url("../imgs/Header_img/samsung_logo.png") no-repeat;
+  background: url('../imgs/Header_img/samsung_logo.png') no-repeat;
   background-size: 100% auto;
   background-position-y: center;
 }

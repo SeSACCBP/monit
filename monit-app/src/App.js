@@ -1,14 +1,12 @@
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-
-import Introduction from "./Components/Introduction";
-import Overview from "./Components/Overview";
-import MapComponent from "./Components/MapComponent";
-import History from "./Components/History";
-import Contact from "./Components/Contact";
-import Main from "./Components/Main.jsx";
-
+import Introduction from './Components/Introduction';
+import Overview from './Components/Overview';
+import MapComponent from './Components/MapComponent';
+import History from './Components/History';
+import Contact from './Components/Contact';
+import Main from './Components/Main.jsx';
 
 function App(props) {
   console.log(props);
@@ -28,7 +26,7 @@ function App(props) {
       {/* <MainSectionComponent02 /> */}
       {/* <MainSectionComponent03 /> */}
       {/* <MainSectionComponent04 /> */}
-      {/* <Main /> */}
+      <Main />
 
       {/* 나은 */}
       {/* <MapComponent /> */}
