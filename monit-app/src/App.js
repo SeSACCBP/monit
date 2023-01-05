@@ -9,6 +9,7 @@ import History from "./Components/History";
 import Contact from "./Components/Contact";
 import Main from "./Components/Main.jsx";
 
+
 function App(props) {
   console.log(props);
   return (
@@ -28,7 +29,6 @@ function App(props) {
       {/* <MainSectionComponent03 /> */}
       {/* <MainSectionComponent04 /> */}
       {/* <Main /> */}
-
 
       {/* 나은 */}
       {/* <MapComponent /> */}
