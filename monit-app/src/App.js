@@ -16,7 +16,7 @@ function App(props) {
       {/* <Header /> */}
 
       {/* 태희 작업용 */}
-      <Introduction />
+      {/* <Introduction /> */}
 
       {/* 율 작업용 */}
       {/* <Overview /> */}
