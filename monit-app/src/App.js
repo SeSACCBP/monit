@@ -22,7 +22,7 @@ function App(props) {
       {/* <Overview /> */}
 
       {/* 수아 작업용 */}
-      <Main />
+      {/* <Main /> */}
 
       {/* 나은 */}
       {/* <MapComponent /> */}
