@@ -42,7 +42,7 @@ const Header = () => {
         </li>
         <li className="header-title">Accelerated by</li>
       </ul>
-    </nav>
+    </div>
   );
 };
 

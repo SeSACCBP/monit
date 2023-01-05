@@ -1,10 +1,15 @@
 import "../scss/Introduction.scss";
+import logo from "../imgs/Fragment_img/monitLogo_white.png";
+import HeaderIntro from "./SubHeader/HeaderIntro";
 
 function Introduction() {
   return (
     <>
+      <HeaderIntro />
       <div>
-        <div className="introduction-title-n-index-wrapper">
+        <div className="introduction-items-wrapper">
+          {/* ---------introduction-title--------- */}
+
           <div className="introduction-title-wrapper">
             <div className="introduction-title">Introduction</div>
             <div className="introduction-title-discription">
@@ -20,6 +25,7 @@ function Introduction() {
           </div>
 
           <hr className="임시"></hr>
+          {/* ---------introduction-index--------- */}
 
           <div className="introductin-index-wrapper">
             <span className="introductin-index-fontcolor">기업명</span>
@@ -43,23 +49,59 @@ function Introduction() {
             | MONIT Digital Therapeutics | Bebefit 스마트 베이비 케어 제품군
             <br />
           </div>
-        </div>
 
-        <hr className="임시"></hr>
-        {/* //1. 네모 -> 동그라미. 2. 차트가져오기?? 👉 내 선택*/}
-        <div className="introduction-circles-wrapper">
-          <div className="introduction-circle">
-            <div className="introduction-circle-inner">
-              <div className="introduction-center-cicle-content">MONIT</div>
-              <h3>
-                AI 데이터 분석 기반 <br />
-                디지털 헬스케어 플랫폼
-              </h3>
+          <hr className="임시"></hr>
+
+          {/* ---------introduction-cicles--------- */}
+
+          {/* <div className="introduction-circles-wrapper">
+            <div className="introduction-circle">
+              <div className="introduction-circle-inner">
+                <div className="introduction-center-circle-content">
+                  <p>MONIT</p>
+                  <p>
+                    AI 데이터 분석 기반 <br />
+                    디지털 헬스케어 플랫폼
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> */}
+
+          <div className="introduction-circles-wrapper">
+            <div className="bigC">
+              <div className="smallC">
+                <img src={logo} alt="" />
+                <p>AI 데이터 분석 기반 </p>
+                <p> 디지털 헬스케어 플랫폼</p>
+              </div>
+            </div>
+
+            <div className="cicle01">
+              <div className="circle circle-c01-up"></div>
+              <div className="circle circle-c01-down">베이비 모니터</div>
+            </div>
+
+            <div className="circle02">
+              <div className="circle circle-c02-up"></div>
+              <div className="circle circle-c02-down">펫 케어</div>
+            </div>
+
+            <div className="circle03">
+              <div className="circle circle-c03-up"></div>
+              <div className="circle circle-c03-down">베베핏 스마트 기어</div>
+            </div>
+
+            <div className="circle04">
+              <div className="circle circle-c04-up"></div>
+              <div className="circle circle-c04-down">시니어 케어 시스템</div>
             </div>
           </div>
-        </div>
-        <hr className="임시"></hr>
 
+          <hr className="임시"></hr>
+
+          {/* ---------testing--------- */}
+        </div>
         <div>띄어쓰기 테스트//&nbsp;테스트2&ensp;테스트3&emsp;테스트4</div>
       </div>
     </>
