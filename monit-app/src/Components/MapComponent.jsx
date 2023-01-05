@@ -3,7 +3,8 @@ import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 import "../scss/MapComponent.scss";
 import "../scss/style.scss";
 import logo from "../imgs/Fragment_img/monitLogo_white.png";
-import { RiNumber2, RiNumber4 } from "react-icons/ri";
+import { RiNumber2, RiNumber4, RiMailLine, RiPhoneLine } from "react-icons/ri";
+import HeaderLo from "./SubHeader/HeaderLo";
 
 const containerStyle = {
   width: "100%",
@@ -34,7 +35,11 @@ function MyComponent() {
 
   return isLoaded ? (
     <div className="MapComponent">
-      오시는 길
+      <HeaderLo />
+      <div className="map-title">
+        Location <br />
+        <p>오시는 길</p>
+      </div>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
         <>
           <Marker onLoad={onLoad} position={position} />
@@ -52,8 +57,14 @@ function MyComponent() {
             <p>사당역 14번 출구로부터 도보 11분</p>
           </div>
           <div className="map-Box-One-left-line">
-            <p className="map-Box-One-left-line-big">070-4349-0184</p>
-            <p>support@goodmonit.com</p>
+            <p className="map-Box-One-left-line-big">
+              <RiPhoneLine className="map-Box-One-Icon" />
+              070-4349-0184
+            </p>
+            <p>
+              <RiMailLine className="map-Box-One-Icon" />
+              support@goodmonit.com
+            </p>
           </div>
         </div>
       </div>

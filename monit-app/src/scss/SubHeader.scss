@@ -1,0 +1,56 @@
+.SubHeader {
+  width: 100%;
+  height: 17rem;
+  //   border: 2px solid red;
+
+  .SubHeader-Img {
+    width: 100%;
+    height: 15rem;
+    background-image: url(../imgs/Header_img/HeaderBanner_img.png);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    line-height: 14rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .SubHeader-Img-Inq {
+    width: 100%;
+    height: 15rem;
+    background-image: linear-gradient(
+        rgba(56, 56, 56, 0.34),
+        rgba(45, 45, 45, 0.475)
+      ),
+      url(../imgs/Header_img/inquiry.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    line-height: 14rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .SubHeader-Img-Pro {
+    width: 100%;
+    height: 15rem;
+    background-image: url(../imgs/Header_img/product.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    line-height: 14rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .SubHeader-word {
+    font-size: 1.1rem;
+    margin: 0.8rem 10rem;
+    color: #545353;
+    .SubHeader-icon {
+      font-size: 1.1rem;
+      margin: 0 1rem;
+      margin-bottom: -0.08rem;
+    }
+  }
+}
