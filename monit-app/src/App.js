@@ -8,6 +8,7 @@ import Introduction from "./Components/Introduction";
 import Overview from "./Components/Overview";
 import MapComponent from "./Components/MapComponent";
 import History from "./Components/History";
+import Contact from "./Components/Contact";
 
 function App(props) {
   console.log(props);
@@ -20,7 +21,7 @@ function App(props) {
       {/* <Introduction /> */}
 
       {/* 율 작업용 */}
-      {/* <Overview /> */}
+      <Overview />
 
       {/* 수아 작업용 */}
       {/* <MainSectionComponent01 /> */}
@@ -30,6 +31,7 @@ function App(props) {
 
       {/* 나은 */}
       {/* <MapComponent /> */}
+      {/* <Contact /> */}
 
       {/*은기 */}
       {/* <History /> */}
