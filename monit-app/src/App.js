@@ -28,6 +28,7 @@ function App(props) {
   return (
     <>
 <<<<<<< HEAD
+<<<<<<< HEAD
       {/* 동교 작업용 */}
       {/* <Header /> */}
 
@@ -50,6 +51,9 @@ function App(props) {
 
       {/* 동교 작업용 season 2 */}
       {/* <Footer /> */}
+=======
+      <RouterProvider router={router} />
+>>>>>>> 1f54532eedbaeea8b6fb620a3dcd7f0ac7a7209a
 =======
       <RouterProvider router={router} />
 >>>>>>> 1f54532eedbaeea8b6fb620a3dcd7f0ac7a7209a
