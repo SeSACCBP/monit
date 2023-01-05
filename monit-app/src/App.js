@@ -1,3 +1,4 @@
+
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
@@ -13,7 +14,7 @@ function App(props) {
   return (
     <>
       {/* 동교 작업용 */}
-      {/* <Header /> */}
+      <Header />
 
       {/* 태희 작업용 */}
       {/* <Introduction /> */}
@@ -35,7 +36,7 @@ function App(props) {
       {/*은기 */}
 
       {/* 동교 작업용 season 2 */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
