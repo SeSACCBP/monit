@@ -1,13 +1,132 @@
-// 부모 가이드
-* {
-  box-sizing: border-box;
+// swiper 코드
+
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 
-.main-section-component01-container {
-  border: 1px solid red;
+body {
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
   width: 100%;
   height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// MainSectionComponent start
+.main-section-component01-img01 {
+  height: 100%;
+  width: 100%;
   background-image: url(../imgs/Main_img/main-roll01.png);
   background-size: cover;
   background-position: center;
+
+  // 원형
+  display: flex;
+  align-items: center;
 }
+
+.main-section-component01-circle-wrapper {
+  width: 65%;
+  height: 100%;
+  // background-color: #ffffff96;
+  background-color: red;
+  border-radius: 0 100rem 100rem 0;
+  display: flex;
+  align-items: center;
+  .main-section-component01-circle-inner {
+    width: 95%;
+    height: 90%;
+    // background-color: #ffffff96;
+    background-color: blue;
+    border-radius: 0 100rem 100rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-section-component-text-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 5rem;
+        padding: 4rem 0;
+      }
+
+      .main-section-component01-bt {
+        width: 9rem;
+        padding: 0.5rem;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.main-section-component01-img02 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../imgs/Main_img/main-roll02.png);
+  background-size: contain;
+  background-position: center;
+}
+
+.main-section-component01-img03 {
+  height: 100%;
+  width: 100%;
+  background-image: url(../imgs/Main_img/main-roll03.png);
+  background-size: contain;
+  background-position: center;
+}
+
+// .main-section-component01-img04 {
+//   height: 100%;
+//   width: 100%;
+//   background-image: url(../imgs/Main_img/main-roll04.png);
+//   background-size: cover;
+//   background-position: center;
+// }
