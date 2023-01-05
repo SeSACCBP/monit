@@ -1,38 +1,40 @@
-@import "../scss/style.scss";
+@import '../scss/style.scss';
 
 .footer-area {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 150px 0 150px;
+  padding: 0 9.375rem 0 9.375rem;
   background: #25435f;
   justify-content: flex-start;
+  bottom: 0;
+  width: 100%;
 }
 .footer-imgArea {
   display: flex;
   align-items: center;
-  width: 200px;
-  height: 100px;
-  margin-right: 50px;
+  width: 12.5rem;
+  height: 6.25rem;
+  margin-right: 3.125rem;
 }
 
 .footer-imgArea img {
   width: 100%;
   height: auto;
 }
-
 .footer-list {
   display: flex;
   flex-direction: column;
   text-align: start;
   justify-content: center;
-  height: 200px;
-  line-height: 25px;
+  height: 12.5rem;
+  line-height: 1.5625rem;
   list-style: none;
 }
 .footer-list .footer-title {
   color: $color-white;
-  line-height: 30px;
+  line-height: 1.875rem;
   font-weight: 400;
 }
 .footer-title a {

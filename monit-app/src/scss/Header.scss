@@ -1,33 +1,161 @@
-@import '../scss/style.scss';
+@import "../scss/style.scss";
 
-.header-area {
-  display: flex;
-  padding: 0 150px 0 150px;
-}
-.header-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 100px;
-  align-items: center;
-  list-style: none;
+.header-line {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
 }
+
+.header-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header-area {
+  position: relative;
+  border-bottom: 3px solid #bfbfbf;
+  background: #ffff;
+  text-align: center;
+  font-size: 0;
+  z-index: 25;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 440px;
+  height: 100px;
+}
+
+.header-list:hover ul {
+  display: block;
+  opacity: 1;
+}
+
+.header-title {
+  display: inline-block;
+  position: relative;
+  margin-right: 60px;
+  height: 102px;
+  overflow: hidden;
+  z-index: 30;
+}
+
+.header-title:hover {
+  overflow: visible;
+}
+
+.header-title > a {
+  display: block;
+  position: relative;
+  width: 180px;
+  height: 100px;
+  font-size: 24px;
+  line-height: 100px;
+  text-decoration: none;
+  color: #3e3e3e;
+  font-weight: bold;
+}
+
+.header-title > a:hover {
+  color: $color-contact-yellow;
+}
+
+.header-title > a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 5px;
+  background: $color-contact-yellow;
+  transition: all 300ms;
+}
+
+.header-title:hover > a:after {
+  width: 100%;
+  left: 0;
+}
+
+.header-sub-list {
+  position: absolute;
+  width: 100%;
+  padding: 30px 0 0;
+  text-align: center;
+  opacity: 0;
+  transition: all 500ms;
+  height: 400px;
+}
+
 .header-sub-title {
   list-style: none;
-  display: none;
+  line-height: 50px;
+}
+
+.header-sub-title > a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: $color-font-gray;
+
+  &:hover {
+    color: $color-contact-yellow;
+    transition: all 200ms;
+  }
+}
+
+.header-area + .header-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 20;
+  transition: all 500ms;
+  height: 0;
+  opacity: 0.5;
+}
+
+.header-area:hover + .header-back {
+  height: 400px;
+  opacity: 1;
 }
 
 .header-imgArea {
-  display: flex;
-  align-items: center;
+  position: absolute;
+  left: 50px;
   width: 200px;
   height: 100px;
-  background: url('../imgs/Header_img/monitLogo_black.png') no-repeat;
+  background: url(../imgs/Header_img/monitLogo_black.png) no-repeat;
+  background-size: 100% auto;
+  background-position-y: center;
+  z-index: 30;
+}
+
+.header-samsung-logo {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  background: url("../imgs/Header_img/samsung_logo.png") no-repeat;
   background-size: 100% auto;
   background-position-y: center;
 }
 
-.header-list .header-title {
-  font-size: $font-regular; // 24px 추천
+.header-title-samsung {
+  position: absolute;
+  top: -15px;
+  right: 50px;
+  color: blue;
+  font-weight: bold;
+  list-style: none;
+  z-index: 40;
+}
+
+.header-samsung {
+  display: flex;
+  align-items: center;
+  line-height: 130px;
 }

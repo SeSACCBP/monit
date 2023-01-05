@@ -1,17 +1,33 @@
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import MainSectionComponent01 from "./Components/MainSectionComponent01";
-import MainSectionComponent02 from "./Components/MainSectionComponent02";
-import MainSectionComponent03 from "./Components/MainSectionComponent03";
-import MainSectionComponent04 from "./Components/MainSectionComponent04";
 import Introduction from "./Components/Introduction";
 import Overview from "./Components/Overview";
 import MapComponent from "./Components/MapComponent";
+import History from "./Components/History";
+import Contact from "./Components/Contact";
+import Main from "./Components/Main.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Root from "./Components/Root";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <Overview />,
+    children: [
+      { index: true, element: <Main /> },
+      { path: "/overview", element: <Overview /> },
+      { path: "/introduction", element: <Introduction /> },
+      { path: "/history", element: <History /> },
+      { path: "/location", element: <MapComponent /> },
+      { path: "/contact", element: <Contact /> },
+    ],
+  },
+]);
 
 function App(props) {
   console.log(props);
   return (
     <>
+<<<<<<< HEAD
       {/* 동교 작업용 */}
       {/* <Header /> */}
 
@@ -34,6 +50,9 @@ function App(props) {
 
       {/* 동교 작업용 season 2 */}
       {/* <Footer /> */}
+=======
+      <RouterProvider router={router} />
+>>>>>>> 1f54532eedbaeea8b6fb620a3dcd7f0ac7a7209a
     </>
   );
 }
