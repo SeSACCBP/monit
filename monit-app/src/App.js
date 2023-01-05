@@ -21,7 +21,7 @@ function App(props) {
       {/* <Introduction /> */}
 
       {/* 율 작업용 */}
-      <Overview />
+      {/* <Overview /> */}
 
       {/* 수아 작업용 */}
       {/* <MainSectionComponent01 /> */}
