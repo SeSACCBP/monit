@@ -1,0 +1,37 @@
+@import "../scss/style.scss";
+
+button {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border: $color-history-orange 8px solid;
+  border-radius: 50%;
+}
+
+ul {
+  list-style: none;
+  li {
+    &:nth-child(odd) {
+      display: inline-block;
+      width: 50px;
+      font-weight: 600;
+      margin-right: 20px;
+    }
+    &:nth-child(even) {
+      display: inline-block;
+      width: calc(100% - 110px);
+    }
+  }
+}
+.history{
+    display: flex;
+}
+.history-buttonBox {
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 100%;
+}
+// .history-textBox{
+//     padding: 0;
+// }

@@ -19,6 +19,7 @@
 /*---------introduction-title---------*/
 
 .introduction-title-wrapper {
+  border: 1px solid blue;
   margin-bottom: 10rem;
 }
 
@@ -38,6 +39,8 @@
 /*---------introduction-index---------*/
 
 .introductin-index-wrapper {
+  border: 1px solid violet;
+
   margin-bottom: 10rem;
   font-size: 1rem;
 }
@@ -48,46 +51,43 @@
 
 /*---------introduction-cicles---------*/
 
-.introduction-circles-wrapper,
-.introduction-circle,
-.introduction-circle-inner,
-.introduction-center-circle-content {
-  border: 1px solid red;
-  box-sizing: border-box;
-  justify-content: center;
-}
+// .introduction-circles-wrapper {
+//   border: 1px solid red;
+//   box-sizing: border-box;
+//   justify-content: center;
+// }
 
-.introduction-circle {
-  width: 100;
-  height: calc(100rem - 4.9375rem);
-  // position: absolute;
-  top: 4.9375rem;
+// .introduction-circle {
+//   width: 100;
+//   height: calc(100rem - 4.9375rem);
+//   // position: absolute;
+//   top: 4.9375rem;
 
-  .introduction-circle-inner {
-    text-align: center;
-    margin-top: 2rem;
-    background-color: $color-index-blue;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    justify-content: space space-between;
+//   .introduction-circle-inner {
+//     text-align: center;
+//     margin-top: 2rem;
+//     background-color: $color-index-blue;
+//     width: 10rem;
+//     height: 10rem;
+//     border-radius: 50%;
+//     justify-content: space space-between;
 
-    .introduction-center-circle-content {
-      // text-align: center;
-      vertical-align: center;
-      color: white;
-    }
-  }
-}
+//     .introduction-center-circle-content {
+//       // text-align: center;
+//       vertical-align: center;
+//       color: white;
+//     }
+//   }
+// }
 
 .introduction-circles-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid $color-index-blue;
+  border: 2px solid red;
 
-  width: 80rem; /*수정필요*/
-  height: 60rem;
+  // width: 80rem; /*수정필요*/
+  // height: 60rem;
 
   .bigC {
     display: flex;
