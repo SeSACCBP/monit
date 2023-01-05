@@ -10,10 +10,18 @@ const Header = () => {
         <li className="header-title">
           <Link to="/overview">회사 소개</Link>
           <ul className="header-sub-list">
-            <li className="header-sub-title">기업 이념</li>
-            <li className="header-sub-title">사업 개요</li>
-            <li className="header-sub-title">회사 연혁</li>
-            <li className="header-sub-title">오시는 길</li>
+            <li className="header-sub-title">
+              <Link to="/overview">기업 이념</Link>
+            </li>
+            <li className="header-sub-title">
+              <Link to="/introduction">사업 개요</Link>
+            </li>
+            <li className="header-sub-title">
+              <Link to="/history">회사 연혁</Link>
+            </li>
+            <li className="header-sub-title">
+              <Link to="/location">오시는 길</Link>
+            </li>
           </ul>
         </li>
         <li className="header-title">
@@ -26,7 +34,9 @@ const Header = () => {
         <li className="header-title">
           <Link to="/contact">문의 하기</Link>
           <ul className="header-sub-list">
-            <li className="header-sub-title">제품 문의</li>
+            <li className="header-sub-title">
+              <Link to="/contact">제품 문의</Link>
+            </li>
             <li className="header-sub-title">제휴 문의</li>
           </ul>
         </li>
