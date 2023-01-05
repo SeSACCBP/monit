@@ -72,7 +72,7 @@ function Introduction() {
           <div className="introduction-circles-wrapper">
             <div className="cicle01">
               <div className="circle circle-c01-up"></div>
-              <div className="circle circle-c01-down">베이비 모니터</div>
+              <div className="circle circle-c01-down">베이비 모니터d</div>
             </div>
 
             <div className="circle03">
