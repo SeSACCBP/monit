@@ -89,6 +89,32 @@ html {
           font-size: 1rem;
           text-align: center;
         }
+
+        .circle-inner-icon-1 {
+          background-image: url(../imgs/Main_img/main_icon_1.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 5.3125rem;
+          height: 100px;
+          margin: 0 auto;
+        }
+
+        .circle-inner-icon-2 {
+          background-image: url(../imgs/Main_img/main_icon_2.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 5.3125rem;
+          height: 100px;
+          margin: 0 auto;
+        }
+        .circle-inner-icon-3 {
+          background-image: url(../imgs/Main_img/main_icon_3.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 5.3125rem;
+          height: 100px;
+          margin: 0 auto;
+        }
       }
     }
   }

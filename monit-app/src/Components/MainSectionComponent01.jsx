@@ -6,11 +6,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 import "../scss/MainSectionComponent01.scss";
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 
 export default function App() {
   return (
@@ -21,7 +22,9 @@ export default function App() {
         pagination={true}
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        loop={false}
         className="mySwiper">
         <SwiperSlide>
           <div className="main-section-component01-img01">
@@ -46,7 +49,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="main-section-component01-img02">
+          <div className="main-section-component01-img01">
             <div className="main-section-component01-circle-wrapper">
               <div className="main-section-component01-circle-inner">
                 <div className="main-section-component-text-wrapper">
@@ -68,7 +71,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="main-section-component01-img03">
+          <div className="main-section-component01-img01">
             <div className="main-section-component01-circle-wrapper">
               <div className="main-section-component01-circle-inner">
                 <div className="main-section-component-text-wrapper">
@@ -90,7 +93,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="main-section-component01-img04">
+          <div className="main-section-component01-img01">
             <div className="main-section-component01-circle-wrapper">
               <div className="main-section-component01-circle-inner">
                 <div className="main-section-component-text-wrapper">
@@ -102,7 +105,7 @@ export default function App() {
                   </button>
                   <p>
                     어르신의 기저귀 교체 시험을 앱을 통해 쉽고 간편하게
-                    알려줍니다
+                    알려줍니다.
                     <br />
                     사랑하는 부모님의 건강을 위해 선택하세요
                   </p>
