@@ -4,6 +4,7 @@ $color-white: #fcfdff;
 $color-main-blue: #255889;
 $color-font-gray: #3e3e3e;
 $color-font-skyblue: #3487d4;
+$color-font-lightgray: #545353;
 $color-button: #517ea7;
 $color-monitLogo: #789abf;
 $color-samsungLogo: #0d4393;
@@ -11,6 +12,16 @@ $color-line-gray: #d9d9d9;
 
 $color-contact-yellow: #ffb400;
 $color-history-orange: #ff9600;
+
+$color-Location-line2: #00a34b;
+$color-Location-line4: #009fdc;
+$color-Location-box: #f4f8ff;
+
+$color-Overview-background: #4a7094;
+$color-Overview-border: #96bde3;
+$color-Overview-title: #496895;
+$color-Overview-bar-color: #cacaca;
+$color-Overview-content: #7e9fc5;
 
 /* Font size */
 $font-large: 48px;
@@ -20,7 +31,8 @@ $font-small: 16px;
 $font-micro: 14px;
 
 /* Font weight */
-$--weight-bold: 700;
+$--weight-super-bold: 900;
+$--weight-bold: 800;
 $--weight-semi-bold: 600;
 $--weight-regular: 400;
 
@@ -70,6 +82,20 @@ $animation-duration: 300ms;
   font-size: 2em;
 }
 
+@mixin Semi-title {
+  width: 50rem;
+  height: 10rem;
+  font-size: 1rem;
+  color: $color-samsungLogo;
+  font-weight: 900;
+  padding: 3rem 10rem;
+  p {
+    font-size: 1.5rem;
+    color: $color-font-gray;
+    margin-top: 0.3rem;
+  }
+}
+
 //1280~1440 짱 큰 화면
 @media all and (min-width: 1360px) {
   html {
@@ -98,10 +124,8 @@ $animation-duration: 300ms;
   }
 }
 
-@media all and (max-width: 768px)  {
+@media all and (max-width: 768px) {
   html {
     font-size: 10px;
   }
 }
-
-
