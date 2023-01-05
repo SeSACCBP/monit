@@ -16,7 +16,7 @@ function App(props) {
       {/* <Header /> */}
 
       {/* 태희 작업용 */}
-      {/* <Introduction /> */}
+      <Introduction />
 
       {/* 율 작업용 */}
       {/* <Overview /> */}
@@ -26,13 +26,6 @@ function App(props) {
       {/* <MainSectionComponent02 /> */}
       {/* <MainSectionComponent03 /> */}
       {/* <MainSectionComponent04 /> */}
-
-      {/* 나은 */}
-      {/* <MapComponent /> */}
-      {/* <MainSectionComponent01 />
-      <MainSectionComponent02 />
-      <MainSectionComponent03 />
-      <MainSectionComponent04 /> */}
 
       {/* 나은 */}
       {/* <MapComponent /> */}
