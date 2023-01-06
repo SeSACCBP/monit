@@ -1,31 +1,25 @@
 @import "../scss/style.scss";
-
 .임시 {
   background-color: #a3cca2;
   height: 10px;
 }
-
 * {
   font-family: "AppleSDGothicNeoUL";
   margin: 0;
   padding: 0;
 }
-
 .introduction-items-wrapper {
   margin: 3rem;
   padding: 3rem;
 }
-
 /*---------introduction-title---------*/
-
 .introduction-title-wrapper {
   border: 1px solid blue;
   margin-bottom: 10rem;
 }
-
 .introduction-title {
   color: $color-index-blue;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .introduction-title-discription {
   color: black;
@@ -35,34 +29,26 @@
   color: $color-monitLogo;
   font-size: 1rem;
 }
-
 /*---------introduction-index---------*/
-
 .introductin-index-wrapper {
   border: 1px solid violet;
-
   margin-bottom: 10rem;
   font-size: 1rem;
 }
-
 .introductin-index-fontcolor {
   color: $color-index-blue;
 }
-
 /*---------introduction-cicles---------*/
-
 // .introduction-circles-wrapper {
 //   border: 1px solid red;
 //   box-sizing: border-box;
 //   justify-content: center;
 // }
-
 // .introduction-circle {
 //   width: 100;
 //   height: calc(100rem - 4.9375rem);
 //   // position: absolute;
 //   top: 4.9375rem;
-
 //   .introduction-circle-inner {
 //     text-align: center;
 //     margin-top: 2rem;
@@ -71,7 +57,6 @@
 //     height: 10rem;
 //     border-radius: 50%;
 //     justify-content: space space-between;
-
 //     .introduction-center-circle-content {
 //       // text-align: center;
 //       vertical-align: center;
@@ -79,35 +64,34 @@
 //     }
 //   }
 // }
-
 .introduction-circles-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid red;
+  font-size: 0.8rem;
   font-weight: bold;
-
+  position: relative;
+  height: 37rem;
+  width: 57rem;
+  margin: 0 auto;
   // width: 80rem; /*수정필요*/
-  height: 60rem;
-
+  // height: 60rem;
   .bigC {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35rem;
-    height: 35rem;
+    padding: 2rem;
     border-radius: 50%;
-    border: 6px solid $color-index-blue;
+    border: 3px solid $color-index-blue;
     // 위치
     // position: absolute;
     position: relative;
     // left: 100px;
     // top: 30px;
     margin: 0 auto; //중앙정렬
-
     .smallC {
-      width: 25rem;
-      height: 25rem;
+      width: 15rem;
+      height: 15rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -126,33 +110,27 @@
       }
     }
   }
-
   // 위치
-
   .cicle01 {
-    position: relative;
-    left: 20rem;
-    top: -15rem;
+    position: absolute;
+    left: 4rem;
+    top: 5rem;
   }
-
   .circle03 {
-    position: relative;
-    left: 5rem;
-    top: 20rem;
+    position: absolute;
+    left: 10rem;
+    bottom: 3rem;
   }
-
   .circle02 {
-    position: relative;
-    left: 15rem;
-    top: -15rem;
+    position: absolute;
+    right: 7rem;
+    top: 3rem;
   }
-
   .circle04 {
-    position: relative;
-    right: 10rem;
-    top: 10rem;
+    position: absolute;
+    right: 7rem;
+    bottom: 1.6rem;
   }
-
   .circle {
     border: 4px solid $color-index-blue;
     border-radius: 50%;
@@ -168,81 +146,74 @@
     color: white;
     border-bottom: none;
   }
-
   .circle-c01-up {
     background-image: url("../imgs/Introduction_img/BabyMonitor.jpg");
-    width: 10rem;
-    height: 5rem;
-    border-radius: 5rem 5rem 0 0;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 4rem 4rem 0 0;
     float: top;
   }
   .circle-c01-down {
+    background-color: $color-index-blue;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0 0 4rem 4rem;
+    float: bottom;
+  }
+  .circle-c02-up {
+    background-image: url("../imgs/Introduction_img/PetCare.jpg");
+    width: 8rem;
+    height: 4rem;
+    border-radius: 4rem 4rem 0 0;
+  }
+  .circle-c02-down {
+    background-color: $color-index-blue;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0 0 4rem 4rem;
+    float: bottom;
+  }
+  .circle-c03-up {
+    background-image: url("../imgs/Introduction_img/Spare2.jpg");
+    width: 8rem;
+    height: 4rem;
+    border-radius: 4rem 4rem 0 0;
+  }
+  .circle-c03-down {
+    background-color: $color-index-blue;
+    width: 8rem;
+    height: 4rem;
+    border-radius: 0 0 4rem 4rem;
+    float: bottom;
+  }
+  .circle-c04-up {
+    background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
+    width: 10rem;
+    height: 5rem;
+    border-radius: 5rem 5rem 0 0;
+  }
+  .circle-c04-down {
     background-color: $color-index-blue;
     width: 10rem;
     height: 5rem;
     border-radius: 0 0 5rem 5rem;
     float: bottom;
   }
-
-  .circle-c02-up {
-    background-image: url("../imgs/Introduction_img/PetCare.jpg");
-    width: 15rem;
-    height: 7.5rem;
-    border-radius: 7.5rem 7.5rem 0 0;
-  }
-
-  .circle-c02-down {
-    background-color: $color-index-blue;
-    width: 15rem;
-    height: 7.5rem;
-    border-radius: 0 0 7.5rem 7.5rem;
-    float: bottom;
-  }
-
-  .circle-c03-up {
-    background-image: url("../imgs/Introduction_img/Spare2.jpg");
-    width: 17rem;
-    height: 8.5rem;
-    border-radius: 8.5rem 8.5rem 0 0;
-  }
-  .circle-c03-down {
-    background-color: $color-index-blue;
-
-    width: 17rem;
-    height: 8.5rem;
-    border-radius: 0 0 8.5rem 8.5rem;
-    float: bottom;
-  }
-
-  .circle-c04-up {
-    background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
-    width: 17rem;
-    height: 8.5rem;
-    border-radius: 8.5rem 8.5rem 0 0;
-  }
-  .circle-c04-down {
-    background-color: $color-index-blue;
-
-    width: 17rem;
-    height: 8.5rem;
-    border-radius: 0 0 8.5rem 8.5rem;
-    float: bottom;
-  }
 }
-
+// .sun {
+//   width: 300px;
+//   height: 10px;
+//   background-color: gray;
+//   transform: rotate(50deg);
+// }
 /* 
 scss로 작성하는 법ex.
 .parent > .child
-
 .parent {
   .child {
-
   }
 }
  */
-
 /*추가해야하는 부분 
  변수를 
- 
- 
  */
