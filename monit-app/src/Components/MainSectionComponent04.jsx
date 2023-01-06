@@ -5,12 +5,12 @@ import "../scss/style.scss";
 
 const MainSectionComponent04 = () => {
   return (
-    <div className='main-section-component04-container'>
+    <div className="main-section-component04-container">
       <section className="main-section-component04">
         <div className="main-section-component04-contact-wrapper">
           <h2 className="main-section-component04-contact">Contact Us</h2>
           <div className="main-section-component04-contact-inquiry">
-            <img src="" alt="" />
+            <div className="main-section-component04-contact-icon icon-top"></div>
             <div className="main-section-component04-contact-inquiry-wrapper">
               <h3>제품문의</h3>
               <div className="main-section-component04-contact-inquiry-shortcut">
@@ -25,7 +25,7 @@ const MainSectionComponent04 = () => {
             </div>
           </div>
           <div className="main-section-component04-contact-inquiry">
-            <img src="" alt="" />
+            <div className="main-section-component04-contact-icon icon-bottom"></div>
             <div className="main-section-component04-contact-inquiry-wrapper">
               <h3>제품문의</h3>
               <div className="main-section-component04-contact-inquiry-shortcut">
