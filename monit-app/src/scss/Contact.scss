@@ -1,19 +1,7 @@
+@import "./style.scss";
+
 .Contact {
   width: 100%;
-
-  .Contact-Fir {
-    width: 50rem;
-    height: 10rem;
-    font-size: 1rem;
-    color: #0061bb;
-    font-weight: 900;
-    padding: 3rem 10rem;
-    p {
-      font-size: 1.5rem;
-      color: #2f2f2f;
-      margin-top: 0.3rem;
-    }
-  }
 
   .Contact-Sec {
     margin: 2rem auto;
