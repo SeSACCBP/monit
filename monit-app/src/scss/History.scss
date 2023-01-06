@@ -2,38 +2,171 @@
 
 .history {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 
-  button {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: transparent;
-    border: $color-history-orange 8px solid;
-    border-radius: 50%;
+  .history-title {
+    width: 60vw;
+    height: 15vh;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
   }
 
-  ul {
-    list-style: none;
-    li {
-      &:nth-child(odd) {
+  .history-mainBox {
+    width: 65vw;
+    height: 90vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    .history-leftBox {
+      .history-line {
+        width: 0.125rem;
+        height: 27rem;
+        background-color: $color-line-gray;
+        position: absolute;
         display: inline-block;
-        width: 50px;
-        font-weight: 600;
-        margin-right: 20px;
+        left: 17.7rem;
+        top: 31rem;
       }
-      &:nth-child(even) {
-        display: inline-block;
-        width: calc(100% - 110px);
+      #history-inputId {
+        position: relative;
+      }
+      .history-but1 {
+        &::before {
+          position: absolute;
+          right: 3rem;
+          content: "2022";
+        }
+        &:checked {
+          color: $color-history-orange;
+          font-weight: $--weight-semi-bold;
+          font-size: 1.3rem;
+        }
+      }
+      .history-but2 {
+        &::before {
+          position: absolute;
+          right: 3rem;
+          content: "2021";
+        }
+        &:checked {
+          color: $color-history-orange;
+          font-weight: $--weight-semi-bold;
+          font-size: 1.3rem;
+        }
+      }
+      .history-but3 {
+        &::before {
+          position: absolute;
+          right: 3rem;
+          content: "2020";
+        }
+        &:checked {
+          color: $color-history-orange;
+          font-weight: $--weight-semi-bold;
+          font-size: 1.3rem;
+        }
+      }
+      .history-but4 {
+        &::before {
+          position: absolute;
+          right: 3rem;
+          content: "2019";
+        }
+        &:checked {
+          color: $color-history-orange;
+          font-weight: $--weight-semi-bold;
+          font-size: 1.3rem;
+        }
+      }
+      .history-but5 {
+        &::before {
+          position: absolute;
+          right: 3rem;
+          content: "2018";
+          
+        }
+        &:checked {
+          color: $color-history-orange;
+          font-weight: $--weight-semi-bold;
+          font-size: 1.3rem;
+        }
+      }
+      .history-but6 {
+        &::before {
+          position: absolute;
+          right: 3rem;
+          content: "2017";
+          
+        }
+        &:checked {
+          color: $color-history-orange;
+          font-weight: $--weight-semi-bold;
+          font-size: 1.3rem;
+        }
+      }
+      input {
+        appearance: none;
+        width: 1.2em;
+        height: 1.2rem;
+        background-color: $color-line-gray;
+        border-radius: 50%;
+        margin-top: 2.5rem;
+        margin-left: 2.2rem;
+        position: relative;
+        z-index: 999;
+
+        // &:first-child {
+        //   width: 1.2rem;
+        //   height: 1.2rem;
+        //   background-color: $color-line-gray;
+        // }
+        &:checked {
+          appearance: none;
+          width: 1.7rem;
+          height: 1.7rem;
+          background-color: $color-white;
+          border: $color-history-orange 0.5rem solid;
+          border-radius: 50%;
+          // margin-top: 2.5rem;
+          margin-left: 2rem;
+          position: relative;
+          z-index: 999;
+        }
       }
     }
   }
 
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 19px;
+
+  //   width: 2px;
+  //   height: 30vh;
+  //   background-color: $color-line-gray;
+  //   z-index: 1;
+  // }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    margin-left: 1rem;
+    &:nth-child(odd) {
+      display: inline-block;
+      width: 50px;
+      margin-right: 1.1rem;
+    }
+    &:nth-child(even) {
+      display: inline-block;
+      width: calc(100% - 110px);
+    }
+  }
+
 }
-.history-buttonBox {
-  display: flex;
-  flex-direction: column;
-  width: 30px;
-  height: 100%;
-}
-// .history-textBox{
-//     padding: 0;
-// }
