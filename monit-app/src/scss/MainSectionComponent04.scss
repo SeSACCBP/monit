@@ -32,7 +32,7 @@
     align-items: flex-start;
     justify-content: space-between;
     align-items: center;
-    padding-top: 9rem;
+    padding: 9rem 0;
 
     .main-section-component04-contact {
       font-size: 3rem;
@@ -51,6 +51,22 @@
         margin-right: 2rem;
       }
 
+      .main-section-component04-contact-icon {
+        // border: 1px solid red;
+        width: 6.25rem;
+        height: 6.25rem;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0 2rem;
+      }
+
+      .icon-top {
+        background-image: url(../imgs/Main_img/product_icon.png);
+      }
+
+      .icon-bottom {
+        background-image: url(../imgs/Main_img/affiliate_icon.png);
+      }
       .main-section-component04-contact-inquiry-wrapper {
         color: #fcfdff;
 
