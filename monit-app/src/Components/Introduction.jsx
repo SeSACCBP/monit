@@ -72,14 +72,14 @@ function Introduction() {
           <div className="introduction-circles-wrapper">
             <div className="cicle01">
               <div className="circle circle-c01-up"></div>
-              <div className="circle circle-c01-down">베이비 모니터d</div>
+              <div className="circle circle-c01-down">베이비 모니터</div>
             </div>
 
             <div className="circle03">
               <div className="circle circle-c03-up"></div>
               <div className="circle circle-c03-down">베베핏 스마트 기어</div>
             </div>
-
+            <div className="sun"></div>
             <div className="bigC">
               <div className="smallC">
                 <img src={logo} alt="" />
@@ -103,7 +103,7 @@ function Introduction() {
 
           {/* ---------testing--------- */}
         </div>
-        <div>띄어쓰기 테스트//&nbsp;테스트2&ensp;테스트3&emsp;테스트4</div>
+        {/* <div>띄어쓰기 테스트//&nbsp;테스트2&ensp;테스트3&emsp;테스트4</div> */}
       </div>
     </>
   );
