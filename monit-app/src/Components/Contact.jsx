@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="Contact">
       <HeaderInquiry />
-      <div className="Contact-Fir">
+      <div className="map-title">
         Contact Us
         <p>제품 문의</p>
       </div>

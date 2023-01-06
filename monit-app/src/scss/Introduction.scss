@@ -24,7 +24,7 @@
 }
 
 .introduction-title {
-  color: $color-index-blue;
+  color: $color-Overview-title;
   font-size: 3rem;
 }
 .introduction-title-discription {
@@ -46,7 +46,7 @@
 }
 
 .introductin-index-fontcolor {
-  color: $color-index-blue;
+  color: $color-Overview-title;
 }
 
 /*---------introduction-cicles---------*/
@@ -96,7 +96,7 @@
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    border: 6px solid $color-index-blue;
+    border: 6px solid $color-Overview-title;
 
     .smallC {
       width: 15rem;
@@ -107,7 +107,7 @@
       align-items: center;
       text-align: center;
       border-radius: 50%;
-      background-color: $color-index-blue;
+      background-color: $color-Overview-title;
       color: white;
       img {
         width: 8rem;
@@ -121,7 +121,7 @@
   }
 
   .circle {
-    border: 4px solid $color-index-blue;
+    border: 4px solid $color-Overview-title;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,7 +143,7 @@
     float: top;
   }
   .circle-c01-down {
-    background-color: $color-index-blue;
+    background-color: $color-Overview-title;
     width: 10rem;
     height: 5rem;
     border-radius: 0 0 5rem 5rem;
@@ -158,7 +158,7 @@
   }
 
   .circle-c02-down {
-    background-color: $color-index-blue;
+    background-color: $color-Overview-title;
     width: 15rem;
     height: 7.5rem;
     border-radius: 0 0 7.5rem 7.5rem;
@@ -172,7 +172,7 @@
     border-radius: 8.5rem 8.5rem 0 0;
   }
   .circle-c03-down {
-    background-color: $color-index-blue;
+    background-color: $color-Overview-title;
 
     width: 17rem;
     height: 8.5rem;
@@ -187,7 +187,7 @@
     border-radius: 8.5rem 8.5rem 0 0;
   }
   .circle-c04-down {
-    background-color: $color-index-blue;
+    background-color: $color-Overview-title;
 
     width: 17rem;
     height: 8.5rem;
