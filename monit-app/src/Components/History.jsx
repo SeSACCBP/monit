@@ -133,15 +133,14 @@ const History = () => {
   return (
     <>
       <HeaderHistory />
+      <div className="map-title">
+        History <br />
+        <p>회사 연혁</p>
+      </div>
       <div className="history">
-        <div className="history-title">
-          <div>History</div>
-          회사 연혁
-        </div>
         <div className="history-mainBox">
           <div className="history-leftBox">
             <div className="history-line"></div>
-
             <input
               className="history-but1"
               type="radio"
@@ -149,6 +148,7 @@ const History = () => {
               id="history-inputId"
               name="tory"
               onClick={buttonOnclick}
+              defaultChecked
             ></input>
             <br />
             <input
