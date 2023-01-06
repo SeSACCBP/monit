@@ -5,13 +5,17 @@
 }
 // 가이드
 .error404-container {
-  border: 3px solid red;
+  // border: 3px solid red;
 }
 
 .error404-wrapper,
 .error404-number-wrapper,
 .error404-text-wrapper {
-  border: 4px solid blue;
+  // border: 4px solid blue;
+}
+
+body {
+  background: #fffff0;
 }
 
 .error404-container {
@@ -19,7 +23,7 @@
   height: 100%;
 
   .error404-wrapper {
-    width: 65rem;
+    width: 58rem;
     margin: 0 auto;
     height: 100vh;
     display: flex;
@@ -37,10 +41,11 @@
     h3 {
       margin-bottom: 2rem;
       font-size: 2.5rem;
+      color: #818181;
     }
 
     p {
-      color: #cdcdcd;
+      color: #a4a4a4;
     }
   }
 
@@ -49,7 +54,7 @@
     height: 13rem;
     text-align: center;
     color: $color-main-blue;
-    margin-top: 10rem;
+    margin-top: 7rem;
 
     .error404-big-number {
       text-shadow: 20px -11px 4px #e4e4e4;

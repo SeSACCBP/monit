@@ -7,6 +7,7 @@ import Main from "./Components/Main.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Components/Root";
 import Error404 from "./Components/Error404";
+import Header from "./Components/Header";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +29,7 @@ function App(props) {
   console.log(props);
   return (
     <>
-      {/* <RouterProvider router={router} /> */}
-      <Error404 />
+      <RouterProvider router={router} />
     </>
   );
 }
