@@ -1,26 +1,29 @@
-import React from "react";
-import "../scss/Header.scss";
+import React from 'react';
+import '../scss/Header.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className="header-line">
       <nav className="header-area">
-        <div className="header-imgArea" />
+        <div className="header-imgArea">
+          <a href="#"></a>
+        </div>
         <ul className="header-list">
           <li className="header-title">
             <a href="#">회사 소개</a>
             <ul className="header-sub-list">
               <li className="header-sub-title">
-                <a href="#">기업 이념</a>
+                <Link to="/overview"> 기업 이념 </Link>
               </li>
               <li className="header-sub-title">
-                <a href="#">사업 개요</a>
+                <Link to="/introduction">사업 개요</Link>
               </li>
               <li className="header-sub-title">
-                <a href="#">회사 연혁</a>
+                <Link to="/history">회사 연혁</Link>
               </li>
               <li className="header-sub-title">
-                <a href="#">오시는 길</a>
+                <Link to="/location">오시는 길</Link>
               </li>
             </ul>
           </li>
@@ -39,7 +42,7 @@ const Header = () => {
             <a href="#">문의 하기</a>
             <ul className="header-sub-list">
               <li className="header-sub-title">
-                <a href="#">제품 문의</a>
+                <Link to="/contact">제품 문의</Link>
               </li>
               <li className="header-sub-title">
                 <a href="#">제휴 문의</a>

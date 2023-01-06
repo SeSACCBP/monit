@@ -1,6 +1,7 @@
 @import "../scss/style.scss";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .history{
     display: flex;
@@ -56,6 +57,35 @@
   }
 
 >>>>>>> f2a3f78a71614cf72a3c82399114b1f929221171
+=======
+.history {
+  display: flex;
+
+  button {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    border: $color-history-orange 8px solid;
+    border-radius: 50%;
+  }
+
+  ul {
+    list-style: none;
+    li {
+      &:nth-child(odd) {
+        display: inline-block;
+        width: 50px;
+        font-weight: 600;
+        margin-right: 20px;
+      }
+      &:nth-child(even) {
+        display: inline-block;
+        width: calc(100% - 110px);
+      }
+    }
+  }
+
+>>>>>>> 7054ae4426fec9cae72e953952c791c82d7e468f
 }
 .history-buttonBox {
   display: flex;
