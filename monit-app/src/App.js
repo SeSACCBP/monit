@@ -6,6 +6,7 @@ import Contact from "./Components/Contact";
 import Main from "./Components/Main.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Components/Root";
+import ContactCompany from "./Components/ContactCompany";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/history", element: <History /> },
       { path: "/location", element: <MapComponent /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/partner", element: <ContactCompany /> },
     ],
   },
 ]);

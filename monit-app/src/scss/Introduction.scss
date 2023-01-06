@@ -85,22 +85,29 @@
   align-items: center;
   justify-content: center;
   border: 2px solid red;
+  font-weight: bold;
 
   // width: 80rem; /*수정필요*/
-  // height: 60rem;
+  height: 60rem;
 
   .bigC {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20rem;
-    height: 20rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 50%;
     border: 6px solid $color-Overview-title;
+    // 위치
+    // position: absolute;
+    position: relative;
+    // left: 100px;
+    // top: 30px;
+    margin: 0 auto; //중앙정렬
 
     .smallC {
-      width: 15rem;
-      height: 15rem;
+      width: 25rem;
+      height: 25rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -120,6 +127,32 @@
     }
   }
 
+  // 위치
+
+  .cicle01 {
+    position: relative;
+    left: 20rem;
+    top: -15rem;
+  }
+
+  .circle03 {
+    position: relative;
+    left: 5rem;
+    top: 20rem;
+  }
+
+  .circle02 {
+    position: relative;
+    left: 15rem;
+    top: -15rem;
+  }
+
+  .circle04 {
+    position: relative;
+    right: 10rem;
+    top: 10rem;
+  }
+
   .circle {
     border: 4px solid $color-Overview-title;
     border-radius: 50%;
@@ -129,7 +162,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    // align-self: auto;
     text-align: center;
     color: white;
     border-bottom: none;
