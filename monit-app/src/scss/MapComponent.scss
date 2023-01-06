@@ -1,21 +1,13 @@
+@import "./style.scss";
+
 .map-title {
-  width: 50rem;
-  height: 10rem;
-  font-size: 1rem;
-  color: #0061bb;
-  font-weight: 900;
-  padding: 3rem 10rem;
-  p {
-    font-size: 1.5rem;
-    color: #2f2f2f;
-    margin-top: 0.3rem;
-  }
+  @include Semi-title();
 }
 
 .map-Box-One {
   width: 52rem;
   height: 8rem;
-  background-color: #8298ba;
+  background-color: $color-monitLogo;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,7 +29,7 @@
     height: 2rem;
   }
   p {
-    color: white;
+    color: $color-white;
     font-size: 0.9rem;
     font-weight: 800;
   }
@@ -48,11 +40,11 @@
   height: 6.5rem;
   border-radius: 20px;
   font-size: 1rem;
-  background-color: #f4f8ff;
+  background-color: $color-Location-box;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: #545353;
+  color: $color-font-lightgray;
 
   .map-Box-One-left-line {
     height: 3.3rem;
@@ -80,13 +72,11 @@
 .map-Box-Two {
   width: 52rem;
   height: 10rem;
-  // border: 2px red solid;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 
   .map-Box-Two-Box {
-    // width: 50%;
     display: flex;
     margin: 0.5rem 0.5rem 2.3rem 0.5rem;
 
@@ -94,7 +84,7 @@
     .map-Box-Two-sub {
       width: 3rem;
       height: 3rem;
-      background-color: #d9d9d9;
+      background-color: $color-line-gray;
       border-radius: 50%;
       box-shadow: 1px 1px 1px gray;
     }
@@ -122,16 +112,16 @@
       .map-Box-Two-arr-circle2 {
         font-size: 1.3rem;
         padding: 0.1rem;
-        color: white;
-        background-color: #00a34b;
+        color: $color-white;
+        background-color: $color-Location-line2;
         border-radius: 50%;
         margin-bottom: -0.25rem;
       }
       .map-Box-Two-arr-circle4 {
         font-size: 1.3rem;
         padding: 0.1rem;
-        color: white;
-        background-color: #009fdc;
+        color: $color-white;
+        background-color: $color-Location-line4;
         border-radius: 50%;
         margin-bottom: -0.25rem;
       }
@@ -140,12 +130,12 @@
       font-weight: bold;
       margin-bottom: 0.6rem;
       font-size: 1rem;
-      color: #575757;
+      color: $color-font-gray;
     }
   }
 }
 .map-Box-Two .map-Box-Two-Box:first-child {
-  border-right: 1.6px solid #c8c8c8;
+  border-right: 1.6px solid $color-line-gray;
   padding-right: 8%;
 }
 .map-Box-Two .map-Box-Two-Box:last-child {
