@@ -1,6 +1,6 @@
 @import "./style.scss";
 
-// 부모 가이드
+// 부모 가이드 d
 // .main-section02-text-wrapper,
 // .circle-transparent {
 //   border: 1px solid red;
@@ -88,31 +88,32 @@ html {
         p {
           font-size: 1rem;
           text-align: center;
+          margin: 0 1rem;
         }
 
         .circle-inner-icon-1 {
           background-image: url(../imgs/Main_img/main_icon_1.png);
-          background-size: contain;
+          background-size: 100%;
           background-repeat: no-repeat;
-          width: 5.3125rem;
-          height: 100px;
-          margin: 0 auto;
+          width: 3.5rem;
+          height: 5.5rem;
+          margin: 0 4.3125rem;
         }
 
         .circle-inner-icon-2 {
           background-image: url(../imgs/Main_img/main_icon_2.png);
-          background-size: contain;
+          background-size: 100%;
           background-repeat: no-repeat;
-          width: 5.3125rem;
-          height: 100px;
-          margin: 0 auto;
+          width: 3rem;
+          height: 5rem;
+          margin: 0 2rem;
         }
         .circle-inner-icon-3 {
           background-image: url(../imgs/Main_img/main_icon_3.png);
-          background-size: contain;
+          background-size: 100%;
           background-repeat: no-repeat;
-          width: 5.3125rem;
-          height: 100px;
+          width: 3rem;
+          height: 5rem;
           margin: 0 auto;
         }
       }
