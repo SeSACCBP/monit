@@ -27,12 +27,7 @@ function App(props) {
   console.log(props);
   return (
     <>
-<<<<<<< HEAD
-      <Main />
-      {/* <RouterProvider routefffr={router} /> */}
-=======
       <RouterProvider router={router} />
->>>>>>> f2a3f78a71614cf72a3c82399114b1f929221171
     </>
   );
 }
