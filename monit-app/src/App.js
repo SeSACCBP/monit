@@ -6,8 +6,12 @@ import Contact from "./Components/Contact";
 import Main from "./Components/Main.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./Components/Root";
+<<<<<<< HEAD
 import Error404 from "./Components/Error404";
 import Header from "./Components/Header";
+=======
+import ContactCompany from "./Components/ContactCompany";
+>>>>>>> da7be683ee8c32088aa3c108ef1f2f1b7a004b47
 
 const router = createBrowserRouter([
   {
@@ -21,6 +25,7 @@ const router = createBrowserRouter([
       { path: "/history", element: <History /> },
       { path: "/location", element: <MapComponent /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/partner", element: <ContactCompany /> },
     ],
   },
 ]);
