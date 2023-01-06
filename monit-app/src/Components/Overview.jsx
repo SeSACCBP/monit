@@ -8,6 +8,10 @@ const Overview = () => {
   return (
     <div>
       <HeaderOver />
+      <div className="map-title">
+        overivew <br />
+        <p>기업 이념</p>
+      </div>
       <div className="overview-section">
         <div className="overivew-bg"></div>
         {/* vision */}
