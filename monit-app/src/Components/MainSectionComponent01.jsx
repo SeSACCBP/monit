@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 import "../scss/MainSectionComponent01.scss";
-
+import "../scss/style.scss";
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 
