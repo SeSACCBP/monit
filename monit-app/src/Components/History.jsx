@@ -134,7 +134,10 @@ const History = () => {
     <>
       <HeaderHistory />
       <div className="history">
-        <div className="history-title">회사 연혁</div>
+        <div className="history-title">
+          <div>History</div>
+          회사 연혁
+        </div>
         <div className="history-mainBox">
           <div className="history-leftBox">
             <div className="history-line"></div>
