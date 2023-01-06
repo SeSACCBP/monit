@@ -1,0 +1,76 @@
+@import "./style.scss";
+
+* {
+  box-sizing: border-box;
+}
+// 가이드
+.error404-container {
+  border: 3px solid red;
+}
+
+.error404-wrapper,
+.error404-number-wrapper,
+.error404-text-wrapper {
+  border: 4px solid blue;
+}
+
+.error404-container {
+  width: 100%;
+  height: 100%;
+
+  .error404-wrapper {
+    width: 65rem;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .error404-text-wrapper {
+    text-align: center;
+    width: 50rem;
+    margin-bottom: 5rem;
+    line-height: 1.5rem;
+    margin-top: 10rem;
+
+    h3 {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: #cdcdcd;
+    }
+  }
+
+  .error404-number-wrapper {
+    width: 100%;
+    height: 13rem;
+    text-align: center;
+    color: $color-main-blue;
+    margin-top: 10rem;
+
+    .error404-big-number {
+      text-shadow: 20px -11px 4px #e4e4e4;
+      text-shadow: 20px -11px 4px #e4e4e4;
+      // text-shadow: 0px 0px 5px 20px #0f0;
+    }
+  }
+
+  // h4 {
+  //   font-size: 1rem;
+  //   display: inline-block;
+  // }
+
+  .error404-big-number {
+    // position: absolute;
+    left: 23rem;
+    font-size: 15rem;
+  }
+
+  // .error404-small-number {
+  //   position: absolute;
+  //   left: 23rem;
+  // }
+}

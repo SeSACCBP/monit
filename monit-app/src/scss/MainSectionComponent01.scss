@@ -1,4 +1,5 @@
 // swiper 코드
+@import "./style.scss";
 
 #app {
   height: 100%;
@@ -21,14 +22,13 @@ body {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 100px);
 }
 .swiper-horizontal.swiper-css-mode > .swiper-wrapper {
   overflow: hidden;
 }
 
 .swiper-slide {
-  height: 46rem;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -75,7 +75,7 @@ body {
   border-radius: 0 100rem 100rem 0;
   display: flex;
   align-items: center;
-  border: 2px solid red;
+  // border: 2px solid red;
   .main-section-component01-circle-inner {
     width: 95%;
     height: 90%;
