@@ -1,23 +1,19 @@
-import Introduction from "./Components/Introduction";
-import Overview from "./Components/Overview";
-import MapComponent from "./Components/MapComponent";
-import History from "./Components/History";
-import Contact from "./Components/Contact";
-import Main from "./Components/Main.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Main from "./Components/Main.jsx";
 import Root from "./Components/Root";
-<<<<<<< HEAD
-import Error404 from "./Components/Error404";
-import Header from "./Components/Header";
-=======
+import Overview from "./Components/Overview";
+import Introduction from "./Components/Introduction";
+import History from "./Components/History";
+import MapComponent from "./Components/MapComponent";
+import Contact from "./Components/Contact";
 import ContactCompany from "./Components/ContactCompany";
->>>>>>> da7be683ee8c32088aa3c108ef1f2f1b7a004b47
+import Error404 from "./Components/Error404";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <Overview />,
+    errorElement: <Error404 />,
     children: [
       { index: true, element: <Main /> },
       { path: "/overview", element: <Overview /> },
