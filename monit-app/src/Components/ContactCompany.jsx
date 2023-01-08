@@ -1,25 +1,26 @@
 import React from "react";
-import "../scss/Contact.scss";
+import "../scss/ContactCompany.scss";
 import "../scss/style.scss";
-import HeaderInquiry from "./SubHeader/HeaderInquiry";
+import HeaderInquiryCom from "./SubHeader/HeaderInquiryCom";
 
-const Contact = () => {
+const ContactCompany = () => {
   return (
-    <div className="Contact">
-      <HeaderInquiry />
+    <div className="ContactC">
+      <HeaderInquiryCom />
       <div className="map-title">
         Contact Us
-        <p>제품 문의</p>
+        <p>제휴 문의</p>
       </div>
       <div className="Contact-Sec">
-        제품에 관해 문의하실 내용을 보내주시면, <br />
-        빠르게 확인 후 회신드리겠습니다.
+        모닛과의 제휴에 관심이 있으시다면 아래 내용을 입력하여 제출해주세요.
+        <br />
+        담당 부서에서 빠르게 확인 후 회신드리겠습니다.
       </div>
       <div className="Contact-body">
         <div className="Contact-Thi">
           <div className="Contact-Thi-img"></div>
           <form>
-            <div className="Contact-form-big">Contact</div>
+            <div className="Contact-form-big">Partnership</div>
             이름 <input type="text" />
             이메일 <input type="email" />
             내용 <textarea />
@@ -37,4 +38,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactCompany;
