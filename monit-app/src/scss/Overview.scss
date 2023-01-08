@@ -19,17 +19,17 @@
     z-index: -1;
   }
   .overview-middlebar {
-    width: 65rem;
+    width: 60rem;
     border: 0.0313rem solid rgb(195, 195, 195);
-    margin: 0 auto;
+    margin: 4rem auto;
   }
 }
 
 .overview {
   // 타이틀 영역
   display: flex;
-  height: 23rem;
-  margin: 6.375rem auto 2.375rem auto;
+  height: 10rem;
+  margin: 1rem auto 1rem auto;
   width: 56rem;
   .overview-title {
     display: flex;
