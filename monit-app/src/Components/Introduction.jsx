@@ -79,7 +79,7 @@ function Introduction() {
               <div className="circle circle-c03-up"></div>
               <div className="circle circle-c03-down">베베핏 스마트 기어</div>
             </div>
-            <div className="sun"></div>
+
             <div className="bigC">
               <div className="smallC">
                 <img src={logo} alt="" />
@@ -97,6 +97,13 @@ function Introduction() {
               <div className="circle circle-c04-up"></div>
               <div className="circle circle-c04-down">시니어 케어 시스템</div>
             </div>
+          </div>
+
+          <div className="introduction-lines-wrapper">
+            <div className="line01"></div>
+            <div className="line02"></div>
+            <div className="line03"></div>
+            <div className="line04"></div>
           </div>
 
           <hr className="임시"></hr>

@@ -15,12 +15,20 @@ body {
   padding: 0;
 }
 
+.swiper-slide-active {
+  overflow: hidden;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
 }
+.swiper-horizontal.swiper-css-mode > .swiper-wrapper {
+  overflow: hidden;
+}
 
 .swiper-slide {
+  height: 46rem;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -62,17 +70,17 @@ body {
 
 .main-section-component01-circle-wrapper {
   width: 65%;
-  height: 100%;
-  // background-color: #ffffff96;
-  background-color: red;
+  height: 135%;
+  background-color: #ffffff98;
   border-radius: 0 100rem 100rem 0;
   display: flex;
   align-items: center;
+  border: 2px solid red;
   .main-section-component01-circle-inner {
     width: 95%;
     height: 90%;
     // background-color: #ffffff96;
-    background-color: blue;
+    background-color: #fcfdff;
     border-radius: 0 100rem 100rem 0;
     display: flex;
     align-items: center;
@@ -83,25 +91,45 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
 
       h4 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        color: #4d4d4d;
+        padding-bottom: 0.5rem;
       }
 
       h3 {
-        font-size: 2rem;
+        font-size: 2.6rem;
+        color: #4d4d4d;
+      }
+
+      button {
+        font-size: 1.5rem;
+        color: #ffffff;
+        border-radius: 4rem;
       }
 
       h2 {
-        font-size: 5rem;
-        padding: 4rem 0;
+        font-size: 5.7rem;
+        padding: 2rem 0;
+        color: #255889;
+      }
+
+      p {
+        color: #4d4d4d;
+        font-weight: bold;
+        padding-top: 5rem;
+        line-height: 2rem;
+        text-align: left;
+        font-size: 1.2rem;
       }
 
       .main-section-component01-bt {
-        width: 9rem;
-        padding: 0.5rem;
-        background-color: #fff;
+        height: 3rem;
+        width: 9.5rem;
+        background-color: #517ea7;
+        border: none;
       }
     }
   }
