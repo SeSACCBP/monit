@@ -1,6 +1,6 @@
 @import "./style.scss";
 
-.Contact {
+.ContactC {
   width: 100%;
 
   .Contact-body {
@@ -11,8 +11,8 @@
     align-items: center;
     background-image: linear-gradient(
       200deg,
-      $color-Overview-border 50%,
-      $color-Overview-title 50%
+      $color-line-gray 50%,
+      $color-white 50%
     );
   }
 
@@ -57,7 +57,7 @@
 
       input {
         border: none;
-        background-color: #c7e1ff;
+        background-color: $color-line-gray;
         width: 22rem;
         height: 2.2rem;
         border-bottom: 2px solid black;
@@ -66,7 +66,7 @@
 
       textarea {
         border: none;
-        background-color: #c7e1ff;
+        background-color: $color-line-gray;
         width: 22rem;
         height: 15rem;
         border-bottom: 2px solid black;
@@ -83,7 +83,7 @@
         width: 10rem;
         margin: 1.5rem 0 0 0;
         font-size: 1.1rem;
-        background-color: $color-Overview-border;
+        background-color: $color-Overview-bar-color;
         font-weight: $--weight-semi-bold;
         color: white;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,

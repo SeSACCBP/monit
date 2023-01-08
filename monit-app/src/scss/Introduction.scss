@@ -19,8 +19,8 @@
   margin-bottom: 10rem;
 }
 .introduction-title {
-  color: $color-index-blue;
-  font-size: 2rem;
+  color: $color-Overview-title;
+  font-size: 3rem;
 }
 .introduction-title-discription {
   color: black;
@@ -37,7 +37,7 @@
   font-size: 1rem;
 }
 .introductin-index-fontcolor {
-  color: $color-index-blue;
+  color: $color-Overview-title;
 }
 /*---------introduction-cicles---------*/
 // .introduction-circles-wrapper {
@@ -87,7 +87,7 @@
     justify-content: center;
     padding: 2rem;
     border-radius: 50%;
-    border: 3px solid $color-index-blue;
+    border: 6px solid $color-Overview-title;
     // 위치
     // position: absolute;
     position: relative;
@@ -103,7 +103,7 @@
       align-items: center;
       text-align: center;
       border-radius: 50%;
-      background-color: $color-index-blue;
+      background-color: $color-Overview-title;
       color: white;
       img {
         width: 8rem;
@@ -137,7 +137,7 @@
     bottom: 1.6rem;
   }
   .circle {
-    border: 3px solid $color-index-blue;
+    border: 4px solid $color-Overview-title;
     border-radius: 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,7 +159,7 @@
     float: top;
   }
   .circle-c01-down {
-    background-color: $color-index-blue;
+    background-color: $color-Overview-title;
     width: 8rem;
     height: 4rem;
     border-radius: 0 0 4rem 4rem;
@@ -172,7 +172,7 @@
     border-radius: 4rem 4rem 0 0;
   }
   .circle-c02-down {
-    background-color: $color-index-blue;
+    background-color: $color-Overview-title;
     width: 8rem;
     height: 4rem;
     border-radius: 0 0 4rem 4rem;
@@ -185,7 +185,7 @@
     border-radius: 4rem 4rem 0 0;
   }
   .circle-c03-down {
-    background-color: $color-index-blue;
+    background-color: $color-Overview-title;
     width: 8rem;
     height: 4rem;
     border-radius: 0 0 4rem 4rem;
@@ -198,7 +198,7 @@
     border-radius: 5rem 5rem 0 0;
   }
   .circle-c04-down {
-    background-color: $color-index-blue;
+    background-color: $color-Overview-title;
     width: 10rem;
     height: 5rem;
     border-radius: 0 0 5rem 5rem;

@@ -19,21 +19,30 @@ const MainSectionComponent02 = () => {
           <div className="circle-inner">
             <div className="circle-inner-icon-1"></div>
             <h4>기저귀 질환 예방</h4>
-            <p>오염된 기저귀로 인한 요로 감염 및 발진, 욕창예방</p>
+            <p>
+              오염된 기저귀로 인한 요로 감염 <br />
+              발진, 욕창예방
+            </p>
           </div>
         </div>
         <div className="circle-transparent transparent02">
           <div className="circle-inner">
             <div className="circle-inner-icon-2"></div>
             <h4>간병 업무 경감</h4>
-            <p>기저귀 교체횟수 기록 침대 오염 방지 쉬워지는 간병</p>
+            <p>
+              기저귀 교체횟수 기록 침대 오염 방지 <br />
+              쉬워지는 간병
+            </p>
           </div>
         </div>
         <div className="circle-transparent transparent03">
           <div className="circle-inner">
             <div className="circle-inner-icon-3"></div>
             <h4>간병 비용 경감</h4>
-            <p>기저귀 사용량 감소 침대 시트 교체 비용 절감</p>
+            <p>
+              기저귀 사용량 감소
+              <br /> 침대 시트 교체 비용 <br /> 절감
+            </p>
           </div>
         </div>
       </div>
@@ -42,3 +51,5 @@ const MainSectionComponent02 = () => {
 };
 
 export default MainSectionComponent02;
+
+<br />;

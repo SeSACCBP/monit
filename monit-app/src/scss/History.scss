@@ -6,167 +6,157 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
+  .history-container {
+    // display: flex;
+    width: 75vw;
+    margin: 0 auto;
+    .history-mainBox {
+      width: 70vw;
+      height: 33rem;
+      display: flex;
+      justify-content: left;
+      align-items: flex-start;
 
-  .history-title {
-    width: 60vw;
-    height: 15vh;
-    text-align: left;
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .history-mainBox {
-    width: 65vw;
-    height: 90vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-    .history-leftBox {
-      .history-line {
-        width: 0.125rem;
-        height: 27rem;
-        background-color: $color-line-gray;
-        position: absolute;
-        display: inline-block;
-        left: 17.7rem;
-        top: 31rem;
-      }
-      #history-inputId {
+      .history-leftBox {
         position: relative;
-      }
-      .history-but1 {
-        &::before {
-          position: absolute;
-          right: 3rem;
-          content: "2022";
-        }
-        &:checked {
-          color: $color-history-orange;
-          font-weight: $--weight-semi-bold;
-          font-size: 1.3rem;
-        }
-      }
-      .history-but2 {
-        &::before {
-          position: absolute;
-          right: 3rem;
-          content: "2021";
-        }
-        &:checked {
-          color: $color-history-orange;
-          font-weight: $--weight-semi-bold;
-          font-size: 1.3rem;
-        }
-      }
-      .history-but3 {
-        &::before {
-          position: absolute;
-          right: 3rem;
-          content: "2020";
-        }
-        &:checked {
-          color: $color-history-orange;
-          font-weight: $--weight-semi-bold;
-          font-size: 1.3rem;
-        }
-      }
-      .history-but4 {
-        &::before {
-          position: absolute;
-          right: 3rem;
-          content: "2019";
-        }
-        &:checked {
-          color: $color-history-orange;
-          font-weight: $--weight-semi-bold;
-          font-size: 1.3rem;
-        }
-      }
-      .history-but5 {
-        &::before {
-          position: absolute;
-          right: 3rem;
-          content: "2018";
-          
-        }
-        &:checked {
-          color: $color-history-orange;
-          font-weight: $--weight-semi-bold;
-          font-size: 1.3rem;
-        }
-      }
-      .history-but6 {
-        &::before {
-          position: absolute;
-          right: 3rem;
-          content: "2017";
-          
-        }
-        &:checked {
-          color: $color-history-orange;
-          font-weight: $--weight-semi-bold;
-          font-size: 1.3rem;
-        }
-      }
-      input {
-        appearance: none;
-        width: 1.2em;
-        height: 1.2rem;
-        background-color: $color-line-gray;
-        border-radius: 50%;
-        margin-top: 2.5rem;
-        margin-left: 2.2rem;
-        position: relative;
-        z-index: 999;
 
-        // &:first-child {
-        //   width: 1.2rem;
-        //   height: 1.2rem;
-        //   background-color: $color-line-gray;
-        // }
-        &:checked {
+        .history-line {
+          width: 0.1rem;
+          height: 35rem;
+          background-color: $color-line-gray;
+          position: absolute;
+          display: inline-block;
+          left: 2.75rem;
+          top: 3.5rem;
+        }
+        #history-inputId {
+          position: relative;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .history-but1 {
+          &::before {
+            position: absolute;
+            right: 4rem;
+            content: "2022";
+          }
+          &:checked {
+            color: $color-history-orange;
+            font-weight: $--weight-semi-bold;
+            font-size: 1.3rem;
+          }
+        }
+        .history-but2 {
+          &::before {
+            position: absolute;
+            right: 4rem;
+            content: "2021";
+          }
+          &:checked {
+            color: $color-history-orange;
+            font-weight: $--weight-semi-bold;
+            font-size: 1.3rem;
+          }
+        }
+        .history-but3 {
+          &::before {
+            position: absolute;
+            right: 4rem;
+            content: "2020";
+          }
+          &:checked {
+            color: $color-history-orange;
+            font-weight: $--weight-semi-bold;
+            font-size: 1.3rem;
+          }
+        }
+        .history-but4 {
+          &::before {
+            position: absolute;
+            right: 4rem;
+            content: "2019";
+          }
+          &:checked {
+            color: $color-history-orange;
+            font-weight: $--weight-semi-bold;
+            font-size: 1.3rem;
+          }
+        }
+        .history-but5 {
+          &::before {
+            position: absolute;
+            right: 4rem;
+            content: "2018";
+          }
+          &:checked {
+            color: $color-history-orange;
+            font-weight: $--weight-semi-bold;
+            font-size: 1.3rem;
+          }
+        }
+        .history-but6 {
+          &::before {
+            position: absolute;
+            right: 4rem;
+            content: "2017";
+          }
+          &:checked {
+            color: $color-history-orange;
+            font-weight: $--weight-semi-bold;
+            font-size: 1.3rem;
+          }
+        }
+        input {
           appearance: none;
-          width: 1.7rem;
-          height: 1.7rem;
-          background-color: $color-white;
-          border: $color-history-orange 0.5rem solid;
+          width: 1.1em;
+          height: 1.1rem;
+          background-color: $color-line-gray;
           border-radius: 50%;
-          // margin-top: 2.5rem;
-          margin-left: 2rem;
+          margin-top: 2.5rem;
+          margin-left: 2.2rem;
           position: relative;
           z-index: 999;
+
+          &:checked {
+            appearance: none;
+            width: 2rem;
+            height: 2rem;
+            background-color: $color-white;
+            border: $color-history-orange 0.5rem solid;
+            border-radius: 50%;
+            margin-left:1.8rem;
+            position: relative;
+            z-index: 999;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      width: 60rem;
+      height: 20rem;
+      margin-top: 2rem;
+      margin-left: 2rem;
+
+      li {
+        line-height: 3rem;
+        margin-left: 3.5rem;
+        &:nth-child(odd) {
+          display: inline-block;
+          width: 50px;
+          margin-right: 0.2rem;
+          font-weight: $--weight-semi-bold;
+        }
+        &:nth-child(even) {
+          display: inline-block;
+          width: calc(100% - 12rem);
+          color: $color-font-gray;
         }
       }
     }
   }
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 19px;
-
-  //   width: 2px;
-  //   height: 30vh;
-  //   background-color: $color-line-gray;
-  //   z-index: 1;
-  // }
-
-  ul {
-    list-style: none;
-  }
-  li {
-    margin-left: 1rem;
-    &:nth-child(odd) {
-      display: inline-block;
-      width: 50px;
-      margin-right: 1.1rem;
-    }
-    &:nth-child(even) {
-      display: inline-block;
-      width: calc(100% - 110px);
-    }
-  }
-
 }
