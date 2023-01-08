@@ -16,7 +16,7 @@ const Overview = () => {
         <div className="overivew-bg"></div>
         {/* vision */}
         <Vision />
-        <div className="overview-middlebar"></div>
+        <div className="overview-middlebar" data-aos="fadeInUp"></div>
         {/* spinoff story */}
         <Spinoff />
       </div>

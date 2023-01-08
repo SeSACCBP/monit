@@ -22,7 +22,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>React App</title>
   </head>
   <body>
@@ -38,5 +38,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // AOS Settings
+        // duration : 조절 범위는  0 ~ 3000, step 50ms
+        duration: 1500,
+        // 스크롤하는 동안 애니메이션 한번만 실행
+        once: true,
+      });
+    </script>
   </body>
 </html>
