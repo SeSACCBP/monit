@@ -27,8 +27,7 @@ function App(props) {
   console.log(props);
   return (
     <>
-      {/* <RouterProvider router={router} /> */}
-      {/* <Introduction /> */}
+      <RouterProvider router={router} />
     </>
   );
 }

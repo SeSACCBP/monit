@@ -17,34 +17,23 @@ const MainSectionComponent02 = () => {
       <div className="main-section02-circle-wrapper">
         <div className="circle-transparent transparent01">
           <div className="circle-inner">
-            <img src="" alt="" />
+            <div className="circle-inner-icon-1"></div>
             <h4>기저귀 질환 예방</h4>
-            <p>
-              오염된 기저귀로 인한
-              <br /> 요로 감염 및 발진,
-              <br /> 욕창 예방에 도움을 줍니다.
-            </p>
+            <p>오염된 기저귀로 인한 요로 감염 및 발진, 욕창예방</p>
           </div>
         </div>
         <div className="circle-transparent transparent02">
           <div className="circle-inner">
-            <img src="" alt="" />
+            <div className="circle-inner-icon-2"></div>
             <h4>간병 업무 경감</h4>
-            <p>
-              기저귀 교체 횟수가 자동으로
-              <br /> 기록되며 침대 오염 방지되어
-              <br /> 간병이 보다 쉬워집니다.
-            </p>
+            <p>기저귀 교체횟수 기록 침대 오염 방지 쉬워지는 간병</p>
           </div>
         </div>
         <div className="circle-transparent transparent03">
           <div className="circle-inner">
-            <img src="" alt="" />
+            <div className="circle-inner-icon-3"></div>
             <h4>간병 비용 경감</h4>
-            <p>
-              기저귀 사용량이 줄어 들 수<br /> 있으며 침대 시트 교체 비용을
-              <br /> 절감할 수 있습니다.
-            </p>
+            <p>기저귀 사용량 감소 침대 시트 교체 비용 절감</p>
           </div>
         </div>
       </div>
