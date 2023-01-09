@@ -54,11 +54,6 @@
             content: "2022";
             // font-size: 1.1rem;
           }
-          // &:checked {
-          //   color: $color-history-orange;
-          //   font-weight: $--weight-semi-bold;
-          //   font-size: 1.3rem;
-          // }
         }
         .history-but2 {
           &::before {
@@ -67,11 +62,6 @@
             content: "2021";
             // font-size: 1.1rem;
           }
-          // &:checked {
-          //   color: $color-history-orange;
-          //   font-weight: $--weight-semi-bold;
-          //   font-size: 1.3rem;
-          // }
         }
         .history-but3 {
           &::before {
@@ -80,11 +70,6 @@
             content: "2020";
             // font-size: 1.1rem;
           }
-          // &:checked {
-          //   color: $color-history-orange;
-          //   font-weight: $--weight-semi-bold;
-          //   font-size: 1.3rem;
-          // }
         }
         .history-but4 {
           &::before {
@@ -93,11 +78,6 @@
             content: "2019";
             // font-size: 1.1rem;
           }
-          // &:checked {
-          //   color: $color-history-orange;
-          //   font-weight: $--weight-semi-bold;
-          //   font-size: 1.3rem;
-          // }
         }
         .history-but5 {
           &::before {
@@ -106,11 +86,6 @@
             content: "2018";
             // font-size: 1.1rem;
           }
-          // &:checked {
-          //   color: $color-history-orange;
-          //   font-weight: $--weight-semi-bold;
-          //   font-size: 1.3rem;
-          // }
         }
         .history-but6 {
           &::before {
@@ -164,7 +139,6 @@
       li {
         line-height: 3.5rem;
         margin-left: 3.5rem;
-        animation: fadeInUp 1s;
 
         &:nth-child(odd) {
           display: inline-block;
@@ -183,13 +157,4 @@
     }
   }
 }
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 35%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translateZ(0);
-  }
-}
+
