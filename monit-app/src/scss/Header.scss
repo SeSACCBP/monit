@@ -33,6 +33,20 @@
   opacity: 1;
 }
 
+// .header-back {
+//   position: absolute;
+//   width: 100%;
+//   height: 380px;
+//   opacity: 0;
+//   background: #eeee;
+//   z-index: 20;
+//   transition: all 500ms;
+// }
+
+// .header-back.active {
+//   opacity: 1;
+// }
+
 .header-list {
   display: inline-block;
   overflow: hidden;
@@ -153,4 +167,116 @@
   display: flex;
   align-items: center;
   line-height: 130px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transiform: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #111;
+}
+
+.header-area-m {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-area {
+    display: none;
+  }
+  .header-title-samsung {
+    display: none;
+  }
+  .header-back {
+    display: none;
+  }
+  .header-area-m {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1875rem solid #bfbfbf;
+    background: #ffff;
+    text-align: center;
+    height: 6.25rem;
+    padding: 0 3.125rem;
+  }
+  .header-imgArea-m {
+    display: flex;
+    align-items: center;
+  }
+  .header-img-m {
+    width: 12.5rem;
+    height: 3.125rem;
+    left: 3.125rem;
+    background: url(../imgs/Header_img/monitLogo_black.png) no-repeat;
+    background-size: 100% auto;
+    background-position-y: center;
+  }
+  .hamburger-area {
+    display: flex;
+    align-items: center;
+    z-index: 60;
+  }
+  .bar {
+    display: block;
+    width: 1.5625rem;
+    height: 0.1875rem;
+    margin: 0.3125rem auto;
+    -webkit-transiform: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #111;
+  }
+  .header-list-m {
+    display: none;
+  }
+  .header-list-m-on {
+    display: block;
+    position: fixed;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #eeee;
+    z-index: 50;
+  }
+  .header-list-m-depth1 {
+    padding: 6.25rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-title-m {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header-title-m > a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+  }
+  .header-sub-list-m {
+    transition: max-height 0.7s;
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #273057;
+  }
+  .header-sub-list-m a {
+    padding: 1.25rem 1.25rem;
+    border-bottom: 0.0625rem solid #394c7f;
+    font-size: 1.25rem;
+    color: #fff;
+    display: block;
+    position: relative;
+  }
+  .header-sub-list-m a:last-child {
+    border: none;
+  }
+  .header-title-m:target .header-sub-list-m {
+    max-height: 20rem;
+  }
 }
