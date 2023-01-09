@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import BackTopButton from './BackTopButton';
 
 const Header = () => {
-  const [headerOn, setHeaderOn] = useState(true);
+  const [headerOn, setHeaderOn] = useState(false);
 
   const [ham, setHam] = useState(true);
 
@@ -12,11 +12,14 @@ const Header = () => {
 
   const buttonClick = (e) => {
     setHam((current) => !current);
+    setHamx((current) => !current);
   };
 
   const [isOn2, setisOn2] = useState(true);
 
   const [isOn3, setisOn3] = useState(true);
+
+  const [hamx, setHamx] = useState(true);
 
   return (
     <div className="header-line">
@@ -24,8 +27,8 @@ const Header = () => {
         <a className="header-imgArea" href="/"></a>
         <ul
           className="header-list"
-          onMouseOver={() => setHeaderOn(false)}
-          onMouseOut={() => setHeaderOn(true)}
+          onMouseOver={() => setHeaderOn(true)}
+          onMouseOut={() => setHeaderOn(false)}
         >
           <li className="header-title">
             <a href="#">회사 소개</a>
@@ -69,7 +72,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className={headerOn ? 'header-back' : 'header-back-active'}></div>
+      <div className={headerOn ? 'header-back-active' : 'header-back'}></div>
 
       <nav className="header-area-m">
         <div className="header-imgArea-m">
@@ -77,7 +80,7 @@ const Header = () => {
         </div>
         <div className="hamburger-area">
           <button className="hamburger-btn" onClick={buttonClick} href="#">
-            <div className="hamburger">
+            <div className={hamx ? 'hamburger' : 'hamburger-active'}>
               <span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span>
