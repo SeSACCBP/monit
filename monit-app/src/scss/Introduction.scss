@@ -6,20 +6,26 @@
   padding: 0;
 }
 .introduction-items-wrapper {
-  margin: 3rem;
-  padding: 3rem;
+  margin: 10rem;
 }
 /*---------introduction-title---------*/
 .introduction-title-wrapper {
   margin-bottom: 3rem;
-  font-weight: bold;
-  line-height: 2rem;
+  // font-weight: bold;
+  // line-height: 2rem;
 }
 .introduction-title {
   color: $color-Overview-title;
-  font-size: 2rem;
+  font-size: 1rem;
+  font-weight: 900;
   margin-bottom: 1.5rem; // introduction 밑
 }
+.introduction-title p {
+  font-size: 1.5rem;
+  color: #3e3e3e;
+  margin-top: 0.3rem;
+}
+
 .introduction-title-discription {
   color: black;
   font-size: 1rem;
@@ -87,7 +93,7 @@
         margin-bottom: 1.5rem;
       }
       p {
-        line-height: 1.5rem;
+        // line-height: 1.5rem;
       }
     }
   }
@@ -121,6 +127,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    // justify-self: end;
     // align-items: center;
     // align-self: auto;
     text-align: center;
@@ -232,4 +239,10 @@
     top: 26rem;
     left: 1rem;
   }
+}
+.circle-c01-down-t,
+.circle-c02-down-t,
+.circle-c03-down-t,
+.circle-c04-down-t {
+  margin-bottom: 2rem;
 }
