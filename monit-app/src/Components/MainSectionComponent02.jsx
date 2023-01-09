@@ -6,7 +6,7 @@ import "../scss/style.scss";
 const MainSectionComponent02 = () => {
   return (
     <div className="main-section02-component">
-      <div className="main-section02-text-wrapper">
+      <div className="main-section02-text-wrapper" data-aos="fadeInUp">
         <p>About MECS</p>
         <h3>왜 MECS가 필요할까요?</h3>
         <h4>
@@ -14,7 +14,7 @@ const MainSectionComponent02 = () => {
           때문입니다
         </h4>
       </div>
-      <div className="main-section02-circle-wrapper">
+      <div className="main-section02-circle-wrapper" data-aos="fadeInUp">
         <div className="circle-transparent transparent01">
           <div className="circle-inner">
             <div className="circle-inner-icon-1"></div>

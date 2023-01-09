@@ -40,13 +40,18 @@ function MyComponent() {
         Location <br />
         <p>오시는 길</p>
       </div>
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={18}
+        data-aos="fadeInUp"
+      >
         <>
           <Marker onLoad={onLoad} position={position} />
         </>
       </GoogleMap>
       {/* 이 밑으로 주소 박스 */}
-      <div className="map-Box-One">
+      <div className="map-Box-One" data-aos="fadeInUp">
         <div className="map-Box-One-right">
           <img src={logo} alt="" />
           <p>주식회사 모닛</p>
@@ -69,7 +74,7 @@ function MyComponent() {
         </div>
       </div>
       {/* 이 밑으로 대중교통 박스 */}
-      <div className="map-Box-Two">
+      <div className="map-Box-Two" data-aos="fadeInUp">
         <div className="map-Box-Two-Box">
           <div className="map-Box-Two-bus"></div>
           <div className="map-Box-Two-arr">

@@ -1,5 +1,6 @@
 import React from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Vision = () => {
   return (
     // <div className="overview">
@@ -21,7 +22,7 @@ const Vision = () => {
     //   </div>
     // </div>
 
-    <div className="overview">
+    <div className="overview" data-aos="fadeInUp">
       <div className="overview-title">
         <div className="overview-title-circle"></div>
         <div className="overview-title-text">Vision</div>
