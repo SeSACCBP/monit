@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import '../scss/Header.scss';
-import { Link } from 'react-router-dom';
-import BackTopButton from './BackTopButton';
+import React, { useState } from "react";
+import "../scss/Header.scss";
+import { Link } from "react-router-dom";
+import BackTopButton from "./BackTopButton";
 
 const Header = () => {
   // const header_area = document.querySelector('.header-list');
@@ -14,7 +14,7 @@ const Header = () => {
   //   back_area.classList.remove('active');
   // });
 
-  const [isOn, setisOn] = useState(false);
+  const [isOn, setisOn] = useState(true);
 
   const buttonClick = (e) => {
     // console.log(e.target);
@@ -82,7 +82,7 @@ const Header = () => {
           </button>
         </div>
         {/* <div className="header-list-m"> */}
-        <div className={isOn ? 'header-list-m' : 'header-list-m-on'}>
+        <div className={isOn ? "header-list-m" : "header-list-m-on"}>
           <ul className="header-list-m-depth1">
             <li className="header-title-m" id="company_intro">
               <a href="#company_intro">회사 소개</a>
