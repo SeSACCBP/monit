@@ -5,21 +5,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  // width: 100vw;
   // height: 100vh;
   .history-container {
     // display: flex;
-    width: 75vw;
-    margin: 0 auto;
+    // width: 50rem;
+    margin-left: 15rem;
+
     .history-mainBox {
-      width: 70vw;
-      height: 33rem;
+      // width: 80vw;
+      height: 38rem;
       display: flex;
       justify-content: left;
-      align-items: flex-start;
+      // align-items: flex-start;
 
       .history-leftBox {
         position: relative;
+
+        // 연혁 그래프 선
 
         .history-line {
           width: 0.1rem;
@@ -30,10 +33,18 @@
           left: 2.75rem;
           top: 3.5rem;
         }
+
+        // 연혁 버튼 + 년도
+
         #history-inputId {
           position: relative;
           &:hover {
             cursor: pointer;
+          }
+          &:checked {
+            color: $color-history-orange;
+            font-weight: $--weight-semi-bold;
+            font-size: 1.3em;
           }
         }
         .history-but1 {
@@ -41,83 +52,92 @@
             position: absolute;
             right: 4rem;
             content: "2022";
+            // font-size: 1.1rem;
           }
-          &:checked {
-            color: $color-history-orange;
-            font-weight: $--weight-semi-bold;
-            font-size: 1.3rem;
-          }
+          // &:checked {
+          //   color: $color-history-orange;
+          //   font-weight: $--weight-semi-bold;
+          //   font-size: 1.3rem;
+          // }
         }
         .history-but2 {
           &::before {
             position: absolute;
             right: 4rem;
             content: "2021";
+            // font-size: 1.1rem;
           }
-          &:checked {
-            color: $color-history-orange;
-            font-weight: $--weight-semi-bold;
-            font-size: 1.3rem;
-          }
+          // &:checked {
+          //   color: $color-history-orange;
+          //   font-weight: $--weight-semi-bold;
+          //   font-size: 1.3rem;
+          // }
         }
         .history-but3 {
           &::before {
             position: absolute;
             right: 4rem;
             content: "2020";
+            // font-size: 1.1rem;
           }
-          &:checked {
-            color: $color-history-orange;
-            font-weight: $--weight-semi-bold;
-            font-size: 1.3rem;
-          }
+          // &:checked {
+          //   color: $color-history-orange;
+          //   font-weight: $--weight-semi-bold;
+          //   font-size: 1.3rem;
+          // }
         }
         .history-but4 {
           &::before {
             position: absolute;
             right: 4rem;
             content: "2019";
+            // font-size: 1.1rem;
           }
-          &:checked {
-            color: $color-history-orange;
-            font-weight: $--weight-semi-bold;
-            font-size: 1.3rem;
-          }
+          // &:checked {
+          //   color: $color-history-orange;
+          //   font-weight: $--weight-semi-bold;
+          //   font-size: 1.3rem;
+          // }
         }
         .history-but5 {
           &::before {
             position: absolute;
             right: 4rem;
             content: "2018";
+            // font-size: 1.1rem;
           }
-          &:checked {
-            color: $color-history-orange;
-            font-weight: $--weight-semi-bold;
-            font-size: 1.3rem;
-          }
+          // &:checked {
+          //   color: $color-history-orange;
+          //   font-weight: $--weight-semi-bold;
+          //   font-size: 1.3rem;
+          // }
         }
         .history-but6 {
           &::before {
             position: absolute;
             right: 4rem;
             content: "2017";
+            // font-size: 1.1rem;
           }
-          &:checked {
-            color: $color-history-orange;
-            font-weight: $--weight-semi-bold;
-            font-size: 1.3rem;
-          }
+          // &:checked {
+          //   color: $color-history-orange;
+          //   font-weight: $--weight-semi-bold;
+          //   font-size: 1.3rem;
+          // }
         }
+
+// 연혁 동그라미 버튼
+
         input {
           appearance: none;
           width: 1.1em;
           height: 1.1rem;
           background-color: $color-line-gray;
           border-radius: 50%;
-          margin-top: 2.5rem;
+          margin-top: 3.3rem;
           margin-left: 2.2rem;
           position: relative;
-          z-index: 999;
+          // z-index: 999;
 
           &:checked {
             appearance: none;
@@ -126,37 +146,50 @@
             background-color: $color-white;
             border: $color-history-orange 0.5rem solid;
             border-radius: 50%;
-            margin-left:1.8rem;
+            margin-left: 1.8rem;
             position: relative;
-            z-index: 999;
-            transition: 0.3s;
+            // z-index: 999;
+            transition: 0.2s;
           }
         }
       }
     }
-
     ul {
       list-style: none;
       width: 60rem;
       height: 20rem;
-      margin-top: 2rem;
-      margin-left: 2rem;
+      margin-top: 2.2rem;
+      // margin-left: 1rem;
 
       li {
-        line-height: 3rem;
+        line-height: 3.5rem;
         margin-left: 3.5rem;
+        animation: fadeInUp 1s;
+
         &:nth-child(odd) {
           display: inline-block;
-          width: 50px;
+          width: 3.125rem;
           margin-right: 0.2rem;
           font-weight: $--weight-semi-bold;
+          font-size: 1.1rem;
         }
         &:nth-child(even) {
           display: inline-block;
           width: calc(100% - 12rem);
           color: $color-font-gray;
+          font-size: $--weight-semi-bold;
         }
       }
     }
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 35%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
   }
 }
