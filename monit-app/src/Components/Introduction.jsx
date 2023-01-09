@@ -55,12 +55,16 @@ function Introduction() {
           <div className="introduction-circles-wrapper">
             <div className="cicle01">
               <div className="circle circle-c01-up"></div>
-              <div className="circle circle-c01-down">베이비 모니터</div>
+              <div className="circle circle-c01-down">
+                <p className="circle-c01-down-t">베이비 모니터</p>
+              </div>
             </div>
 
             <div className="circle03">
               <div className="circle circle-c03-up"></div>
-              <div className="circle circle-c03-down">베베핏 스마트 기어</div>
+              <div className="circle circle-c03-down">
+                <p className="circle-c03-down-t">베베핏 스마트 기어</p>
+              </div>
             </div>
 
             <div className="bigC">
@@ -73,12 +77,16 @@ function Introduction() {
 
             <div className="circle02">
               <div className="circle circle-c02-up"></div>
-              <div className="circle circle-c02-down">펫 케어</div>
+              <div className="circle circle-c02-down">
+                <p className="circle-c02-down-t">펫 케어</p>
+              </div>
             </div>
 
             <div className="circle04">
               <div className="circle circle-c04-up"></div>
-              <div className="circle circle-c04-down">시니어 케어 시스템</div>
+              <div className="circle circle-c04-down">
+                <p className="circle-c02-down-t">시니어 케어 시스템</p>
+              </div>
             </div>
           </div>
 
