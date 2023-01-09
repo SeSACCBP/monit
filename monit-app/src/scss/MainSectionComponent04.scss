@@ -29,10 +29,9 @@
   .main-section-component04-contact-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
     padding: 9rem 0;
+    margin-left: 9rem;
 
     .main-section-component04-contact {
       font-size: 3rem;
@@ -44,6 +43,8 @@
       height: 15rem;
       align-items: center;
       border-bottom: 1px solid #fff;
+      width: 50rem;
+
       img {
         height: 3.75rem;
         width: 3.75rem;
@@ -53,8 +54,8 @@
 
       .main-section-component04-contact-icon {
         // border: 1px solid red;
-        width: 6.25rem;
-        height: 6.25rem;
+        width: 3rem;
+        height: 3rem;
         background-size: 100%;
         background-repeat: no-repeat;
         margin: 0 2rem;
@@ -69,34 +70,33 @@
       }
       .main-section-component04-contact-inquiry-wrapper {
         color: #fcfdff;
-
         h3,
         p {
           padding-right: 10rem;
         }
         h3 {
-          font-size: 1.7rem;
+          font-size: 1.4rem;
           margin-bottom: 1rem;
         }
         p {
           font-size: 1.2rem;
           line-height: 2rem;
-          width: 34rem;
+          width: 35rem;
         }
 
         .main-section-component04-contact-inquiry-shortcut {
           display: flex;
 
           .main-section-component04-contact-inquiry-shortcut-bt {
-            width: 9rem;
-            margin-top: 1rem;
+            width: 7.5rem;
+            height: 2.5rem;
             background-color: transparent;
             border: 1px solid #fcfdff;
 
             a {
               text-decoration: none;
               color: #fcfdff;
-              font-size: 1.5rem;
+              font-size: 1rem;
             }
           }
         }
