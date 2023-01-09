@@ -8,11 +8,12 @@
 .introduction-items-wrapper {
   margin: 10rem;
 }
+
 /*---------introduction-title---------*/
 .introduction-title-wrapper {
   margin-bottom: 3rem;
   // font-weight: bold;
-  // line-height: 2rem;
+  line-height: 2rem;
 }
 .introduction-title {
   color: $color-Overview-title;
@@ -36,13 +37,13 @@
   // font-weight: bold;
 }
 /*---------introduction-index---------*/
-.introductin-index-wrapper {
+.introduction-index-wrapper {
   margin-bottom: 3rem;
   font-size: 1rem;
   line-height: 2.2rem;
   // font-weight: bold;
 }
-.introductin-index-fontcolor {
+.introduction-index-fontcolor {
   color: $color-Overview-title;
 }
 /*---------introduction-cicles---------*/
@@ -61,21 +62,20 @@
   margin: 0 auto;
   // width: 80rem; /*수정필요*/
   // height: 60rem;
+
   .bigC {
     background-color: white;
     display: flex;
     justify-self: center;
-    // align-items: center;
     justify-content: center;
     padding: 2rem;
     border-radius: 50%;
     border: 6px solid $color-Overview-title;
+
     // 위치
-    // position: absolute;
     position: relative;
-    // left: 100px;
-    // top: 30px;
     margin: 0 auto; //중앙정렬
+
     .smallC {
       width: 15rem;
       height: 15rem;
@@ -93,10 +93,11 @@
         margin-bottom: 1.5rem;
       }
       p {
-        // line-height: 1.5rem;
+        line-height: 1.5rem;
       }
     }
   }
+
   // 위치
   .cicle01 {
     position: relative;
@@ -118,7 +119,10 @@
     right: 7rem;
     top: 10rem;
   }
+
+  //작은 원들 모양
   .circle {
+    position: relative;
     border: 4px solid $color-Overview-title;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -188,7 +192,15 @@
     float: bottom;
   }
 }
+//아래 반원 글씨 위치
+.circle-c01-down-t,
+.circle-c02-down-t,
+.circle-c03-down-t,
+.circle-c04-down-t {
+  margin-bottom: 2rem;
+}
 
+//연결 선 wrapper
 .introduction-lines-wrapper {
   width: 50rem; // introduction-circles-wrapper 값과 같게
   min-width: 50rem;
@@ -199,10 +211,11 @@
   top: -40rem; //height 값과 같게
   margin: 0 auto;
 
+  //연결 선들
   .line01 {
     width: 14rem;
     height: 0.2rem;
-    background-color: gray;
+    background-color: #d3d5d6;
     transform: rotate(36deg);
     display: flex;
     position: absolute;
@@ -212,7 +225,7 @@
   .line02 {
     width: 14rem;
     height: 0.2rem;
-    background-color: gray;
+    background-color: #d3d5d6;
     transform: rotate(140deg);
     display: flex;
     position: relative;
@@ -222,7 +235,7 @@
   .line03 {
     width: 14rem;
     height: 0.2rem;
-    background-color: gray;
+    background-color: #d3d5d6;
     transform: rotate(140deg);
     display: flex;
     position: relative;
@@ -232,17 +245,11 @@
   .line04 {
     width: 14rem;
     height: 0.2rem;
-    background-color: gray;
+    background-color: #d3d5d6;
     transform: rotate(40deg);
     display: flex;
     position: relative;
     top: 26rem;
     left: 1rem;
   }
-}
-.circle-c01-down-t,
-.circle-c02-down-t,
-.circle-c03-down-t,
-.circle-c04-down-t {
-  margin-bottom: 2rem;
 }
