@@ -218,6 +218,23 @@
     transition: all 0.3s ease-in-out;
     background-color: #111;
   }
+
+  .hamburger-active {
+    position: fixed;
+    margin-left: -1.5625rem;
+    margin-top: -0.9375rem;
+  }
+
+  .hamburger-active .bar:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+  }
+  .hamburger-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-active .bar:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(-45deg);
+  }
+
   .header-list-m {
     display: none;
   }
