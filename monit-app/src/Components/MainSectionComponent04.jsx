@@ -8,8 +8,13 @@ const MainSectionComponent04 = () => {
     <div className="main-section-component04-container">
       <section className="main-section-component04">
         <div className="main-section-component04-contact-wrapper">
-          <h2 className="main-section-component04-contact">Contact Us</h2>
-          <div className="main-section-component04-contact-inquiry">
+          <h2 className="main-section-component04-contact" data-aos="fadeInUp">
+            Contact Us
+          </h2>
+          <div
+            className="main-section-component04-contact-inquiry"
+            data-aos="fadeInUp"
+          >
             <div className="main-section-component04-contact-icon icon-top"></div>
             <div className="main-section-component04-contact-inquiry-wrapper">
               <h3>제품문의</h3>
@@ -24,7 +29,10 @@ const MainSectionComponent04 = () => {
               </div>
             </div>
           </div>
-          <div className="main-section-component04-contact-inquiry">
+          <div
+            className="main-section-component04-contact-inquiry"
+            data-aos="fadeInUp"
+          >
             <div className="main-section-component04-contact-icon icon-bottom"></div>
             <div className="main-section-component04-contact-inquiry-wrapper">
               <h3>제품문의</h3>

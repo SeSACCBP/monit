@@ -35,7 +35,7 @@ const History = () => {
         "09월",
         "코스트코 캐나다 입점 확정",
         "06월",
-        "엘더리 케어 관련 고려대학교 안암/안산병원, 카톨릭 대학병원, 양평군요양원, 은혜의집 베타테스트 진행",
+        "엘더리 케어 관련 고려대학교 안암/안산병원, 카톨릭 대학병원, 양평군요양원, 은혜의 집 베타테스트 진행",
         "06월",
         "싱가포르 UnitedBMEC 독점공급계약 체결",
       ],
@@ -105,10 +105,10 @@ const History = () => {
       ],
     },
   ];
-  const [but, setBut] = useState("2022");
+  const [button, setButton] = useState("2022");
 
   const buttonOnclick = (e) => {
-    setBut(e.target.value);
+    setButton(e.target.value);
     // console.log(e.target.value);
     // console.log(typeof e.target.value);
   };
@@ -117,11 +117,11 @@ const History = () => {
 
   useEffect(() => {
     years.map((y) => {
-      if (y.value == but) {
+      if (y.value == button) {
         setP(y.text);
       }
     });
-  }, [but]);
+  }, [button]);
 
   let i;
   let arr = [];
