@@ -1,21 +1,16 @@
 @import "../scss/style.scss";
-.임시 {
-  background-color: #a3cca2;
-  height: 10px;
-}
+
 * {
   font-family: "AppleSDGothicNeoUL";
   margin: 0;
   padding: 0;
 }
 .introduction-items-wrapper {
-  border: 1px solid yellowgreen;
   margin: 3rem;
   padding: 3rem;
 }
 /*---------introduction-title---------*/
 .introduction-title-wrapper {
-  border: 1px solid blue;
   margin-bottom: 3rem;
   font-weight: bold;
   line-height: 2rem;
@@ -36,7 +31,6 @@
 }
 /*---------introduction-index---------*/
 .introductin-index-wrapper {
-  border: 1px solid violet;
   margin-bottom: 3rem;
   font-size: 1rem;
   line-height: 2.2rem;
@@ -46,33 +40,8 @@
   color: $color-Overview-title;
 }
 /*---------introduction-cicles---------*/
-// .introduction-circles-wrapper {
-//   border: 1px solid red;
-//   box-sizing: border-box;
-//   justify-content: center;
-// }
-// .introduction-circle {
-//   width: 100;
-//   height: calc(100rem - 4.9375rem);
-//   // position: absolute;
-//   top: 4.9375rem;
-//   .introduction-circle-inner {
-//     text-align: center;
-//     margin-top: 2rem;
-//     background-color: $color-index-blue;
-//     width: 10rem;
-//     height: 10rem;
-//     border-radius: 50%;
-//     justify-content: space space-between;
-//     .introduction-center-circle-content {
-//       // text-align: center;
-//       vertical-align: center;
-//       color: white;
-//     }
-//   }
-// }
+
 .introduction-circles-wrapper {
-  border: 1px solid blueviolet;
   display: flex;
   align-items: center;
   // justify-content: center;
@@ -87,6 +56,7 @@
   // width: 80rem; /*수정필요*/
   // height: 60rem;
   .bigC {
+    background-color: white;
     display: flex;
     justify-self: center;
     // align-items: center;
@@ -214,9 +184,7 @@
 
 .introduction-lines-wrapper {
   width: 50rem; // introduction-circles-wrapper 값과 같게
-  // height: 40rem; // introduction-circles-wrapper 값과 같게
   min-width: 50rem;
-  // background-color: yellow;
   display: flex;
   align-items: center;
   position: relative;
@@ -265,15 +233,3 @@
     left: 1rem;
   }
 }
-
-/* 
-scss로 작성하는 법ex.
-.parent > .child
-.parent {
-  .child {
-  }
-}
- */
-/*추가해야하는 부분 
- 변수를 
- */

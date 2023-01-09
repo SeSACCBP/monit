@@ -25,7 +25,6 @@ function Introduction() {
             </div>
           </div>
 
-          <hr className="임시"></hr>
           {/* ---------introduction-index--------- */}
 
           <div className="introductin-index-wrapper">
@@ -51,23 +50,7 @@ function Introduction() {
             <br />
           </div>
 
-          <hr className="임시"></hr>
-
           {/* ---------introduction-cicles--------- */}
-
-          {/* <div className="introduction-circles-wrapper">
-            <div className="introduction-circle">
-              <div className="introduction-circle-inner">
-                <div className="introduction-center-circle-content">
-                  <p>MONIT</p>
-                  <p>
-                    AI 데이터 분석 기반 <br />
-                    디지털 헬스케어 플랫폼
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> */}
 
           <div className="introduction-circles-wrapper">
             <div className="cicle01">
@@ -105,12 +88,7 @@ function Introduction() {
             <div className="line03"></div>
             <div className="line04"></div>
           </div>
-
-          <hr className="임시"></hr>
-
-          {/* ---------testing--------- */}
         </div>
-        {/* <div>띄어쓰기 테스트//&nbsp;테스트2&ensp;테스트3&emsp;테스트4</div> */}
       </div>
     </>
   );
