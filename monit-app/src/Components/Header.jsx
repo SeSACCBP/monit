@@ -8,18 +8,20 @@ const Header = () => {
 
   const [ham, setHam] = useState(true);
 
-  const [isOn1, setisOn1] = useState(true);
-
   const buttonClick = (e) => {
     setHam((current) => !current);
     setHamx((current) => !current);
   };
+
+  const [isOn1, setisOn1] = useState(true);
 
   const [isOn2, setisOn2] = useState(true);
 
   const [isOn3, setisOn3] = useState(true);
 
   const [hamx, setHamx] = useState(true);
+
+  const [listout, setListOut] = useState(true);
 
   return (
     <div className="header-line">
@@ -57,6 +59,13 @@ const Header = () => {
           </li>
           <li className="header-title">
             <a href="#">구매 하기</a>
+            <ul className="header-sub-list">
+              <li className="header-sub-title">
+                <a className="blank" href="#">
+                  　
+                </a>
+              </li>
+            </ul>
           </li>
           <li className="header-title">
             <a href="#">문의 하기</a>
@@ -116,8 +125,8 @@ const Header = () => {
                 <a href="#">맥스 자세히 보기</a>
               </div>
             </li>
-            <li className="header-title-m">
-              <a href="#">구매 하기</a>
+            <li className="header-title-m" id="to_buy">
+              <a href="#to_buy">구매 하기</a>
             </li>
             <li className="header-title-m" id="contact_us">
               <a href="#contact_us" onClick={() => setisOn3(!isOn3)}>
