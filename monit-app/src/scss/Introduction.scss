@@ -6,20 +6,27 @@
   padding: 0;
 }
 .introduction-items-wrapper {
-  margin: 3rem;
-  padding: 3rem;
+  margin: 10rem;
 }
+
 /*---------introduction-title---------*/
 .introduction-title-wrapper {
   margin-bottom: 3rem;
-  font-weight: bold;
+  // font-weight: bold;
   line-height: 2rem;
 }
 .introduction-title {
   color: $color-Overview-title;
-  font-size: 2rem;
+  font-size: 1rem;
+  font-weight: 900;
   margin-bottom: 1.5rem; // introduction 밑
 }
+.introduction-title p {
+  font-size: 1.5rem;
+  color: #3e3e3e;
+  margin-top: 0.3rem;
+}
+
 .introduction-title-discription {
   color: black;
   font-size: 1rem;
@@ -27,16 +34,16 @@
 .introduction-title-discription-fontcolor {
   color: $color-monitLogo;
   font-size: 1.3rem;
-  font-weight: bold;
+  // font-weight: bold;
 }
 /*---------introduction-index---------*/
-.introductin-index-wrapper {
+.introduction-index-wrapper {
   margin-bottom: 3rem;
   font-size: 1rem;
   line-height: 2.2rem;
-  font-weight: bold;
+  // font-weight: bold;
 }
-.introductin-index-fontcolor {
+.introduction-index-fontcolor {
   color: $color-Overview-title;
 }
 /*---------introduction-cicles---------*/
@@ -46,7 +53,7 @@
   align-items: center;
   // justify-content: center;
   font-size: 0.8rem;
-  font-weight: bold;
+  // font-weight: bold;
   position: relative;
   z-index: 2;
   height: 40rem;
@@ -55,21 +62,20 @@
   margin: 0 auto;
   // width: 80rem; /*수정필요*/
   // height: 60rem;
+
   .bigC {
     background-color: white;
     display: flex;
     justify-self: center;
-    // align-items: center;
     justify-content: center;
     padding: 2rem;
     border-radius: 50%;
     border: 6px solid $color-Overview-title;
+
     // 위치
-    // position: absolute;
     position: relative;
-    // left: 100px;
-    // top: 30px;
     margin: 0 auto; //중앙정렬
+
     .smallC {
       width: 15rem;
       height: 15rem;
@@ -91,6 +97,7 @@
       }
     }
   }
+
   // 위치
   .cicle01 {
     position: relative;
@@ -112,7 +119,10 @@
     right: 7rem;
     top: 10rem;
   }
+
+  //작은 원들 모양
   .circle {
+    position: relative;
     border: 4px solid $color-Overview-title;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -121,6 +131,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    // justify-self: end;
     // align-items: center;
     // align-self: auto;
     text-align: center;
@@ -181,7 +192,15 @@
     float: bottom;
   }
 }
+//아래 반원 글씨 위치
+.circle-c01-down-t,
+.circle-c02-down-t,
+.circle-c03-down-t,
+.circle-c04-down-t {
+  margin-bottom: 2rem;
+}
 
+//연결 선 wrapper
 .introduction-lines-wrapper {
   width: 50rem; // introduction-circles-wrapper 값과 같게
   min-width: 50rem;
@@ -192,10 +211,11 @@
   top: -40rem; //height 값과 같게
   margin: 0 auto;
 
+  //연결 선들
   .line01 {
     width: 14rem;
     height: 0.2rem;
-    background-color: gray;
+    background-color: #d3d5d6;
     transform: rotate(36deg);
     display: flex;
     position: absolute;
@@ -205,7 +225,7 @@
   .line02 {
     width: 14rem;
     height: 0.2rem;
-    background-color: gray;
+    background-color: #d3d5d6;
     transform: rotate(140deg);
     display: flex;
     position: relative;
@@ -215,7 +235,7 @@
   .line03 {
     width: 14rem;
     height: 0.2rem;
-    background-color: gray;
+    background-color: #d3d5d6;
     transform: rotate(140deg);
     display: flex;
     position: relative;
@@ -225,7 +245,7 @@
   .line04 {
     width: 14rem;
     height: 0.2rem;
-    background-color: gray;
+    background-color: #d3d5d6;
     transform: rotate(40deg);
     display: flex;
     position: relative;
