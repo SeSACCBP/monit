@@ -14,55 +14,53 @@
   border-radius: 20px;
   padding: 0.9375rem;
   margin: 2rem auto;
-}
-
-.map-Box-One-right {
-  width: 14rem;
-  height: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-
-  img {
-    width: 8rem;
-    height: 2rem;
-  }
-  p {
-    color: $color-white;
-    font-size: 0.9rem;
-    font-weight: 800;
-  }
-}
-
-.map-Box-One-left {
-  width: 45rem;
-  height: 6.5rem;
-  border-radius: 20px;
-  font-size: 1rem;
-  background-color: $color-Location-box;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: $color-font-lightgray;
-
-  .map-Box-One-left-line {
-    height: 3.3rem;
+  .map-Box-One-right {
+    width: 14rem;
+    height: 5rem;
     display: flex;
     flex-direction: column;
-    font-weight: bold;
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 
-    .map-Box-One-left-line-big {
-      font-size: 1.2rem;
+    img {
+      width: 8rem;
+      height: 2rem;
     }
+    p {
+      color: $color-white;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+  }
+  .map-Box-One-left {
+    width: 45rem;
+    height: 6.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    background-color: $color-Location-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $color-font-lightgray;
 
-    .map-Box-One-Icon {
-      font-size: 1.2rem;
-      margin-bottom: -0.3rem;
-      margin-right: 0.5rem;
+    .map-Box-One-left-line {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      height: 3.3rem;
+
+      .map-Box-One-left-line-big {
+        font-size: 1.2rem;
+      }
+
+      .map-Box-One-Icon {
+        margin-bottom: -0.3rem;
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+      }
     }
   }
 }
@@ -70,11 +68,11 @@
 // 여기서부터 대중교통
 
 .map-Box-Two {
+  display: flex;
+  justify-content: center;
   width: 52rem;
   height: 10rem;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
 
   .map-Box-Two-Box {
     display: flex;
@@ -100,12 +98,12 @@
       background-position: center;
     }
     .map-Box-Two-arr {
-      height: 7rem;
-      font-size: 1rem;
-      margin-left: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      height: 7rem;
+      font-size: 1rem;
+      margin-left: 1rem;
       div {
         margin-top: 0.5rem;
       }
@@ -133,11 +131,11 @@
       color: $color-font-gray;
     }
   }
-}
-.map-Box-Two .map-Box-Two-Box:first-child {
-  border-right: 1.6px solid $color-line-gray;
-  padding-right: 8%;
-}
-.map-Box-Two .map-Box-Two-Box:last-child {
-  margin-left: 4%;
+  .map-Box-Two-Box:first-child {
+    border-right: 1.6px solid $color-line-gray;
+    padding-right: 8%;
+  }
+  .map-Box-Two-Box:last-child {
+    margin-left: 4%;
+  }
 }
