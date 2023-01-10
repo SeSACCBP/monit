@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import "../scss/History.scss";
+import React, { useState } from "react";
 import "../scss/History.scss";
 import HistoryChange from "./HistoryChange";
 import HeaderHistory from "./SubHeader/HeaderHistory";
@@ -9,8 +8,6 @@ const History = () => {
 
   const buttonOnclick = (e) => {
     setButton(e.target.value);
-    // console.log(e.target.value);
-    // console.log(typeof e.target.value);
   };
 
   return (
@@ -26,56 +23,45 @@ const History = () => {
             <div className="history-leftBox">
               <div className="history-line"></div>
               <input
-                className="history-but1"
+                className="history-btn1"
                 type="radio"
                 value="2022"
-                id="history-inputId"
                 name="tory"
                 onClick={buttonOnclick}
                 defaultChecked
               ></input>
-              <br />
               <input
-                className="history-but2"
+                className="history-btn2"
                 type="radio"
                 value="2021"
-                id="history-inputId"
                 name="tory"
                 onClick={buttonOnclick}
               ></input>
-              <br />
               <input
-                className="history-but3"
+                className="history-btn3"
                 type="radio"
                 value="2020"
-                id="history-inputId"
                 name="tory"
                 onClick={buttonOnclick}
               ></input>
-              <br />
               <input
-                className="history-but4"
+                className="history-btn4"
                 type="radio"
                 value="2019"
-                id="history-inputId"
                 name="tory"
                 onClick={buttonOnclick}
               ></input>
-              <br />
               <input
-                className="history-but5"
+                className="history-btn5"
                 type="radio"
                 value="2018"
-                id="history-inputId"
                 name="tory"
                 onClick={buttonOnclick}
               ></input>
-              <br />
               <input
-                className="history-but6"
+                className="history-btn6"
                 type="radio"
                 value="2017"
-                id="history-inputId"
                 name="tory"
                 onClick={buttonOnclick}
               ></input>
