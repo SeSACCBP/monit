@@ -6,7 +6,7 @@
 
 .header-area {
   position: relative;
-  border-bottom: 3px solid #bfbfbf;
+  border-bottom: 1.5px solid #bfbfbf;
   background: #ffff;
   text-align: center;
   font-size: 0;
@@ -23,11 +23,12 @@
   left: 0;
   top: 0;
   width: 100%;
-  background: #eeee;
+  background: #ffff;
   z-index: 20;
   transition: all 500ms;
   height: 405px;
   opacity: 1;
+  border-bottom: 4px solid #bfbfbf;
 }
 
 .header-list {
@@ -43,6 +44,7 @@
 
 .header-list:hover ul {
   opacity: 1;
+  transition: all 500ms;
 }
 
 .header-title {
@@ -92,13 +94,21 @@
   padding: 30px 0 0;
   text-align: center;
   opacity: 0;
-  transition: all 500ms;
-  height: 400px;
+  // transition: all 400ms;
+  height: 300px;
+}
+
+// .header-sub-list-down {
+
+// }
+.blank {
+  cursor: default;
 }
 
 .header-sub-title {
   list-style: none;
   line-height: 50px;
+  transition-delay: 10s;
 }
 
 .header-sub-title > a {
@@ -107,7 +117,7 @@
   font-size: 20px;
   font-weight: 600;
   color: $color-font-gray;
-  transition: all 500ms;
+  transition: all 100ms;
 
   &:hover {
     color: $color-contact-yellow;
@@ -210,13 +220,13 @@
   }
   .bar {
     display: block;
-    // position: fixed;
     width: 1.5625rem;
     height: 0.1875rem;
     margin: 0.3125rem auto;
     -webkit-transiform: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #111;
+    border-radius: 5px;
   }
 
   .hamburger-active {
