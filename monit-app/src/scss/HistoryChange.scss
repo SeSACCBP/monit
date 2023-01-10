@@ -1,4 +1,4 @@
-@import "../scss/style.scss";
+@import '../scss/style.scss';
 .historyChange-ul {
   list-style: none;
   width: 60rem;
@@ -8,7 +8,7 @@
   animation-timing-function: ease;
 }
 .historyChange-list {
-  animation: fadeInUp 1s;
+  animation: fadeInUp 1.5s;
   //   animation-duration: 2s;
   animation-timing-function: ease;
 

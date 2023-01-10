@@ -33,6 +33,7 @@ function BackTopButton() {
             fontSize: '50px',
             borderRadius: '10px',
             zIndex: '2',
+            cursor: 'pointer',
           }}
           onClick={scrollUp}
         >
