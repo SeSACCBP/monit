@@ -38,16 +38,16 @@ const IntroductionMindmap = () => {
         <div className="circle04">
           <div className="circle circle-c04-up"></div>
           <div className="circle circle-c04-down">
-            <p className="circle-c02-down-t">시니어 케어 시스템</p>
+            <p className="circle-c04-down-t">시니어 케어 시스템</p>
           </div>
         </div>
       </div>
 
       <div className="introduction-lines-wrapper">
-        <div className="line01"></div>
-        <div className="line02"></div>
-        <div className="line03"></div>
-        <div className="line04"></div>
+        <div className="line line-top-left"></div>
+        <div className="line line-bottom-left"></div>
+        <div className="line line-top-rignt"></div>
+        <div className="line line-bottom-rignt"></div>
       </div>
     </div>
   );
