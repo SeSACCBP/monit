@@ -26,11 +26,11 @@ function BackTopButton() {
         <button
           style={{
             position: 'fixed',
-            bottom: '50px',
-            right: '50px',
-            height: '50px',
-            width: '50px',
-            fontSize: '50px',
+            bottom: '3.125rem',
+            right: '3.125rem',
+            height: '3.125rem',
+            width: '3.125rem',
+            fontSize: '3.125rem',
             borderRadius: '10px',
             zIndex: '2',
             cursor: 'pointer',
