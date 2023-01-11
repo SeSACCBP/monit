@@ -1,5 +1,4 @@
 import React from "react";
-import "../scss/HistoryChange.scss";
 
 const HistoryChange = (props) => {
   const { button } = props;
@@ -108,14 +107,16 @@ const HistoryChange = (props) => {
   ];
 
   return (
-    <ul className="historyChange-ul">
+    <ul>
       {years.map((one) => {
+        
         let arr = [];
+        
         if (one.value == button) {
           return (
             <>
               {one.text.map((textone) => (
-                <li className="historyChange-list">{textone}</li>
+                <li>{textone}</li>
               ))}
             </>
           );

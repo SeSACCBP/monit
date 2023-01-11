@@ -6,45 +6,51 @@
 }
 .history {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
   .history-container {
     margin-left: 15rem;
 
     .history-mainBox {
-      height: 38rem;
       display: flex;
       justify-content: left;
-
+      height: 38rem;
+     
       .history-leftBox {
         position: relative;
         width: 3rem;
         height: 36rem;
+
         // ---------연혁 그래프 선-----------
+        
         .history-line {
+          display: inline-block;
+          position: absolute;
           width: 0.1rem;
           height: 35rem;
           background-color: $color-line-gray;
-          position: absolute;
-          display: inline-block;
           left: 2.75rem;
           top: 3.5rem;
         }
-        // -------- 연혁 버튼 = input, 년도 = before -------
+
+        // --------- 연혁 버튼 -----------
+        
         input {
           position: relative;
-          appearance: none;
           width: 1.1em;
           height: 1.1rem;
-          background-color: $color-line-gray;
-          border-radius: 50%;
           margin-top: 3.5em;
           margin-left: 2.2rem;
-          position: relative;
+          appearance: none;
+          background-color: $color-line-gray;
+          border-radius: 50%;
+        
           &:hover {
             cursor: pointer;
           }
+
           &:checked {
             font-weight: $--weight-super-bold;
             border: 2px solid #fff;
@@ -57,6 +63,9 @@
             transition: 0.4s;
           }
         }
+
+        // ------- 연혁 연도 글자 ------
+
         .history-btn1::before {
           @include button-before();
           content: "2022";
@@ -84,19 +93,21 @@
         }
       }
     }
-    // -------연혁 년도별 설명-------
+
+    // ------- 연혁 연도별 내용 -------
+    
     ul {
-      list-style: none;
       width: 60rem;
       height: 20rem;
       margin-top: 2.2rem;
+      list-style: none;
 
       li {
-        line-height: 3.5rem;
-        margin-left: 3.5rem;
-        animation-timing-function: ease;
-        animation: fadeInUp 1.2s;
         display: inline-block;
+        margin-left: 3.5rem;
+        line-height: 3.5rem;
+        animation: fadeInUp 1.2s;
+        animation-timing-function: ease;
 
         &:nth-child(odd) {
           width: 3.125rem;
@@ -112,6 +123,9 @@
     }
   }
 }
+
+// ------ 연혁 연도별 내용 애니메이션 -------
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
