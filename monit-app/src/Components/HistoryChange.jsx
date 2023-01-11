@@ -5,6 +5,7 @@ const HistoryChange = (props) => {
 
   const years = [
     {
+      id: "1",
       value: "2022",
       text: [
         "11월",
@@ -22,10 +23,11 @@ const HistoryChange = (props) => {
         "10월",
         "온누리요양원 MOU 체결 시법도입 사업진행",
         "01월",
-        "CES 2022 Samsung 관 전시",
+        "CES 2022 Samsung관 전시",
       ],
     },
     {
+      id: "2",
       value: "2021",
       text: [
         "10월",
@@ -41,6 +43,7 @@ const HistoryChange = (props) => {
       ],
     },
     {
+      id: "3",
       value: "2020",
       text: [
         "09월",
@@ -54,12 +57,11 @@ const HistoryChange = (props) => {
       ],
     },
     {
+      id: "4",
       value: "2019",
       text: [
         "01월",
-        "CES 2020 참가",
-        "01월",
-        "MONIT America Inc. 설립(Delaware C-corp)",
+        "MONIT America Inc.설립(Delaware C-corp)",
         "01월",
         "CES 2019 참가",
         "01월",
@@ -67,6 +69,7 @@ const HistoryChange = (props) => {
       ],
     },
     {
+      id: "5",
       value: "2018",
       text: [
         "09월",
@@ -84,12 +87,13 @@ const HistoryChange = (props) => {
         "03월",
         "Kimberly Clark 공식 Supplier 선정",
         "02월",
-        " K-Global 300 선정",
+        "K-Global 300 선정",
         "01월",
         "KIC Washington Bio Acceleration 선정",
       ],
     },
     {
+      id: "6",
       value: "2017",
       text: [
         "10월",
@@ -107,22 +111,21 @@ const HistoryChange = (props) => {
   ];
 
   return (
-    <ul>
-      {years.map((one) => {
-        
+    <>
+      {years.map((one, index) => {
         let arr = [];
-        
+
         if (one.value == button) {
           return (
-            <>
-              {one.text.map((textone) => (
-                <li>{textone}</li>
+            <ul key={one.text + index}>
+              {one.text.map((textone, index) => (
+                <li key={textone + index}>{textone}</li>
               ))}
-            </>
+            </ul>
           );
         }
       })}
-    </ul>
+    </>
   );
 };
 
