@@ -1,160 +1,138 @@
 @import "../scss/style.scss";
 
+@mixin button-before() {
+  position: absolute;
+  right: 2rem;
+}
 .history {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  // width: 100vw;
-  // height: 100vh;
+  flex-direction: column;
+
   .history-container {
-    // display: flex;
-    // width: 50rem;
     margin-left: 15rem;
 
     .history-mainBox {
-      // width: 80vw;
-      height: 38rem;
       display: flex;
       justify-content: left;
-      // align-items: flex-start;
-
+      height: 38rem;
+     
       .history-leftBox {
         position: relative;
+        width: 3rem;
+        height: 36rem;
 
-        // 연혁 그래프 선
-
+        // ---------연혁 그래프 선-----------
+        
         .history-line {
+          display: inline-block;
+          position: absolute;
           width: 0.1rem;
           height: 35rem;
           background-color: $color-line-gray;
-          position: absolute;
-          display: inline-block;
           left: 2.75rem;
           top: 3.5rem;
         }
 
-        // 연혁 버튼 + 년도
-
-        #history-inputId {
+        // --------- 연혁 버튼 -----------
+        
+        input {
           position: relative;
+          width: 1.1em;
+          height: 1.1rem;
+          margin-top: 3.5em;
+          margin-left: 2.2rem;
+          appearance: none;
+          background-color: $color-line-gray;
+          border-radius: 50%;
+        
           &:hover {
             cursor: pointer;
           }
+
           &:checked {
+            font-weight: $--weight-super-bold;
+            border: 2px solid #fff;
+            outline-style: solid;
+            outline-width: 2px;
             color: $color-history-orange;
-            font-weight: $--weight-semi-bold;
-            font-size: 1.3em;
-          }
-        }
-        .history-but1 {
-          &::before {
-            position: absolute;
-            right: 4rem;
-            content: "2022";
-            // font-size: 1.1rem;
-          }
-        }
-        .history-but2 {
-          &::before {
-            position: absolute;
-            right: 4rem;
-            content: "2021";
-            // font-size: 1.1rem;
-          }
-        }
-        .history-but3 {
-          &::before {
-            position: absolute;
-            right: 4rem;
-            content: "2020";
-            // font-size: 1.1rem;
-          }
-        }
-        .history-but4 {
-          &::before {
-            position: absolute;
-            right: 4rem;
-            content: "2019";
-            // font-size: 1.1rem;
-          }
-        }
-        .history-but5 {
-          &::before {
-            position: absolute;
-            right: 4rem;
-            content: "2018";
-            // font-size: 1.1rem;
-          }
-        }
-        .history-but6 {
-          &::before {
-            position: absolute;
-            right: 4rem;
-            content: "2017";
-            // font-size: 1.1rem;
-          }
-          // &:checked {
-          //   color: $color-history-orange;
-          //   font-weight: $--weight-semi-bold;
-          //   font-size: 1.3rem;
-          // }
-        }
-
-// 연혁 동그라미 버튼
-
-        input {
-          appearance: none;
-          width: 1.1em;
-          height: 1.1rem;
-          background-color: $color-line-gray;
-          border-radius: 50%;
-          margin-top: 3.3rem;
-          margin-left: 2.2rem;
-          position: relative;
-          // z-index: 999;
-
-          &:checked {
-            appearance: none;
-            width: 2rem;
-            height: 2rem;
-            background-color: $color-white;
-            border: $color-history-orange 0.5rem solid;
+            background-color: $color-history-orange;
             border-radius: 50%;
-            margin-left: 1.8rem;
-            position: relative;
-            // z-index: 999;
-            transition: 0.2s;
+            transform: scale(1.5);
+            transition: 0.4s;
           }
+        }
+
+        // ------- 연혁 연도 글자 ------
+
+        .history-btn1::before {
+          @include button-before();
+          content: "2022";
+        }
+
+        .history-btn2::before {
+          @include button-before();
+          content: "2021";
+        }
+        .history-btn3::before {
+          @include button-before();
+          content: "2020";
+        }
+        .history-btn4::before {
+          @include button-before();
+          content: "2019";
+        }
+        .history-btn5::before {
+          @include button-before();
+          content: "2018";
+        }
+        .history-btn6::before {
+          @include button-before();
+          content: "2017";
         }
       }
     }
+
+    // ------- 연혁 연도별 내용 -------
+    
     ul {
-      list-style: none;
       width: 60rem;
       height: 20rem;
       margin-top: 2.2rem;
-      // margin-left: 1rem;
+      list-style: none;
 
       li {
-        line-height: 3.5rem;
+        display: inline-block;
         margin-left: 3.5rem;
+        line-height: 3.5rem;
+        animation: fadeInUp 1.2s;
+        animation-timing-function: ease;
 
         &:nth-child(odd) {
-          display: inline-block;
           width: 3.125rem;
           margin-right: 0.2rem;
           font-weight: $--weight-semi-bold;
           font-size: 1.1rem;
         }
         &:nth-child(even) {
-          display: inline-block;
           width: calc(100% - 12rem);
           color: $color-font-gray;
-          font-size: $--weight-semi-bold;
         }
       }
     }
   }
 }
 
+// ------ 연혁 연도별 내용 애니메이션 -------
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 6%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
