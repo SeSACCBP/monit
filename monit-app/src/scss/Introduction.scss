@@ -60,6 +60,7 @@
 // 🟢컴포넌트 : IntroductionMindmap.jsx
 /*---------introduction-cicles---------*/
 
+// 원과 선의 wrapper
 .introduction-circles-wrapper {
   display: flex;
   align-items: center;
@@ -71,27 +72,23 @@
   min-width: 50rem;
   margin: 0 auto;
 
+  // 중앙 큰 원의 배치,모양,크기,색
   .centerC {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: $color-Overview-title;
-    color: white;
-    // padding: 2rem;
-    border: 20px solid #fff;
-    outline-style: solid;
-    outline-color: $color-Overview-title;
-    outline-width: 6px;
-    box-sizing: border-box;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    border-radius: 50%;
+    background-color: $color-Overview-title;
+    color: white;
+    border: 2rem solid #fff;
+    outline: solid;
+    outline-width: 0.5rem;
+    outline-color: $color-Overview-title;
+    //모닛로고 이미지
     img {
       width: 8rem;
       height: 2rem;
@@ -102,45 +99,7 @@
     }
   }
 
-  .bigC {
-    // background-color: white;
-    // display: flex;
-    // justify-content: center;
-    // padding: 2rem;
-    // border-radius: 50%;
-    // border: 6px solid $color-Overview-title;
-
-    // 위치
-    // position: relative;
-    // margin: 0 auto; //중앙정렬
-
-    .smallC {
-      width: 18rem;
-      height: 18rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      border-radius: 50%;
-      background-color: $color-Overview-title;
-      color: white;
-      border: 2rem solid #fff;
-      outline: solid;
-      outline-width: 0.5rem;
-      outline-color: $color-Overview-title;
-      img {
-        width: 8rem;
-        height: 2rem;
-        margin-bottom: 1.5rem;
-      }
-      p {
-        line-height: 1.5rem;
-      }
-    }
-  }
-
-  // 위치
+  // 작은 원들 위치
   .cicle-top-left {
     position: relative;
     left: 3rem;
@@ -218,7 +177,6 @@
     margin-bottom: 2rem;
   }
   .circle-c04-down-t {
-    // +0.6
     margin-bottom: 2.6rem;
   }
 }

@@ -19,23 +19,13 @@ const IntroductionMindmap = () => {
             <p className="letter-in-circle">베베핏 스마트 기어</p>
           </div>
         </div>
-
-        {/* <div>
+        <div>
           <div className="centerC">
             <img src={logo} alt="" />
             <p>AI 데이터 분석 기반 </p>
             <p> 디지털 헬스케어 플랫폼</p>
           </div>
-        </div> */}
-
-        <div className="bigC">
-          <div className="smallC">
-            <img src={logo} alt="" />
-            <p>AI 데이터 분석 기반 </p>
-            <p> 디지털 헬스케어 플랫폼</p>
-          </div>
         </div>
-
         <div className="circle-top-right">
           <div className="circle upper-half img02"></div>
           <div className="circle lower-half">
