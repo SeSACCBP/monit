@@ -67,10 +67,40 @@
   min-width: 50rem;
   margin: 0 auto;
 
+  // .centerC {
+  //   width: 15rem;
+  //   height: 15rem;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   border-radius: 50%;
+  //   background-color: $color-Overview-title;
+  //   color: white;
+  //   padding: 2rem;
+  //   border: 20px solid #fff;
+  //   outline-style: solid;
+  //   outline-color: $color-Overview-title;
+  //   outline-width: 6px;
+  //   box-sizing: border-box;
+
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+
+  //   img {
+  //     width: 8rem;
+  //     height: 2rem;
+  //     margin-bottom: 1.5rem;
+  //   }
+  //   p {
+  //     line-height: 1.5rem;
+  //   }
+  // }
+
   .bigC {
     background-color: white;
     display: flex;
-    justify-self: center;
     justify-content: center;
     padding: 2rem;
     border-radius: 50%;
@@ -103,22 +133,22 @@
   }
 
   // 위치
-  .cicle01 {
+  .cicle-top-left {
     position: relative;
     left: 3rem;
     top: -11rem;
   }
-  .circle03 {
+  .cicle-bottom-left {
     position: relative;
     left: 1rem;
     bottom: -10rem;
   }
-  .circle02 {
+  .circle-top-right {
     position: relative;
     left: 3rem;
     top: -13rem;
   }
-  .circle04 {
+  .cicle-bottom-right {
     position: relative;
     right: 7rem;
     top: 10rem;
@@ -135,9 +165,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // justify-self: end;
-    // align-items: center;
-    // align-self: auto;
     text-align: center;
     color: white;
     border-bottom: none;
@@ -147,14 +174,12 @@
     width: 8rem;
     height: 4rem;
     border-radius: 4rem 4rem 0 0;
-    float: top;
   }
   .circle-c01-down {
     background-color: $color-Overview-title;
     width: 8rem;
     height: 4rem;
     border-radius: 0 0 4rem 4rem;
-    float: bottom;
   }
   .circle-c02-up {
     background-image: url("../imgs/Introduction_img/PetCare.jpg");
@@ -167,7 +192,6 @@
     width: 8rem;
     height: 4rem;
     border-radius: 0 0 4rem 4rem;
-    float: bottom;
   }
   .circle-c03-up {
     background-image: url("../imgs/Introduction_img/Spare2.jpg");
@@ -180,7 +204,6 @@
     width: 8rem;
     height: 4rem;
     border-radius: 0 0 4rem 4rem;
-    float: bottom;
   }
   .circle-c04-up {
     background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
@@ -193,7 +216,6 @@
     width: 10rem;
     height: 5rem;
     border-radius: 0 0 5rem 5rem;
-    float: bottom;
   }
 
   //아래 반원 글씨 위치
@@ -209,16 +231,16 @@
 
 /*---------introduction-lines-wrapper---------*/
 .introduction-lines-wrapper {
-  width: 50rem; // introduction-circles-wrapper 값과 같게
+  width: 50rem; // introduction-circles-wrapper 값과 같게.
   min-width: 50rem;
   display: flex;
   align-items: center;
   position: relative;
   z-index: -1;
-  top: -40rem; //height 값과 같게
+  top: -40rem; //height 값과 같게.
   margin: 0 auto;
 
-  //연결 선
+  //연결 선 공통 모양
   .line {
     width: 20rem;
     height: 0.2rem;
@@ -227,22 +249,23 @@
     position: relative;
   }
 
-  .line-top-left {
+  //연결 선 각도와 위치
+  .top-left {
     transform: rotate(36deg);
     top: 14rem;
     left: 9rem;
   }
-  .line-bottom-left {
+  .bottom-left {
     transform: rotate(140deg);
     top: 27rem;
     left: -3rem;
   }
-  .line-top-rignt {
+  .top-right {
     transform: rotate(140deg);
     top: 11rem;
     left: 6rem;
   }
-  .line-bottom-rignt {
+  .bottom-right {
     transform: rotate(40deg);
     top: 25rem;
     left: -8rem;
