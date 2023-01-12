@@ -88,15 +88,23 @@
           display: flex;
 
           .main-section-component04-contact-inquiry-shortcut-bt {
-            width: 7.5rem;
-            height: 2.5rem;
             background-color: transparent;
             border: 1px solid #fcfdff;
+            height: 3rem;
+            width: 6rem;
 
             a {
               text-decoration: none;
               color: #fcfdff;
               font-size: 1rem;
+              line-height: 1rem;
+              display: block;
+              height: 100%;
+              line-height: 3rem;
+            }
+
+            a:hover {
+              background-color: #ff9600;
             }
           }
         }
