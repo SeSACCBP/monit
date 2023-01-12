@@ -33,11 +33,10 @@
   left: 0;
   top: 0;
   width: 100%;
-  background: #fdfdfd;
-
+  background: #fff;
   z-index: 20;
   transition: all 400ms;
-  height: 405px;
+  height: 370px;
   opacity: 1;
   border-bottom: 1.5px solid #bfbfbf;
 }
@@ -103,7 +102,7 @@
 .header-sub-list {
   position: absolute;
   width: 100%;
-  padding: 30px 0 0;
+  padding: 20px 0 0;
   text-align: center;
   opacity: 0;
   height: 300px;
@@ -128,6 +127,7 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
+  // color: $color-font-gray;
   color: $color-font-gray;
   transition: all 100ms;
 
@@ -162,10 +162,11 @@
   position: absolute;
   top: -15px;
   right: 50px;
-  color: blue;
+  color: $color-samsungLogo;
   font-weight: bold;
   list-style: none;
   z-index: 40;
+  font-size: 0.8rem;
 }
 
 .header-samsung {
@@ -328,6 +329,7 @@
     margin-top: -12px;
     font-size: 25px;
     transition: all 400ms;
+    transform-origin: center;
   }
   input[id*='accordion'] + label + .accordion-menu-list {
     max-height: 0;
@@ -348,6 +350,8 @@
 
   input[id*='accordion']:checked + label em {
     transition: all 400ms;
+    // rotate: (180deg);
+    transform: rotate(180deg);
   }
 
   .accordion-menu-list {
