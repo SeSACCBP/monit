@@ -130,6 +130,20 @@ body {
         width: 9.5rem;
         background-color: #517ea7;
         border: none;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          display: block;
+          height: 100%;
+          border-radius: 4rem;
+          line-height: 3rem;
+        }
+
+        a:hover {
+          color: #fff;
+          background-color: red;
+        }
       }
     }
   }
