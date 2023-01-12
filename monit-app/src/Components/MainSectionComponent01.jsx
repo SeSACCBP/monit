@@ -23,7 +23,7 @@ export default function App() {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={false}
         className="mySwiper">
         <SwiperSlide>
@@ -35,7 +35,7 @@ export default function App() {
                   <h3>스마트한 기저귀 케어 시스템</h3>
                   <h2>MECS 맥스</h2>
                   <button className="main-section-component01-bt">
-                    자세히 보기
+                    <a href="#">자세히 보기</a>
                   </button>
                   <p>
                     어르신의 기저귀 교체 시험을 앱을 통해 쉽고 간편하게
@@ -57,7 +57,7 @@ export default function App() {
                   <h3>스마트한 기저귀 케어 시스템</h3>
                   <h2>MECS 맥스</h2>
                   <button className="main-section-component01-bt">
-                    자세히 보기
+                    <a href="#">자세히 보기</a>
                   </button>
                   <p>
                     어르신의 기저귀 교체 시험을 앱을 통해 쉽고 간편하게
@@ -79,7 +79,7 @@ export default function App() {
                   <h3>스마트한 기저귀 케어 시스템</h3>
                   <h2>MECS 맥스</h2>
                   <button className="main-section-component01-bt">
-                    자세히 보기
+                    <a href="#">자세히 보기</a>
                   </button>
                   <p>
                     어르신의 기저귀 교체 시험을 앱을 통해 쉽고 간편하게
@@ -101,7 +101,7 @@ export default function App() {
                   <h3>스마트한 기저귀 케어 시스템</h3>
                   <h2>MECS 맥스</h2>
                   <button className="main-section-component01-bt">
-                    자세히 보기
+                    <a href="#">자세히 보기</a>
                   </button>
                   <p>
                     어르신의 기저귀 교체 시험을 앱을 통해 쉽고 간편하게
