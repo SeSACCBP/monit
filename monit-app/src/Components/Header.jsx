@@ -2,26 +2,11 @@ import React, { useState } from 'react';
 import '../scss/Header.scss';
 import { Link } from 'react-router-dom';
 import BackTopButton from './BackTopButton';
+import { AiFillDownCircle } from 'react-icons/ai';
+import { AiFillUpCircle } from 'react-icons/ai';
 
 const Header = () => {
   const [headerOn, setHeaderOn] = useState(false);
-
-  const [ham, setHam] = useState(true);
-
-  const buttonClick = (e) => {
-    setHam((current) => !current);
-    setHamx((current) => !current);
-  };
-
-  const [isOn1, setisOn1] = useState(true);
-
-  const [isOn2, setisOn2] = useState(true);
-
-  const [isOn3, setisOn3] = useState(true);
-
-  const [hamx, setHamx] = useState(true);
-
-  const [listout, setListOut] = useState(true);
 
   return (
     <div className="header-line">
@@ -88,60 +73,52 @@ const Header = () => {
           <a className="header-img-m" href="/"></a>
         </div>
         <div className="hamburger-area">
-          <button className="hamburger-btn" onClick={buttonClick} href="#">
-            <div className={hamx ? 'hamburger' : 'hamburger-active'}>
-              <span className="bar"></span>
-              <span className="bar"></span>
-              <span className="bar"></span>
-            </div>
-          </button>
-        </div>
-        <div className={ham ? 'header-list-m' : 'header-list-m-on'}>
-          <ul className="header-list-m-depth1">
-            <li className="header-title-m" id="company_intro">
-              <a href="#company_intro" onClick={() => setisOn1(!isOn1)}>
+          <input type="checkbox" id="hamburger" />
+          <label htmlFor="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div className="hamburger-sidebar">
+            <div className="accordion">
+              <input type="checkbox" id="accordion-menu-1" />
+              <label htmlFor="accordion-menu-1">
                 회사 소개
-              </a>
-              <div
-                className={
-                  isOn1 ? 'header-sub-list-m-hide' : 'header-sub-list-m'
-                }
-              >
-                <a href="#">기업 이념</a>
-                <a href="#">사업 개요</a>
-                <a href="#">회사 연혁</a>
-                <a href="#">오시는 길</a>
+                <em>
+                  <AiFillDownCircle />
+                </em>
+              </label>
+              <div className="accordion-menu-list">
+                <Link to="/overview"> 기업 이념 </Link>
+                <Link to="/introduction">사업 개요</Link>
+                <Link to="/history">회사 연혁</Link>
+                <Link to="/location">오시는 길</Link>
               </div>
-            </li>
-            <li className="header-title-m" id="product_intro">
-              <a href="#product_intro" onClick={() => setisOn2(!isOn2)}>
+              <input type="checkbox" id="accordion-menu-2" />
+              <label htmlFor="accordion-menu-2">
                 제품 소개
-              </a>
-              <div
-                className={
-                  isOn2 ? 'header-sub-list-m-hide' : 'header-sub-list-m'
-                }
-              >
+                <em>
+                  <AiFillDownCircle />
+                </em>
+              </label>
+              <div className="accordion-menu-list">
                 <a href="#">맥스 자세히 보기</a>
               </div>
-            </li>
-            <li className="header-title-m" id="to_buy">
-              <a href="#to_buy">구매 하기</a>
-            </li>
-            <li className="header-title-m" id="contact_us">
-              <a href="#contact_us" onClick={() => setisOn3(!isOn3)}>
+              <input type="checkbox" id="accordion-menu-3" />
+              <label htmlFor="accordion-menu-3">구매 하기</label>
+              <input type="checkbox" id="accordion-menu-4" />
+              <label htmlFor="accordion-menu-4">
                 문의 하기
-              </a>
-              <div
-                className={
-                  isOn3 ? 'header-sub-list-m-hide' : 'header-sub-list-m'
-                }
-              >
-                <a href="#">제품 문의</a>
+                <em>
+                  <AiFillDownCircle />
+                </em>
+              </label>
+              <div className="accordion-menu-list">
+                <Link to="/contact">제품 문의</Link>
                 <a href="#">제휴 문의</a>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </nav>
       <ul className="header-title-samsung">
