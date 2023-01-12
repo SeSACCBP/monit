@@ -1,5 +1,10 @@
 @import "../scss/style.scss";
 
+@mixin circle-box-default($size) {
+  width: 2 * $size;
+  height: $size;
+}
+
 // 전체 폰트, 브라우저 호환
 * {
   font-family: "AppleSDGothicNeoUL";
@@ -38,7 +43,6 @@
   .introduction-title-discription-fontcolor {
     color: $color-monitLogo;
     font-size: 1.3rem;
-    // font-weight: bold;
   }
 }
 
@@ -56,6 +60,7 @@
 // 🟢컴포넌트 : IntroductionMindmap.jsx
 /*---------introduction-cicles---------*/
 
+// 원과 선의 wrapper
 .introduction-circles-wrapper {
   display: flex;
   align-items: center;
@@ -67,58 +72,50 @@
   min-width: 50rem;
   margin: 0 auto;
 
-  .bigC {
-    background-color: white;
+  // 중앙 큰 원의 배치,모양,크기,색
+  .centerC {
+    width: 18rem;
+    height: 18rem;
     display: flex;
-    justify-self: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    align-items: center;
+    text-align: center;
     border-radius: 50%;
-    border: 6px solid $color-Overview-title;
-
-    // 위치
-    position: relative;
-    margin: 0 auto; //중앙정렬
-
-    .smallC {
-      width: 15rem;
-      height: 15rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      border-radius: 50%;
-      background-color: $color-Overview-title;
-      color: white;
-      img {
-        width: 8rem;
-        height: 2rem;
-        margin-bottom: 1.5rem;
-      }
-      p {
-        line-height: 1.5rem;
-      }
+    background-color: $color-Overview-title;
+    color: white;
+    border: 2rem solid #fff;
+    outline: solid;
+    outline-width: 0.5rem;
+    outline-color: $color-Overview-title;
+    //모닛로고 이미지
+    img {
+      width: 8rem;
+      height: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      line-height: 1.5rem;
     }
   }
 
-  // 위치
-  .cicle01 {
+  // 작은 원들 위치
+  .cicle-top-left {
     position: relative;
     left: 3rem;
     top: -11rem;
   }
-  .circle03 {
+  .cicle-bottom-left {
     position: relative;
     left: 1rem;
     bottom: -10rem;
   }
-  .circle02 {
+  .circle-top-right {
     position: relative;
     left: 3rem;
     top: -13rem;
   }
-  .circle04 {
+  .cicle-bottom-right {
     position: relative;
     right: 7rem;
     top: 10rem;
@@ -126,6 +123,7 @@
 
   //작은 원들 공통 모양
   .circle {
+    @include circle-box-default(4rem);
     position: relative;
     border: 4px solid $color-Overview-title;
     border-radius: 50%;
@@ -135,71 +133,47 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // justify-self: end;
-    // align-items: center;
-    // align-self: auto;
     text-align: center;
     color: white;
     border-bottom: none;
   }
-  .circle-c01-up {
+
+  //공통적인 반원의 크기(3개)
+  .upper-half {
+    border-radius: 4rem 4rem 0 0;
+  }
+  .lower-half {
+    border-radius: 0 0 4rem 4rem;
+    background-color: $color-Overview-title;
+  }
+
+  //윗 반원의 이미지들 삽입
+  .img01 {
     background-image: url("../imgs/Introduction_img/BabyMonitor.jpg");
-    width: 8rem;
-    height: 4rem;
-    border-radius: 4rem 4rem 0 0;
-    float: top;
   }
-  .circle-c01-down {
-    background-color: $color-Overview-title;
-    width: 8rem;
-    height: 4rem;
-    border-radius: 0 0 4rem 4rem;
-    float: bottom;
-  }
-  .circle-c02-up {
+
+  .img03 {
     background-image: url("../imgs/Introduction_img/PetCare.jpg");
-    width: 8rem;
-    height: 4rem;
-    border-radius: 4rem 4rem 0 0;
   }
-  .circle-c02-down {
-    background-color: $color-Overview-title;
-    width: 8rem;
-    height: 4rem;
-    border-radius: 0 0 4rem 4rem;
-    float: bottom;
-  }
-  .circle-c03-up {
+
+  .img02 {
     background-image: url("../imgs/Introduction_img/Spare2.jpg");
-    width: 8rem;
-    height: 4rem;
-    border-radius: 4rem 4rem 0 0;
   }
-  .circle-c03-down {
-    background-color: $color-Overview-title;
-    width: 8rem;
-    height: 4rem;
-    border-radius: 0 0 4rem 4rem;
-    float: bottom;
-  }
-  .circle-c04-up {
+
+  // 예외처리. bottom-right circle 관련
+  .img04 {
     background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
-    width: 10rem;
-    height: 5rem;
+    @include circle-box-default(5rem);
     border-radius: 5rem 5rem 0 0;
   }
   .circle-c04-down {
+    @include circle-box-default(5rem);
     background-color: $color-Overview-title;
-    width: 10rem;
-    height: 5rem;
     border-radius: 0 0 5rem 5rem;
-    float: bottom;
   }
 
   //아래 반원 글씨 위치
-  .circle-c01-down-t,
-  .circle-c02-down-t,
-  .circle-c03-down-t {
+  .letter-in-circle {
     margin-bottom: 2rem;
   }
   .circle-c04-down-t {
@@ -209,16 +183,16 @@
 
 /*---------introduction-lines-wrapper---------*/
 .introduction-lines-wrapper {
-  width: 50rem; // introduction-circles-wrapper 값과 같게
+  width: 50rem; // introduction-circles-wrapper 값과 같게.
   min-width: 50rem;
   display: flex;
   align-items: center;
   position: relative;
   z-index: -1;
-  top: -40rem; //height 값과 같게
+  top: -40rem; //height 값과 같게.
   margin: 0 auto;
 
-  //연결 선
+  //연결 선 공통 모양
   .line {
     width: 20rem;
     height: 0.2rem;
@@ -227,22 +201,23 @@
     position: relative;
   }
 
-  .line-top-left {
+  //연결 선 각도와 위치
+  .top-left {
     transform: rotate(36deg);
     top: 14rem;
     left: 9rem;
   }
-  .line-bottom-left {
+  .bottom-left {
     transform: rotate(140deg);
     top: 27rem;
     left: -3rem;
   }
-  .line-top-rignt {
+  .top-right {
     transform: rotate(140deg);
     top: 11rem;
     left: 6rem;
   }
-  .line-bottom-rignt {
+  .bottom-right {
     transform: rotate(40deg);
     top: 25rem;
     left: -8rem;
