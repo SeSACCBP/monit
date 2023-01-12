@@ -13,8 +13,7 @@ const MainSectionComponent04 = () => {
           </h2>
           <div
             className="main-section-component04-contact-inquiry"
-            data-aos="fadeInUp"
-          >
+            data-aos="fadeInUp">
             <div className="main-section-component04-contact-icon icon-top"></div>
             <div className="main-section-component04-contact-inquiry-wrapper">
               <h3>제품문의</h3>
@@ -31,8 +30,7 @@ const MainSectionComponent04 = () => {
           </div>
           <div
             className="main-section-component04-contact-inquiry"
-            data-aos="fadeInUp"
-          >
+            data-aos="fadeInUp">
             <div className="main-section-component04-contact-icon icon-bottom"></div>
             <div className="main-section-component04-contact-inquiry-wrapper">
               <h3>제품문의</h3>
