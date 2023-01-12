@@ -6,48 +6,45 @@ const IntroductionMindmap = () => {
   return (
     <div>
       <div className="introduction-circles-wrapper">
-        <div className="cicle01">
-          <div className="circle circle-c01-up"></div>
-          <div className="circle circle-c01-down">
-            <p className="circle-c01-down-t">베이비 모니터</p>
+        <div className="cicle-top-left">
+          <div className="circle upper-half img01"></div>
+          <div className="circle lower-half">
+            <p className="letter-in-circle">베이비 모니터</p>
           </div>
         </div>
 
-        <div className="circle03">
-          <div className="circle circle-c03-up"></div>
-          <div className="circle circle-c03-down">
-            <p className="circle-c03-down-t">베베핏 스마트 기어</p>
+        <div className="cicle-bottom-left">
+          <div className="circle upper-half img03"></div>
+          <div className="circle lower-half">
+            <p className="letter-in-circle">베베핏 스마트 기어</p>
           </div>
         </div>
-
-        <div className="bigC">
-          <div className="smallC">
+        <div>
+          <div className="centerC">
             <img src={logo} alt="" />
             <p>AI 데이터 분석 기반 </p>
             <p> 디지털 헬스케어 플랫폼</p>
           </div>
         </div>
-
-        <div className="circle02">
-          <div className="circle circle-c02-up"></div>
-          <div className="circle circle-c02-down">
-            <p className="circle-c02-down-t">펫 케어</p>
+        <div className="circle-top-right">
+          <div className="circle upper-half img02"></div>
+          <div className="circle lower-half">
+            <p className="letter-in-circle">펫 케어</p>
           </div>
         </div>
 
-        <div className="circle04">
-          <div className="circle circle-c04-up"></div>
+        <div className="cicle-bottom-right">
+          <div className="circle img04"></div>
           <div className="circle circle-c04-down">
             <p className="circle-c04-down-t">시니어 케어 시스템</p>
           </div>
         </div>
       </div>
-
       <div className="introduction-lines-wrapper">
-        <div className="line line-top-left"></div>
-        <div className="line line-bottom-left"></div>
-        <div className="line line-top-rignt"></div>
-        <div className="line line-bottom-rignt"></div>
+        <div className="line top-left"></div>
+        <div className="line bottom-left"></div>
+        <div className="line top-right"></div>
+        <div className="line bottom-right"></div>
       </div>
     </div>
   );
