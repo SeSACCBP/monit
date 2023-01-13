@@ -4,138 +4,260 @@
   @include Semi-title();
 }
 
-.map-Box-One {
-  width: 52rem;
-  height: 8rem;
-  background-color: $color-monitLogo;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  padding: 0.9375rem;
-  margin: 2rem auto;
-  .map-Box-One-right {
-    width: 14rem;
-    height: 5rem;
+.MapComponent {
+  .map-Box-One {
+    width: 52rem;
+    height: 8rem;
+    background-color: $color-monitLogo;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-
-    img {
-      width: 8rem;
-      height: 2rem;
-    }
-    p {
-      color: $color-white;
-      font-size: 0.9rem;
-      font-weight: 800;
-    }
-  }
-  .map-Box-One-left {
-    width: 45rem;
-    height: 6.5rem;
+    justify-content: center;
     border-radius: 20px;
-    font-size: 1rem;
-    background-color: $color-Location-box;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: $color-font-lightgray;
-
-    .map-Box-One-left-line {
+    padding: 0.9375rem;
+    margin: 6rem auto;
+    .map-Box-One-right {
+      width: 14rem;
+      height: 5rem;
       display: flex;
       flex-direction: column;
-      font-weight: bold;
-      display: flex;
-      align-content: center;
-      justify-content: space-between;
-      height: 3.3rem;
+      align-items: center;
+      justify-content: space-around;
 
-      .map-Box-One-left-line-big {
-        font-size: 1.2rem;
+      img {
+        width: 8rem;
+        height: 2rem;
       }
+      p {
+        color: $color-white;
+        font-size: 0.9rem;
+        font-weight: 800;
+      }
+    }
+    .map-Box-One-left {
+      width: 45rem;
+      height: 6.5rem;
+      border-radius: 20px;
+      font-size: 1rem;
+      background-color: $color-Location-box;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: $color-font-lightgray;
 
-      .map-Box-One-Icon {
-        margin-bottom: -0.3rem;
-        margin-right: 0.5rem;
-        font-size: 1.2rem;
+      .map-Box-One-left-line {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        align-content: center;
+        justify-content: space-between;
+        height: 3.3rem;
+
+        .map-Box-One-left-line-big {
+          font-size: 1.2rem;
+        }
+
+        .map-Box-One-Icon {
+          margin-bottom: -0.3rem;
+          margin-right: 0.5rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // 여기서부터 대중교통
+
+  .map-Box-Two {
+    display: flex;
+    justify-content: center;
+    width: 52rem;
+    height: 10rem;
+    margin: 3rem auto;
+
+    .map-Box-Two-Box {
+      display: flex;
+      margin: 0.5rem 0.5rem 2.3rem 0.5rem;
+
+      .map-Box-Two-bus,
+      .map-Box-Two-sub {
+        width: 3rem;
+        height: 3rem;
+        background-color: $color-line-gray;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px gray;
+      }
+      .map-Box-Two-bus {
+        background-image: url(../imgs/Map_img/bus.png);
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .map-Box-Two-sub {
+        background-image: url(../imgs/Map_img/subway.png);
+        background-size: 80%;
+        background-position: center;
+      }
+      .map-Box-Two-arr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 7rem;
+        font-size: 1rem;
+        margin-left: 1rem;
+        div {
+          margin-top: 0.5rem;
+        }
+        .map-Box-Two-arr-circle2 {
+          font-size: 1.3rem;
+          padding: 0.1rem;
+          color: $color-white;
+          background-color: $color-Location-line2;
+          border-radius: 50%;
+          margin-bottom: -0.25rem;
+        }
+        .map-Box-Two-arr-circle4 {
+          font-size: 1.3rem;
+          padding: 0.1rem;
+          color: $color-white;
+          background-color: $color-Location-line4;
+          border-radius: 50%;
+          margin-bottom: -0.25rem;
+        }
+      }
+      .map-Box-Two-arr-B {
+        font-weight: bold;
+        margin-bottom: 0.6rem;
+        font-size: 1rem;
+        color: $color-font-gray;
+      }
+    }
+    .map-Box-Two-Box:first-child {
+      border-right: 1.6px solid $color-line-gray;
+      padding-right: 8%;
+    }
+    .map-Box-Two-Box:last-child {
+      margin-left: 4%;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .MapComponent {
+    .map-Box-One {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 50vh;
+      width: 95%;
+      .map-Box-One-right {
+        img {
+          width: 13rem;
+          height: 4rem;
+        }
+        p {
+          display: none;
+        }
+      }
+      .map-Box-One-left {
+        height: 80%;
+        width: 99%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        .map-Box-One-left-line {
+          height: 25%;
+          width: 100%;
+          flex-wrap: wrap;
+          p {
+            margin: 0 auto;
+          }
+          .map-Box-One-left-line-big {
+            font-size: 2.5rem;
+          }
+          .map-Box-One-Icon {
+            margin-bottom: -0.5rem;
+            margin-right: 1rem;
+            font-size: 2.2rem;
+          }
+        }
+      }
+      .map-Box-One-left-line:last-child {
+        font-size: 2.5rem;
+      }
+    }
+    // 여기서부터 대중교통 박스
+    .map-Box-Two {
+      flex-direction: column;
+      height: 40vh;
+      .map-Box-Two-Box {
+        margin-left: 4%;
+        height: 18vh;
+        flex-wrap: wrap;
+        align-items: center;
+        .map-Box-Two-bus,
+        .map-Box-Two-sub {
+          width: 5rem;
+          height: 5rem;
+        }
+        .map-Box-Two-arr-B {
+          font-size: 2rem;
+        }
+        .map-Box-Two-arr {
+          font-size: 1.9rem;
+          .map-Box-Two-arr-circle2 {
+            font-size: 2rem;
+          }
+          .map-Box-Two-arr-circle4 {
+            font-size: 2rem;
+          }
+        }
+      }
+      .map-Box-Two-Box:first-child {
+        border-right: none;
+        border-bottom: 1.6px solid $color-line-gray;
+        padding-bottom: 10%;
       }
     }
   }
 }
 
-// 여기서부터 대중교통
-
-.map-Box-Two {
-  display: flex;
-  justify-content: center;
-  width: 52rem;
-  height: 10rem;
-  margin: 0 auto;
-
-  .map-Box-Two-Box {
-    display: flex;
-    margin: 0.5rem 0.5rem 2.3rem 0.5rem;
-
-    .map-Box-Two-bus,
-    .map-Box-Two-sub {
-      width: 3rem;
-      height: 3rem;
-      background-color: $color-line-gray;
-      border-radius: 50%;
-      box-shadow: 1px 1px 1px gray;
-    }
-    .map-Box-Two-bus {
-      background-image: url(../imgs/Map_img/bus.png);
-      background-size: 80%;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    .map-Box-Two-sub {
-      background-image: url(../imgs/Map_img/subway.png);
-      background-size: 80%;
-      background-position: center;
-    }
-    .map-Box-Two-arr {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 7rem;
-      font-size: 1rem;
-      margin-left: 1rem;
-      div {
-        margin-top: 0.5rem;
+@media (max-width: 420px) {
+  .MapComponent {
+    .map-Box-One {
+      .map-Box-One-left {
+        font-size: 1.5rem;
+        .map-Box-One-left-line .map-Box-One-left-line-big {
+          font-size: 1.7rem;
+        }
       }
-      .map-Box-Two-arr-circle2 {
-        font-size: 1.3rem;
-        padding: 0.1rem;
-        color: $color-white;
-        background-color: $color-Location-line2;
-        border-radius: 50%;
-        margin-bottom: -0.25rem;
-      }
-      .map-Box-Two-arr-circle4 {
-        font-size: 1.3rem;
-        padding: 0.1rem;
-        color: $color-white;
-        background-color: $color-Location-line4;
-        border-radius: 50%;
-        margin-bottom: -0.25rem;
+      .map-Box-One-left-line:last-child {
+        font-size: 1.5rem;
       }
     }
-    .map-Box-Two-arr-B {
-      font-weight: bold;
-      margin-bottom: 0.6rem;
-      font-size: 1rem;
-      color: $color-font-gray;
+    // 여기서부터 대중교통 박스
+    .map-Box-Two {
+      width: 98%;
+      .map-Box-Two-Box {
+        .map-Box-Two-bus,
+        .map-Box-Two-sub {
+          display: none;
+        }
+        .map-Box-Two-arr-B {
+          font-size: 1.8rem;
+        }
+        .map-Box-Two-arr {
+          font-size: 1.5rem;
+          .map-Box-Two-arr-circle2 {
+            font-size: 1.7rem;
+          }
+          .map-Box-Two-arr-circle4 {
+            font-size: 1.7rem;
+          }
+        }
+      }
+      .map-Box-Two-Box:first-child {
+        padding-right: 0;
+        padding-bottom: 15%;
+      }
     }
-  }
-  .map-Box-Two-Box:first-child {
-    border-right: 1.6px solid $color-line-gray;
-    padding-right: 8%;
-  }
-  .map-Box-Two-Box:last-child {
-    margin-left: 4%;
   }
 }
