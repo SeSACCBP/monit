@@ -7,13 +7,14 @@ function Introduction() {
   return (
     <>
       <HeaderIntro />
+      <div className="map-title">
+        Itroduction <br />
+        <p>사업 개요</p>
+      </div>
+      <div className="introduction-items-wrapper">
+        <IntroductionInformation />
 
-      <div>
-        <div className="introduction-items-wrapper">
-          <IntroductionInformation />
-
-          <IntroductionMindmap />
-        </div>
+        <IntroductionMindmap />
       </div>
     </>
   );
