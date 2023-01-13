@@ -1,10 +1,9 @@
 import React from "react";
+import SubHeader from "./SubHeader";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
-import "../scss/MapComponent.scss";
-import "../scss/style.scss";
-import logo from "../imgs/Fragment_img/monitLogo_white.png";
 import { RiNumber2, RiNumber4, RiMailLine, RiPhoneLine } from "react-icons/ri";
-import HeaderLo from "./SubHeader/HeaderLo";
+import logo from "../imgs/Fragment_img/monitLogo_white.png";
+import "../scss/MapComponent.scss";
 
 const containerStyle = {
   width: "100%",
@@ -26,6 +25,12 @@ const onLoad = (marker) => {
 };
 
 function MyComponent() {
+  const title = {
+    pageSection: "회사 소개",
+    pageTitle: "오시는 길 ",
+    img: "SubHeader-Img",
+  };
+
   const API_KEY = process.env.REACT_APP_Map_API_KEY;
 
   const { isLoaded } = useJsApiLoader({
@@ -35,7 +40,7 @@ function MyComponent() {
 
   return isLoaded ? (
     <div className="MapComponent">
-      <HeaderLo />
+      <SubHeader title={title} />
       <div className="map-title">
         Location <br />
         <p>오시는 길</p>
