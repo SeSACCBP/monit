@@ -18,7 +18,6 @@ function Introduction() {
       </div>
       <div className="introduction-items-wrapper">
         <IntroductionInformation />
-
         <IntroductionMindmap />
       </div>
     </>

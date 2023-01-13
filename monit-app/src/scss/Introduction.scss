@@ -24,17 +24,6 @@
   margin-bottom: 3rem;
   line-height: 2rem;
 
-  .introduction-title {
-    color: $color-Overview-title;
-    font-size: 1rem;
-    font-weight: 900;
-    margin-bottom: 1.5rem; // introduction 아래 여백
-  }
-  .introduction-title p {
-    font-size: 1.5rem;
-    color: #3e3e3e;
-    margin-top: 0.3rem;
-  }
   .introduction-title-discription {
     color: black;
     font-size: 1rem;
@@ -49,7 +38,7 @@
 .introduction-index-wrapper {
   margin-bottom: 3rem;
   font-size: 1rem;
-  line-height: 2.2rem;
+  line-height: 2rem;
 
   .introduction-index-fontcolor {
     color: $color-Overview-title;
@@ -102,8 +91,8 @@
   // 작은 원들 - 위치
   .cicle-top-left {
     position: relative;
-    left: 3rem;
-    top: -11rem;
+    left: 4rem;
+    top: -9rem;
   }
   .cicle-bottom-left {
     position: relative;
@@ -138,7 +127,7 @@
     color: white;
   }
 
-  //공통적인 반원 - 크기(3개)
+  //공통적인 반원 - 크기(2개)
   .upper-half {
     border-radius: 4rem 4rem 0 0;
   }
@@ -148,9 +137,6 @@
   }
 
   //윗 반원 - 이미지들 삽입
-  .img01 {
-    background-image: url("../imgs/Introduction_img/BabyMonitor.jpg");
-  }
 
   .img03 {
     background-image: url("../imgs/Introduction_img/PetCare.jpg");
@@ -164,17 +150,25 @@
   .letter-in-circle {
     margin-bottom: 2rem;
   }
-  .circle-c04-down-t {
+  .letter-in-circle-ver2 {
     margin-bottom: 2.6rem;
   }
 
-  // 예외처리. bottom-right circle 관련 - (시니어 케어 시스템 원)
+  // 원 5rem. bottom-right circle 관련 - (시니어 케어 시스템 원)
+
+  .img01 {
+    background-image: url("../imgs/Introduction_img/BabyMonitor.jpg");
+    @include circle-box-default(5rem);
+    border-radius: 5rem 5rem 0 0;
+  }
+
   .img04 {
     background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
     @include circle-box-default(5rem);
     border-radius: 5rem 5rem 0 0;
   }
-  .circle-c04-down {
+
+  .lower-half-ver2 {
     @include circle-box-default(5rem);
     background-color: $color-Overview-title;
     border-radius: 0 0 5rem 5rem;
@@ -222,4 +216,222 @@
     top: 25rem;
     left: -8rem;
   }
+}
+
+// ⬜반응형 640px⬜
+@media (max-width: 640px) {
+  * {
+    font-family: "AppleSDGothicNeoUL";
+    margin: 0;
+    padding: 0;
+  }
+
+  // 전체 여백
+  .introduction-items-wrapper {
+    margin: 0 3em 0 3rem;
+  }
+
+  // 🟢컴포넌트 : IntroductionInformation.jsx
+  /*---------introduction-title---------*/
+
+  .introduction-title-wrapper {
+    margin-bottom: 3rem;
+    line-height: 2rem;
+
+    .introduction-title-discription {
+      color: black;
+      font-size: 1.6rem;
+    }
+    .introduction-title-discription-fontcolor {
+      color: $color-monitLogo;
+      font-size: 2.1rem;
+    }
+  }
+
+  /*---------introduction-index---------*/
+  .introduction-index-wrapper {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+
+    .introduction-index-fontcolor {
+      color: $color-Overview-title;
+    }
+  }
+
+  // 🟢컴포넌트 : IntroductionMindmap.jsx
+  /*---------introduction-cicles---------*/
+
+  // 원과 선의 wrapper
+  .introduction-circles-wrapper {
+    width: 50rem;
+    min-width: 50rem;
+    height: 40rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    z-index: 2;
+
+    // 중앙 큰 원의 배치,모양,크기,색
+    .centerC {
+      width: 18rem;
+      height: 18rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 50%;
+      background-color: $color-Overview-title;
+      color: white;
+      border: 2rem solid #fff;
+      outline: solid;
+      outline-width: 0.5rem;
+      outline-color: $color-Overview-title;
+
+      //모닛로고 이미지
+      img {
+        width: 8rem;
+        height: 2rem;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        line-height: 1.5rem;
+      }
+    }
+
+    // 작은 원들 - 위치
+    .cicle-top-left {
+      position: relative;
+      left: 4rem;
+      top: -9rem;
+    }
+    .cicle-bottom-left {
+      position: relative;
+      left: 1rem;
+      bottom: -10rem;
+    }
+    .circle-top-right {
+      position: relative;
+      left: 3rem;
+      top: -13rem;
+    }
+    .cicle-bottom-right {
+      position: relative;
+      right: 7rem;
+      top: 10rem;
+    }
+
+    //작은 원들 - 공통 모양
+    .circle {
+      @include circle-box-default(4rem);
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border: 4px solid $color-Overview-title;
+      border-bottom: none;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    //공통적인 반원 - 크기(2개)
+    .upper-half {
+      border-radius: 4rem 4rem 0 0;
+    }
+    .lower-half {
+      border-radius: 0 0 4rem 4rem;
+      background-color: $color-Overview-title;
+    }
+
+    //윗 반원 - 이미지들 삽입
+
+    .img03 {
+      background-image: url("../imgs/Introduction_img/PetCare.jpg");
+    }
+
+    .img02 {
+      background-image: url("../imgs/Introduction_img/Spare2.jpg");
+    }
+
+    //아래 반원 - 글씨 위치
+    .letter-in-circle {
+      margin-bottom: 2rem;
+    }
+    .letter-in-circle-ver2 {
+      margin-bottom: 2.6rem;
+    }
+
+    // 원 5rem. bottom-right circle 관련 - (시니어 케어 시스템 원)
+
+    .img01 {
+      background-image: url("../imgs/Introduction_img/BabyMonitor.jpg");
+      @include circle-box-default(5rem);
+      border-radius: 5rem 5rem 0 0;
+    }
+
+    .img04 {
+      background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
+      @include circle-box-default(5rem);
+      border-radius: 5rem 5rem 0 0;
+    }
+
+    .lower-half-ver2 {
+      @include circle-box-default(5rem);
+      background-color: $color-Overview-title;
+      border-radius: 0 0 5rem 5rem;
+    }
+  }
+
+  /*---------introduction-lines-wrapper---------*/
+  .introduction-lines-wrapper {
+    width: 50rem; // introduction-circles-wrapper 값과 같게.
+    min-width: 50rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: -40rem; //height 값과 같게.
+    margin: 0 auto;
+    z-index: -1;
+
+    //연결 선 - 공통 모양
+    .line {
+      width: 20rem;
+      height: 0.2rem;
+      display: flex;
+      position: relative;
+      background-color: $color-Overview-line-color;
+    }
+
+    //연결 선 - 각도와 위치
+    .top-left {
+      transform: rotate(36deg);
+      top: 14rem;
+      left: 9rem;
+    }
+    .bottom-left {
+      transform: rotate(140deg);
+      top: 27rem;
+      left: -3rem;
+    }
+    .top-right {
+      transform: rotate(140deg);
+      top: 11rem;
+      left: 6rem;
+    }
+    .bottom-right {
+      transform: rotate(40deg);
+      top: 25rem;
+      left: -8rem;
+    }
+  }
+}
+// ⬜반응형 420px⬜
+@media (max-width: 420px) {
 }
