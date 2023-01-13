@@ -1,12 +1,17 @@
 import React from "react";
 import "../scss/ContactCompany.scss";
 import "../scss/style.scss";
-import HeaderInquiryCom from "./SubHeader/HeaderInquiryCom";
+import SubHeader from "./SubHeader";
 
 const ContactCompany = () => {
+  const title = {
+    pageSection: "회사 소개",
+    pageTitle: "기업 이념",
+    img: "SubHeader-Img",
+  };
   return (
     <div className="ContactC">
-      <HeaderInquiryCom />
+      <SubHeader title={title} />
       <div className="map-title">
         Contact Us
         <p>제휴 문의</p>

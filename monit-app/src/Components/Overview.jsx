@@ -1,13 +1,18 @@
 import React from "react";
+import SubHeader from "./SubHeader";
 import Vision from "./Vision";
 import Spinoff from "./Spinoff";
 import "../scss/Overview.scss";
-import HeaderOver from "./SubHeader/HeaderOver";
 
 const Overview = () => {
+  const title = {
+    pageSection: "회사 소개",
+    pageTitle: "기업 이념",
+    img: "SubHeader-Img",
+  };
   return (
     <div>
-      <HeaderOver />
+      <SubHeader title={title} />
       <div className="map-title">
         overivew <br />
         <p>기업 이념</p>
