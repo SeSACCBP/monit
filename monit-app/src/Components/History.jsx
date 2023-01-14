@@ -18,7 +18,6 @@ const History = () => {
         <p>회사 연혁</p>
       </div>
       <div className="history">
-        <div className="history-container">
           <div className="history-mainBox">
             <div className="history-leftBox">
               <div className="history-line"></div>
@@ -68,7 +67,6 @@ const History = () => {
             </div>
             <HistoryChange button={button} />
           </div>
-        </div>
       </div>
     </>
   );
