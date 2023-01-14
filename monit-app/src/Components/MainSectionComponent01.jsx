@@ -15,7 +15,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 
 export default function App() {
   return (
-    <>
+    <div className="main-section-component01">
       <Swiper
         cssMode={true}
         navigation={true}
@@ -115,6 +115,6 @@ export default function App() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
