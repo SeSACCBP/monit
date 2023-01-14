@@ -268,20 +268,19 @@
 
   // 원과 선의 wrapper
   .introduction-circles-wrapper {
+    margin: 3rem 0 3rem 0; // top 과 bottom 에 같은값을 주어야 원과 선 중앙배치 잘됨.
     width: 50rem;
     min-width: 50rem;
     height: 65rem;
     display: flex;
     position: relative;
-    align-items: center;
-    font-size: 0.8rem;
     margin: 0 auto;
     justify-content: space-evenly; // 자식중앙정렬
     align-items: center;
     text-align: center;
     flex-direction: column;
     z-index: 2;
-    margin: 3rem 0 3rem 0; // top 과 bottom 에 같은값을 주어야 원과 선 중앙배치 잘됨.
+    font-size: 0.8rem;
 
     // 중앙 큰 원의 배치,모양,크기,색
     .centerC {
@@ -395,53 +394,31 @@
 
   /*---------introduction-lines-wrapper---------*/
   .introduction-lines-wrapper {
+    margin: 3rem 0 3rem 0; //introduction-circles-wrapper 값과 같게.
     width: 50rem; // introduction-circles-wrapper 값과 같게.
     min-width: 50rem;
-    top: -60rem; // circles-wrapper의 height 값과 같게.
-    // display: flex;
+    top: -65rem; // circles-wrapper의 height 값과 같게.
+    display: flex;
     position: relative;
     align-items: center;
+    text-align: center;
     z-index: -1;
     margin: 0 auto;
     justify-content: center; // 자식중앙정렬
 
     //연결 선 - 공통 모양
     .line {
-      // width: 20rem;
-      // height: 0.2rem;
       display: none; // 기존 라인(4개) - 640px에서 보이지 않게 기본값 설정
       position: relative;
       background-color: $color-Overview-line-color;
     }
 
     //연결 선 - 각도와 위치
-    // .top-left {
-    //   transform: rotate(36deg);
-    //   top: 14rem;
-    //   left: 9rem;
-    // }
-    // .bottom-left {
-    //   transform: rotate(140deg);
-    //   top: 27rem;
-    //   left: -3rem;
-    // }
-    // .top-right {
-    //   transform: rotate(140deg);
-    //   top: 11rem;
-    //   left: 6rem;
-    // }
-    // .bottom-right {
-    //   transform: rotate(40deg);
-    //   top: 25rem;
-    //   left: -8rem;
-    // }
-
-    //연결 선 - 각도와 위치
     .responsive-center {
       width: 300rem;
       transform: rotate(90deg);
       display: flex;
-      top: 20rem;
+      top: 32.5rem; //  lines-wrapper의 top: |-65rem|; 나누기 2
     }
   }
 }
