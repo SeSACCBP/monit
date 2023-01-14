@@ -23,7 +23,8 @@ const HistoryChange = (props) => {
         "10월",
         "온누리요양원 MOU 체결 시법도입 사업진행",
         "01월",
-        "CES 2022 Samsung관 전시"],
+        "CES 2022 Samsung관 전시",
+      ],
     },
     {
       id: "2",
@@ -37,7 +38,7 @@ const HistoryChange = (props) => {
         "코스트코 캐나다 입점 확정",
         "06월",
         "엘더리 케어 관련 고려대학교 안암/안산병원 베타테스트",
-        "",
+        "06월",
         "카톨릭 대학병원, 양평군요양원, 은혜의 집 베타테스트",
         "06월",
         "싱가포르 UnitedBMEC 독점공급계약 체결",
@@ -68,7 +69,7 @@ const HistoryChange = (props) => {
         "01월",
         "SkyDeck Accelerator Cohort Team 선정",
         "",
-        "(UC Berkeley Foundation)",        
+        "(UC Berkeley Foundation)",
       ],
     },
     {
@@ -120,7 +121,9 @@ const HistoryChange = (props) => {
           return (
             <ul key={one.text + index}>
               {one.text.map((textone, index) => (
-                <li className="HistoryChange-text" key={textone + index}>{textone}</li>
+                <li className="HistoryChange-text" key={textone + index}>
+                  {textone}
+                </li>
               ))}
             </ul>
           );

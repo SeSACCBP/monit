@@ -6,7 +6,7 @@
 }
 @mixin button-responsive() {
   position: absolute;
-  bottom: 1.3rem;
+  bottom: 2rem;
   left: -0.7rem;
 }
 .history {
@@ -55,7 +55,6 @@
         }
 
         &:checked {
-          font-weight: $--weight-super-bold;
           border: 2px solid #fff;
           outline-style: solid;
           outline-width: 2px;
@@ -64,6 +63,7 @@
           border-radius: 50%;
           transform: scale(1.5);
           transition: 0.4s;
+          font-weight: $--weight-super-bold;
         }
       }
 
@@ -143,32 +143,33 @@
 // --------- 모바일 반응형----------
 @media all and (max-width: 640px) {
   .history {
-    margin-left: 3rem;
+    margin-left: 2rem;
 
     .history-mainBox {
       flex-direction: column;
-      height: 48rem;
-      margin-top: 2rem;
+      height: 52rem;
+      margin-top: 3rem;
 
       .history-leftBox {
         width: 50rem;
-        height: 3rem;
+        height: 4rem;
         // ---------연혁 그래프 선-----------
         .history-line {
-          width: 47.2rem;
-          height: 0.1rem;
+          width: 53rem;
+          height: 0.2rem;
           left: -10rem;
           top: 1rem;
         }
         // --------- 연혁 버튼 -----------
         input {
+          width: 1em;
+          height: 1.5rem;
           position: relative;
           left: 1rem;
           margin-top: 0.5rem;
-          margin-left: 5rem;
+          margin-left: 5.5rem;
+          font-size: 15px;
           &:checked {
-            width: em;
-            height: 1rem;
             font-weight: $--weight-semi-bold;
             border: none;
             outline: none;
@@ -195,33 +196,14 @@
           @include button-responsive();
         }
       }
-
       // ------- 연혁 연도별 내용 -------
-
       ul {
-        width: 60rem;
-        height: 20rem;
-        margin-top: 2.2rem;
-        list-style: none;
-        // font-size: 16px;
-
         li {
-          display: inline-block;
-          margin-left: 3.5rem;
           line-height: 4.3rem;
-          animation: fadeInUp 1.2s;
-          animation-timing-function: ease;
-          font-size: 16px;
-
+          font-size: 18px;
           &:nth-child(odd) {
-            width: 6rem;
-            margin-right: 0.2rem;
-            font-weight: $--weight-semi-bold;
-            font-size: 16px;
-          }
-          &:nth-child(even) {
-            width: calc(100% - 18rem);
-            color: $color-font-gray;
+            width: 3.9rem;
+            font-size: 18px;
           }
         }
       }
