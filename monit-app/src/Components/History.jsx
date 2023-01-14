@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../scss/History.scss";
+import SubHeader from "./SubHeader";
 import HistoryChange from "./HistoryChange";
-import HeaderHistory from "./SubHeader/HeaderHistory";
+import "../scss/History.scss";
 
 const History = () => {
   const [button, setButton] = useState("2022");
@@ -10,9 +10,14 @@ const History = () => {
     setButton(e.target.value);
   };
 
+  const title = {
+    pageSection: "회사 소개",
+    pageTitle: "회사 연혁",
+    img: "SubHeader-Img",
+  };
   return (
     <>
-      <HeaderHistory />
+      <SubHeader title={title} />
       <div className="map-title">
         History <br />
         <p>회사 연혁</p>
