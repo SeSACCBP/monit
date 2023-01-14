@@ -216,6 +216,10 @@
     top: 25rem;
     left: -8rem;
   }
+
+  .responsive-center {
+    display: none;
+  }
 }
 
 // ⬜반응형 640px⬜
@@ -393,45 +397,54 @@
   .introduction-lines-wrapper {
     width: 50rem; // introduction-circles-wrapper 값과 같게.
     min-width: 50rem;
-    display: flex;
+    top: -40rem; //height 값과 같게.
+    // display: flex;
     position: relative;
     align-items: center;
-    top: -40rem; //height 값과 같게.
+    z-index: 10;
     margin: 0 auto;
-    z-index: -1;
+    background-color: yellow;
+
+    justify-content: center; // 자식중앙정렬
 
     //연결 선 - 공통 모양
     .line {
-      width: 20rem;
-      height: 0.2rem;
-      display: flex;
+      // width: 20rem;
+      // height: 0.2rem;
+      display: none; // 기존 라인(4개) - 640px에서 보이지 않게 기본값 설정
       position: relative;
       background-color: $color-Overview-line-color;
     }
 
     //연결 선 - 각도와 위치
-    .top-left {
-      transform: rotate(36deg);
-      top: 14rem;
-      left: 9rem;
-    }
-    .bottom-left {
-      transform: rotate(140deg);
-      top: 27rem;
-      left: -3rem;
-    }
-    .top-right {
-      transform: rotate(140deg);
-      top: 11rem;
-      left: 6rem;
-    }
-    .bottom-right {
-      transform: rotate(40deg);
-      top: 25rem;
-      left: -8rem;
+    // .top-left {
+    //   transform: rotate(36deg);
+    //   top: 14rem;
+    //   left: 9rem;
+    // }
+    // .bottom-left {
+    //   transform: rotate(140deg);
+    //   top: 27rem;
+    //   left: -3rem;
+    // }
+    // .top-right {
+    //   transform: rotate(140deg);
+    //   top: 11rem;
+    //   left: 6rem;
+    // }
+    // .bottom-right {
+    //   transform: rotate(40deg);
+    //   top: 25rem;
+    //   left: -8rem;
+    // }
+
+    //연결 선 - 각도와 위치
+    .responsive-center {
+      width: 300rem;
+      transform: rotate(90deg);
+      display: flex;
+      background-color: red;
+      top: 20rem;
     }
   }
-}
-// ⬜반응형 420px⬜
-@media (max-width: 420px) {
 }
