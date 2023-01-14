@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 9.375rem 0 9.375rem;
+  padding: 0 3.125rem 0 3.125rem;
   background: #25435f;
   justify-content: flex-start;
   bottom: 0;
@@ -14,9 +14,12 @@
 .footer-imgArea {
   display: flex;
   align-items: center;
-  width: 12.5rem;
+  width: 11.25rem;
   height: 6.25rem;
   margin-right: 3.125rem;
+  background: url(../imgs/Footer_img/monitLogo_pointColor.png) no-repeat;
+  background-size: 100% auto;
+  background-position-y: center;
 }
 
 .footer-imgArea img {
@@ -36,9 +39,35 @@
   color: $color-white;
   line-height: 1.875rem;
   font-weight: 400;
-  font-size: 0.6rem;
+  font-size: 0.9rem;
 }
 .footer-title a {
   color: $color-white;
   text-decoration: none;
+}
+
+.footer-list .footer-title br {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .footer-area {
+    flex-direction: column;
+    padding: 1.5625rem 0 1.5625rem 0;
+  }
+  .footer-list .footer-title br {
+    display: block;
+  }
+  .footer-imgArea {
+    margin-right: unset;
+  }
+  .footer-list {
+    text-align: center;
+    height: auto;
+    padding: 0 1.25rem 0 1.25rem;
+  }
+  .footer-list .footer-title {
+    font-size: 0.875rem;
+    line-height: 2.5625rem;
+  }
 }
