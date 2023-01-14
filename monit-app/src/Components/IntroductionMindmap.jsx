@@ -45,6 +45,7 @@ const IntroductionMindmap = () => {
         <div className="line bottom-left"></div>
         <div className="line top-right"></div>
         <div className="line bottom-right"></div>
+        <div className="line responsive-center"></div>
       </div>
     </div>
   );
