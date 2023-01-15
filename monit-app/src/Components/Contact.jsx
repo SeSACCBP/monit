@@ -14,16 +14,16 @@ const Contact = (props) => {
             <div className="Contact-Thi-img"></div>
             <div className="form">
               <div className="input-section">
-                <label>
+                <label htmlFor="user">
                   <FaRegUserCircle className="contact-icon" />
                 </label>
-                <input type="text" placeholder="이름" />
+                <input type="text" id="user" placeholder="이름" />
               </div>
               <div className="input-section">
-                <label>
+                <label htmlFor="email">
                   <FaRegEnvelope className="contact-icon" />
                 </label>
-                <input type="email" placeholder="이메일 *" />
+                <input type="email" id="email" placeholder="이메일 *" />
               </div>
               <div className="textarea-section">
                 <label></label>
