@@ -8,8 +8,8 @@ const IntroductionMindmap = () => {
       <div className="introduction-circles-wrapper">
         <div className="cicle-top-left">
           <div className="circle upper-half img01"></div>
-          <div className="circle lower-half">
-            <p className="letter-in-circle">베이비 모니터</p>
+          <div className="circle lower-half-ver2">
+            <p className="letter-in-circle-ver2">베이비 모니터</p>
           </div>
         </div>
 
@@ -35,8 +35,8 @@ const IntroductionMindmap = () => {
 
         <div className="cicle-bottom-right">
           <div className="circle img04"></div>
-          <div className="circle circle-c04-down">
-            <p className="circle-c04-down-t">시니어 케어 시스템</p>
+          <div className="circle lower-half-ver2">
+            <p className="letter-in-circle-ver2">시니어 케어 시스템</p>
           </div>
         </div>
       </div>
@@ -45,6 +45,7 @@ const IntroductionMindmap = () => {
         <div className="line bottom-left"></div>
         <div className="line top-right"></div>
         <div className="line bottom-right"></div>
+        <div className="line responsive-center"></div>
       </div>
     </div>
   );
