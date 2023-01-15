@@ -13,7 +13,7 @@
   }
 
   .Contact-Sec {
-    width: 50rem;
+    width: 100%;
     height: 5rem;
     color: $color-font-lightgray;
     font-size: 1.05rem;
@@ -53,7 +53,7 @@
         margin-bottom: 2rem;
         label {
           position: absolute;
-          flex: 1;
+          width: 3rem;
           line-height: 2.2rem;
           display: flex;
           align-items: center;
@@ -62,7 +62,7 @@
           height: 70%;
           .contact-icon {
             margin-right: 1rem;
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 300;
           }
           .input-warning-icon {
@@ -77,8 +77,8 @@
           width: 100%;
           height: 2.2rem;
           border-bottom: 1px solid $color-line-gray;
-          margin: 0.3rem 0 1rem 0;
-          padding-left: 3rem;
+          margin: 0.3rem 0rem 1rem 0;
+          padding-left: 3.5rem;
         }
       }
       .textarea-section {
@@ -130,7 +130,7 @@
         .Contact-Thi-Submit {
           border-radius: 20px;
           border: none;
-          width: 40%;
+          width: 14rem;
           height: 3rem;
           margin: 1.5rem 0 0 0;
           font-size: 1.1rem;
@@ -144,6 +144,50 @@
             color: $color-main-blue;
             background-color: $color-white;
             border: 2px solid $color-main-blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  .Contact {
+    margin: 0rem 5rem 10rem 5rem;
+    .Contact-Sec {
+      font-size: 1.8rem;
+      margin-bottom: 4rem;
+    }
+    .Contact-body {
+      height: 60rem;
+      .Contact-Thi {
+        .Contact-Thi-img {
+          display: none;
+        }
+        .form {
+          font-size: 1.8rem;
+          padding: 5rem 4rem;
+          .input-section {
+            margin-bottom: 3rem;
+            label {
+              height: 80%;
+              .contact-icon {
+                font-size: 2rem;
+              }
+            }
+            input {
+              padding-left: 4rem;
+              height: 6rem;
+            }
+          }
+          .input-warning-text {
+            margin-bottom: 4rem;
+          }
+          .input-submit {
+            .Contact-Thi-Submit {
+              height: 4.5rem;
+              font-size: 2rem;
+            }
           }
         }
       }
