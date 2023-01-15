@@ -1,43 +1,47 @@
 import React from "react";
-import SubHeader from "./SubHeader";
 import "../scss/Contact.scss";
+import { FaRegUserCircle, FaRegEnvelope } from "react-icons/fa";
 
-const Contact = () => {
-  const title = {
-    pageSection: "문의 하기",
-    pageTitle: "제픔 문의",
-    img: "SubHeader-Img-Inq",
-  };
+const Contact = (props) => {
+  const { text } = props;
+  console.log(text);
   return (
-    <div className="Contact">
-      <SubHeader title={title} />
-      <div className="map-title">
-        Contact Us
-        <p>제품 문의</p>
-      </div>
-      <div className="Contact-Sec">
-        제품에 관해 문의하실 내용을 보내주시면, <br />
-        빠르게 확인 후 회신드리겠습니다.
-      </div>
-      <div className="Contact-body">
-        <div className="Contact-Thi">
-          <div className="Contact-Thi-img"></div>
-          <form>
-            <div className="Contact-form-big">Contact</div>
-            이름 <input type="text" />
-            이메일 <input type="email" />
-            내용 <textarea />
-            <div>
-              <input
-                type="submit"
-                value="send"
-                className="Contact-Thi-Submit"
-              />
+    <>
+      <div className="Contact">
+        <div className="Contact-Sec">{text}</div>
+        <div className="Contact-body">
+          <div className="Contact-Thi">
+            <div className="Contact-Thi-img"></div>
+            <div className="form">
+              <div className="input-section">
+                <label>
+                  <FaRegUserCircle className="contact-icon" />
+                </label>
+                <input type="text" placeholder="이름" />
+              </div>
+              <div className="input-section">
+                <label>
+                  <FaRegEnvelope className="contact-icon" />
+                </label>
+                <input type="email" placeholder="이메일 *" />
+              </div>
+              <div className="textarea-section">
+                <label></label>
+                <textarea placeholder="내용을 작성해 주세요 *" />
+              </div>
+              <div className="input-warning-text">
+                <span>*</span>은 필수 입력 사항입니다.
+              </div>
+              <div className="input-submit">
+                <button type="submit" value="" className="Contact-Thi-Submit">
+                  문의하기
+                </button>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import '../scss/Header.scss';
-import { Link } from 'react-router-dom';
-import BackTopButton from './BackTopButton';
-import { AiFillDownCircle } from 'react-icons/ai';
-import { AiFillUpCircle } from 'react-icons/ai';
+import React, { useState } from "react";
+import "../scss/Header.scss";
+import { Link } from "react-router-dom";
+import BackTopButton from "./BackTopButton";
+import { AiFillDownCircle } from "react-icons/ai";
+import { AiFillUpCircle } from "react-icons/ai";
 
 const Header = () => {
   const [headerOn, setHeaderOn] = useState(false);
@@ -56,17 +56,17 @@ const Header = () => {
             <a href="#">문의 하기</a>
             <ul className="header-sub-list">
               <li className="header-sub-title">
-                <Link to="/contact">제품 문의</Link>
+                <Link to="/product">제품 문의</Link>
               </li>
               <li className="header-sub-title">
-                <a href="#">제휴 문의</a>
+                <Link to="/partner">제휴 문의</Link>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
 
-      <div className={headerOn ? 'header-back-active' : 'header-back'}></div>
+      <div className={headerOn ? "header-back-active" : "header-back"}></div>
 
       <nav className="header-area-m">
         <div className="header-imgArea-m">
@@ -123,8 +123,8 @@ const Header = () => {
                 </em>
               </label>
               <div className="accordion-menu-list">
-                <Link to="/contact">제품 문의</Link>
-                <a href="#">제휴 문의</a>
+                <Link to="/product">제품 문의</Link>
+                <Link to="/partner">제휴 문의</Link>
               </div>
             </div>
           </div>
