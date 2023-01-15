@@ -1,11 +1,11 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React from "react";
+import { useEffect, useState } from "react";
 
 function BackTopButton() {
   const [TopButton, setTopButton] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         setTopButton(true);
       } else {
@@ -17,7 +17,7 @@ function BackTopButton() {
   const scrollUp = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
   return (
@@ -25,22 +25,22 @@ function BackTopButton() {
       {TopButton && (
         <button
           style={{
-            position: 'fixed',
-            bottom: '3.125rem',
-            right: '3.125rem',
-            zIndex: '2',
-            cursor: 'pointer',
-            border: 'none',
-            background: 'transparent',
+            position: "fixed",
+            bottom: "3.125rem",
+            right: "3.125rem",
+            zIndex: "2",
+            cursor: "pointer",
+            border: "none",
+            background: "transparent",
           }}
           onClick={scrollUp}
         >
           <img
-            src="peng.png"
+            src="top.png"
             style={{
-              height: '4.375rem',
-              weight: '4.375rem',
-              objectFit: 'cover',
+              height: "3rem",
+              weight: "3rem",
+              objectFit: "cover",
             }}
           ></img>
         </button>
