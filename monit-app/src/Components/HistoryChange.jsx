@@ -5,7 +5,6 @@ const HistoryChange = (props) => {
 
   const years = [
     {
-      id: "1",
       value: "2022",
       text: [
         "11월",
@@ -27,7 +26,6 @@ const HistoryChange = (props) => {
       ],
     },
     {
-      id: "2",
       value: "2021",
       text: [
         "10월",
@@ -45,7 +43,6 @@ const HistoryChange = (props) => {
       ],
     },
     {
-      id: "3",
       value: "2020",
       text: [
         "09월",
@@ -59,11 +56,12 @@ const HistoryChange = (props) => {
       ],
     },
     {
-      id: "4",
       value: "2019",
       text: [
         "01월",
-        "MONIT America Inc.설립(Delaware C-corp)",
+        "MONIT America Inc.설립",
+        "",
+        "(Delaware C-corp)",
         "01월",
         "CES 2019 참가",
         "01월",
@@ -73,7 +71,6 @@ const HistoryChange = (props) => {
       ],
     },
     {
-      id: "5",
       value: "2018",
       text: [
         "09월",
@@ -97,7 +94,6 @@ const HistoryChange = (props) => {
       ],
     },
     {
-      id: "6",
       value: "2017",
       text: [
         "10월",
