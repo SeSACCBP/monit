@@ -16,7 +16,7 @@ const IntroductionMindmap = () => {
         <div className="cicle-bottom-left">
           <div className="circle upper-half img03"></div>
           <div className="circle lower-half">
-            <p className="letter-in-circle">베베핏 스마트 기어</p>
+            <p className="bebefit-in-circle">베베핏 스마트 기어</p>
           </div>
         </div>
         <div>
