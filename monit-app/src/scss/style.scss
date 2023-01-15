@@ -31,7 +31,7 @@ $--weight-semi-bold: 600;
 $--weight-regular: 400;
 
 @mixin Semi-title {
-  width: 50rem;
+  // width: 50rem;
   height: 10rem;
   font-size: 1rem;
   color: $color-samsungLogo;
@@ -75,5 +75,6 @@ $--weight-regular: 400;
 @media all and (max-width: 768px) {
   html {
     font-size: 10px;
+    min-width: 320px;
   }
 }
