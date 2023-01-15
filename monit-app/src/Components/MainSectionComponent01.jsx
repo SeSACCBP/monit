@@ -15,7 +15,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 
 export default function App() {
   return (
-    <>
+    <div className="main-section-component01">
       <Swiper
         cssMode={true}
         navigation={true}
@@ -23,7 +23,7 @@ export default function App() {
         mousewheel={true}
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        // autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={false}
         className="mySwiper">
         <SwiperSlide>
@@ -115,6 +115,6 @@ export default function App() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

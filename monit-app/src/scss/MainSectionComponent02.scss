@@ -19,7 +19,7 @@ html {
   padding: 5rem;
   background-color: #496895;
   box-sizing: border-box;
-
+  min-width: 320px;
   flex-direction: column;
 
   .main-section02-text-wrapper {
@@ -30,12 +30,12 @@ html {
     h3 {
       font-size: 3.125rem;
       color: $color-white;
+      word-break: keep-all;
     }
     h4 {
       font-size: 1.875rem;
       color: $color-white;
       margin-top: 1.3rem;
-      word-break: normal;
       word-break: keep-all;
     }
   }
@@ -120,8 +120,45 @@ html {
     }
   }
 }
-@media all and (max-width: 578px) {
-  html {
-    overflow-x: hidden;
+@media all and (max-width: 640px) {
+  .main-section02-component {
+    .main-section02-text-wrapper {
+      text-align: center;
+
+      h4 {
+        font-size: 2rem;
+        line-height: 3rem;
+      }
+    }
+
+    .main-section02-circle-wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-top: -4rem;
+
+      .circle-transparent {
+        width: 24rem;
+        height: 24rem;
+        margin: 1rem 0;
+
+        .circle-inner {
+          width: 19rem;
+          height: 19rem;
+
+          h4 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .transparent01 {
+        position: initial;
+      }
+      .transparent03 {
+        position: initial;
+      }
+    }
   }
 }

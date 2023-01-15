@@ -1,4 +1,5 @@
 @import "./style.scss";
+@import "./MainSectionCommon.scss";
 
 // 가이드
 // .main-section-component04,
@@ -12,87 +13,96 @@
 //   border: 1px solid blue;
 // }
 
+// main font size 모음
+.main-section-component04-container {
+}
+
 .main-section-component04 {
   background-image: url(../imgs/2023.png);
   background-size: cover;
   background-position: top;
   width: 100%;
+  min-width: 320px;
   height: 100%;
 }
 
-.main-section-component04 {
-  // header , footer 값 -
-
-  .main-section-component04-contact-wrapper div:nth-of-type(2) {
-    border: none;
-  }
-  .main-section-component04-contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 9rem 0;
-    margin-left: 9rem;
-
-    .main-section-component04-contact {
-      font-size: 3rem;
-      color: #ff9600;
+.main-section-component04-container {
+  width: 100%;
+  .main-section-component04 {
+    width: 100%;
+    .main-section-component04-contact-wrapper div:nth-of-type(2) {
+      border: none;
     }
-
-    .main-section-component04-contact-inquiry {
+    .main-section-component04-contact-wrapper {
+      width: 80%;
       display: flex;
-      height: 15rem;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      border-bottom: 1px solid #fff;
-      width: 50rem;
+      padding: 5rem 0;
 
-      img {
-        height: 3.75rem;
-        width: 3.75rem;
-        border: 1px solid red;
-        margin-right: 2rem;
-      }
-
-      .main-section-component04-contact-icon {
-        // border: 1px solid red;
-        width: 3rem;
-        height: 3rem;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        margin: 0 2rem;
-      }
-
-      .icon-top {
-        background-image: url(../imgs/Main_img/product_icon.png);
-      }
-
-      .icon-bottom {
-        background-image: url(../imgs/Main_img/affiliate_icon.png);
-      }
-      .main-section-component04-contact-inquiry-wrapper {
-        color: #fcfdff;
-        h3,
-        p {
-          padding-right: 10rem;
+      .main-section-component04-contact-inquiry {
+        .inquiry-top {
         }
-        h3 {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
+        .inquiry-bottom {
+          margin-left: 1rem;
         }
-        p {
-          font-size: 1.2rem;
-          line-height: 2rem;
-          width: 35rem;
+      }
+
+      .main-section-component04-contact {
+        font-size: 3rem;
+        color: #ff9600;
+        padding-bottom: 5rem;
+      }
+
+      .main-section-component04-contact-inquiry {
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+
+        img {
+          height: 3.75rem;
+          width: 3.75rem;
+          border: 1px solid red;
+          margin-right: 2rem;
         }
 
-        .main-section-component04-contact-inquiry-shortcut {
-          display: flex;
+        .main-section-component04-contact-icon {
+          // border: 1px solid red;
+          width: 3rem;
+          height: 3rem;
+          margin: 2rem;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        }
 
-          .main-section-component04-contact-inquiry-shortcut-bt {
-            background-color: transparent;
-            border: 1px solid #fcfdff;
-            height: 3rem;
-            width: 6rem;
+        .icon-top {
+          background-image: url(../imgs/Main_img/product_icon.png);
+        }
 
+        .icon-bottom {
+          background-image: url(../imgs/Main_img/affiliate_icon.png);
+        }
+        .main-section-component04-contact-inquiry-wrapper {
+          color: #fcfdff;
+
+          h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+          }
+          p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+            word-break: keep-all;
+            width: 24rem;
+          }
+
+          .main-section-component04-contact-inquiry-shortcut {
+            display: flex;
+            align-items: center;
+
+            // 바로가기 버튼
             a {
               text-decoration: none;
               color: #fcfdff;
@@ -101,10 +111,62 @@
               display: block;
               height: 100%;
               line-height: 3rem;
+              padding: 0 0.5rem;
+              border: 1px solid #fff;
+              margin: 0 2rem;
+              min-width: 70px;
             }
 
+            // 바로가기 버튼 background-color
             a:hover {
               background-color: #ff9600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .main-section-component04-container {
+    width: 100%;
+    height: 90vh;
+
+    .main-section-component04 {
+      .main-section-component04-contact-wrapper {
+        justify-content: space-evenly;
+        width: 100%;
+        height: 90vh;
+
+        .main-section-component04-contact {
+          font-size: 4rem;
+        }
+
+        .main-section-component04-contact-inquiry {
+          margin: 0 1rem;
+          height: 20rem;
+          .main-section-component04-contact-icon {
+            min-width: 4rem;
+            height: 11rem;
+            margin-bottom: 2rem;
+          }
+          .main-section-component04-contact-inquiry-wrapper {
+            h3 {
+              font-size: 2rem;
+            }
+            p {
+              font-size: 1.8rem;
+              line-height: 2.5rem;
+            }
+
+            .main-section-component04-contact-inquiry-shortcut {
+              flex-direction: column;
+              align-items: flex-start;
+              a {
+                margin: 2rem 0 2rem 6rem;
+                text-align: center;
+              }
             }
           }
         }

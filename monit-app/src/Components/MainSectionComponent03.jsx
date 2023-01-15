@@ -9,8 +9,7 @@ const MainSectionComponent03 = () => {
       <section className="main-section-component03">
         <div
           className="main-section-component03-text-wrapper"
-          data-aos="fadeInUp"
-        >
+          data-aos="fadeInUp">
           <div className="main-section-component03-text">
             <h2 className="main-section-component03-title">
               지금 <span>MECS</span>와 함께,
@@ -23,8 +22,7 @@ const MainSectionComponent03 = () => {
         </div>
         <div
           className="main-section-component03-circle-wrapper"
-          data-aos="fadeInUp"
-        >
+          data-aos="fadeInUp">
           <div className="main-section-component03-circle01">
             <div className="main-section-component03-circle01-inner">
               <div className="main-section-component03-circle01-inner-nb">

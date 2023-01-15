@@ -15,16 +15,14 @@ const MainSectionComponent04 = () => {
             className="main-section-component04-contact-inquiry"
             data-aos="fadeInUp">
             <div className="main-section-component04-contact-icon icon-top"></div>
-            <div className="main-section-component04-contact-inquiry-wrapper">
+            <div className="main-section-component04-contact-inquiry-wrapper inquiry-top">
               <h3>제품문의</h3>
               <div className="main-section-component04-contact-inquiry-shortcut">
                 <p>
                   제품에 관해 문의하실 내용을 보내주시면,
                   <br /> 빠르게 확인 후 회신드리겠습니다.
                 </p>
-                <button className="main-section-component04-contact-inquiry-shortcut-bt">
-                  <a href="#">바로가기 &gt;</a>
-                </button>
+                <a href="#">바로가기 &gt;</a>
               </div>
             </div>
           </div>
@@ -32,16 +30,13 @@ const MainSectionComponent04 = () => {
             className="main-section-component04-contact-inquiry"
             data-aos="fadeInUp">
             <div className="main-section-component04-contact-icon icon-bottom"></div>
-            <div className="main-section-component04-contact-inquiry-wrapper">
-              <h3>제품문의</h3>
+            <div className="main-section-component04-contact-inquiry-wrapper inquiry-top">
+              <h3>제휴문의</h3>
               <div className="main-section-component04-contact-inquiry-shortcut">
                 <p>
-                  제품 및 모닛과의 협업에 관심이 있으시다면
-                  <br /> 편하게 문의주세요
+                  제품 및 모닛과의 협업에 관심이 있으시다면 편하게 문의주세요
                 </p>
-                <button className="main-section-component04-contact-inquiry-shortcut-bt">
-                  <a href="#">바로가기 &gt;</a>
-                </button>
+                <a href="#">바로가기 &gt;</a>
               </div>
             </div>
           </div>
