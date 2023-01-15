@@ -10,8 +10,7 @@ const MainSectionComponent02 = () => {
         <p>About MECS</p>
         <h3>왜 MECS가 필요할까요?</h3>
         <h4>
-          알맞은 시간에 환자분들의 기저귀를 교체하는 것이 매우 중요하기
-          때문입니다
+          알맞은 시간에 환자분들의 기저귀를 교체하는 것이 매우 중요하기 때문입니다.
         </h4>
       </div>
       <div className="main-section02-circle-wrapper" data-aos="fadeInUp">
