@@ -6,11 +6,10 @@ const IntroductionInformation = () => {
       {/* ---------introduction-title--------- */}
 
       <div className="introduction-title-wrapper">
-        <div className="introduction-title">Introduction</div>
         <div className="introduction-title-discription">
           모닛은 2017년 삼성전자 C-lab에서 스핀오프하여 설립된 스타트업입니다.
           <br />
-          독자적인 기술을 기반으로 하여
+          독자적인 기술을 기반으로 하여&nbsp;{" "}
           <span className="introduction-title-discription-fontcolor">
             AI 디지털 헬스케어 플랫폼
           </span>

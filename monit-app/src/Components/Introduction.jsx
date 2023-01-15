@@ -12,12 +12,13 @@ function Introduction() {
   return (
     <>
       <SubHeader title={title} />
-      <div>
-        <div className="introduction-items-wrapper">
-          <IntroductionInformation />
-
-          <IntroductionMindmap />
-        </div>
+      <div className="map-title">
+        Itroduction <br />
+        <p>사업 개요</p>
+      </div>
+      <div className="introduction-items-wrapper">
+        <IntroductionInformation />
+        <IntroductionMindmap />
       </div>
     </>
   );

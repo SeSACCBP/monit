@@ -37,7 +37,9 @@ const HistoryChange = (props) => {
         "09월",
         "코스트코 캐나다 입점 확정",
         "06월",
-        "엘더리 케어 관련 고려대학교 안암/안산병원, 카톨릭 대학병원, 양평군요양원, 은혜의 집 베타테스트 진행",
+        "엘더리 케어 관련 고려대학교 안암/안산병원 베타테스트",
+        "06월",
+        "카톨릭 대학병원, 양평군요양원, 은혜의 집 베타테스트",
         "06월",
         "싱가포르 UnitedBMEC 독점공급계약 체결",
       ],
@@ -65,7 +67,9 @@ const HistoryChange = (props) => {
         "01월",
         "CES 2019 참가",
         "01월",
-        "SkyDeck Accelerator Cohort Team 선정(UC Berkeley Foundation)",
+        "SkyDeck Accelerator Cohort Team 선정",
+        "",
+        "(UC Berkeley Foundation)",
       ],
     },
     {
@@ -113,13 +117,13 @@ const HistoryChange = (props) => {
   return (
     <>
       {years.map((one, index) => {
-        let arr = [];
-
         if (one.value == button) {
           return (
             <ul key={one.text + index}>
               {one.text.map((textone, index) => (
-                <li key={textone + index}>{textone}</li>
+                <li className="HistoryChange-text" key={textone + index}>
+                  {textone}
+                </li>
               ))}
             </ul>
           );
