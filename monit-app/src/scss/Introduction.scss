@@ -5,6 +5,9 @@
   height: $size;
 }
 
+$responsive-default-fontsize: 1.8rem;
+$responsive-emphasis-fontsize: 2rem;
+
 // 전체 폰트, 브라우저 호환
 * {
   font-family: "AppleSDGothicNeoUL";
@@ -50,13 +53,13 @@
 
 // 원과 선의 wrapper
 .introduction-circles-wrapper {
-  width: 50rem;
-  min-width: 50rem;
+  width: 45rem;
+  min-width: 45rem;
   height: 40rem;
   display: flex;
   position: relative;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0 auto;
   z-index: 2;
 
@@ -137,7 +140,6 @@
   }
 
   //윗 반원 - 이미지들 삽입
-
   .img03 {
     background-image: url("../imgs/Introduction_img/PetCare.jpg");
   }
@@ -147,6 +149,9 @@
   }
 
   //아래 반원 - 글씨 위치
+  .bebefit-in-circle {
+    margin-bottom: 1rem;
+  }
   .letter-in-circle {
     margin-bottom: 2rem;
   }
@@ -177,14 +182,16 @@
 
 /*---------introduction-lines-wrapper---------*/
 .introduction-lines-wrapper {
-  width: 50rem; // introduction-circles-wrapper 값과 같게.
-  min-width: 50rem;
+  width: 45rem; // introduction-circles-wrapper 값과 같게.
+  min-width: 45rem;
   display: flex;
   position: relative;
   align-items: center;
   top: -40rem; //height 값과 같게.
   margin: 0 auto;
   z-index: -1;
+  text-align: center;
+  justify-content: center; // 자식중앙정렬
 
   //연결 선 - 공통 모양
   .line {
@@ -204,17 +211,17 @@
   .bottom-left {
     transform: rotate(140deg);
     top: 27rem;
-    left: -3rem;
+    left: 1rem;
   }
   .top-right {
     transform: rotate(140deg);
-    top: 11rem;
-    left: 6rem;
+    top: 12rem;
+    left: 8rem;
   }
   .bottom-right {
     transform: rotate(40deg);
-    top: 25rem;
-    left: -8rem;
+    top: 26rem;
+    left: -3rem;
   }
 
   .responsive-center {
@@ -244,18 +251,18 @@
 
     .introduction-title-discription {
       color: black;
-      font-size: 1.6rem;
+      font-size: $responsive-default-fontsize;
     }
     .introduction-title-discription-fontcolor {
       color: $color-monitLogo;
-      font-size: 2.1rem;
+      font-size: $responsive-emphasis-fontsize;
     }
   }
 
   /*---------introduction-index---------*/
   .introduction-index-wrapper {
     margin-bottom: 2rem;
-    font-size: 1.6rem;
+    font-size: $responsive-default-fontsize;
     line-height: 2.2rem;
 
     .introduction-index-fontcolor {
@@ -269,8 +276,8 @@
   // 원과 선의 wrapper
   .introduction-circles-wrapper {
     margin: 3rem 0 3rem 0; // top 과 bottom 에 같은값을 주어야 원과 선 중앙배치 잘됨.
-    width: 50rem;
-    min-width: 50rem;
+    // width: 50rem;
+    // min-width: 50rem;
     height: 65rem;
     display: flex;
     position: relative;
@@ -280,7 +287,7 @@
     text-align: center;
     flex-direction: column;
     z-index: 2;
-    font-size: 0.8rem;
+    font-size: 1rem;
 
     // 중앙 큰 원의 배치,모양,크기,색
     .centerC {
@@ -367,6 +374,9 @@
     }
 
     //아래 반원 - 글씨 위치
+    .bebefit-in-circle {
+      margin-bottom: 1rem;
+    }
     .letter-in-circle {
       margin-bottom: 2rem;
     }
@@ -395,8 +405,8 @@
   /*---------introduction-lines-wrapper---------*/
   .introduction-lines-wrapper {
     margin: 3rem 0 3rem 0; //introduction-circles-wrapper 값과 같게.
-    width: 50rem; // introduction-circles-wrapper 값과 같게.
-    min-width: 50rem;
+    // width: 50rem; // introduction-circles-wrapper 값과 같게.
+    // min-width: 50rem;
     top: -65rem; // circles-wrapper의 height 값과 같게.
     display: flex;
     position: relative;
