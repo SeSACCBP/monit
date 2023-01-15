@@ -10,19 +10,12 @@
 .main-section-component03-text,
 .main-section-component03-circle-wrapper {
   // border: 1px solid red;
-  // box-sizing: border-box;
 }
-
-//자식 가이드
-// .main-section-component03-text,
-// .main-section-component03-circle01 {
-//   border: 1px solid blue;
-// }
-// style start
 
 .main-section-component03 {
   padding: 5rem;
   width: 100%;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
 
@@ -38,6 +31,7 @@
         font-size: 3rem;
         line-height: 5rem;
         color: #4d4d4d;
+        word-break: keep-all;
 
         span {
           color: #496895;
@@ -58,11 +52,9 @@
   }
 
   .main-section-component03-circle-wrapper {
-    
     display: flex;
     justify-content: center;
     padding: 3rem 0;
-    background-color: $color-white;
 
     .main-section-component03-circle01 {
       min-width: 17rem;
@@ -92,7 +84,8 @@
           height: 2rem;
           text-align: center;
           font-size: 1.5rem;
-          border-bottom: 2px solid $color-white;
+          text-decoration: underline;
+          text-underline-position: under;
           margin-bottom: 3rem;
         }
 
@@ -101,6 +94,47 @@
           text-align: center;
           margin-bottom: 3rem;
           line-height: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  .main-section-component03 {
+    padding-bottom: 5rem;
+
+    .main-section-component03-text-wrapper {
+      padding: 3rem 0;
+      .main-section-component03-text {
+        .main-section-component03-title {
+          font-size: 2.5rem;
+          line-height: 4rem;
+        }
+      }
+    }
+    .main-section-component03-circle-wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      .main-section-component03-circle01 {
+        width: 24rem;
+        height: 24rem;
+        background-color: #496895;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1rem 0;
+
+        .main-section-component03-circle01-inner {
+          .main-section-component03-circle01-inner-nb {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.8rem;
+          }
         }
       }
     }

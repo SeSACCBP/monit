@@ -10,12 +10,6 @@ body {
   height: 100%;
 }
 
-body {
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
 .swiper-slide-active {
   overflow: hidden;
 }
@@ -24,6 +18,7 @@ body {
   width: 100%;
   height: calc(100vh - 100px);
 }
+
 .swiper-horizontal.swiper-css-mode > .swiper-wrapper {
   overflow: hidden;
 }
@@ -66,6 +61,10 @@ body {
   // 원형
   display: flex;
   align-items: center;
+}
+
+.main-section-component01 {
+  min-width: 320px;
 }
 
 .main-section-component01-circle-wrapper {
@@ -141,8 +140,9 @@ body {
         }
 
         a:hover {
-          color: #fff;
-          background-color: red;
+          color: #517ea7;
+          background-color: #fff;
+          border: 3px solid #517ea7;
         }
       }
     }
@@ -165,10 +165,46 @@ body {
   background-position: center;
 }
 
-// .main-section-component01-img04 {
-//   height: 100%;
-//   width: 100%;
-//   background-image: url(../imgs/Main_img/main-roll04.png);
-//   background-size: cover;
-//   background-position: center;
-// }
+@media all and (max-width: 680px) {
+  .main-section-component01-img01 {
+    width: initial;
+
+    .main-section-component01-circle-wrapper {
+      width: initial;
+
+      .main-section-component01-circle-inner {
+        border-radius: 0;
+        width: initial;
+
+        .main-section-component-text-wrapper {
+          align-items: center;
+
+          h4 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.8rem;
+            text-align: center;
+            word-break: keep-all;
+            line-height: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-slide {
+    background-color: #fcfdff;
+  }
+
+  // 롤링 화살표 사이즈
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    font-size: 1.5rem;
+  }
+  // 롤링 화살표 사이즈
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    font-size: 1.5rem;
+  }
+}
