@@ -1,103 +1,156 @@
 @import "../scss/style.scss";
 
-.overview-section {
+.overview {
   display: flex;
   flex-direction: column;
-  position: relative;
+  width: 80%;
+  margin: 4rem 10rem;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
-  height: 40rem;
-  .overivew-bg {
-    width: 34.5rem;
-    height: 35rem;
+  height: 45rem;
+  .overivew-bg-img {
+    width: 15rem;
+    height: 30rem;
     margin-top: 2rem;
     background: $color-Overview-background;
     opacity: 7%;
     border: 3.75rem solid $color-Overview-border;
-    border-radius: 50%;
+    border-right: 0;
+    border-radius: 30rem 0 0 30rem;
     position: absolute;
-    right: -18.75rem;
+    right: 0rem;
     z-index: -1;
   }
   .overview-middlebar {
-    width: 60rem;
+    width: 90%;
     border: 0.0313rem solid rgb(195, 195, 195);
-    margin: 4rem auto;
+    margin: 7rem auto;
+  }
+
+  .overview-main-section {
+    // 타이틀 영역
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    .overview-title {
+      display: flex;
+      width: 14.5rem;
+      height: -20rem;
+      margin-left: 0.625rem;
+      position: relative;
+      // 타이틀 강조 원
+      .overview-title-circle {
+        width: 0.9375rem;
+        height: 0.9375rem;
+        background: $color-monitLogo;
+        border-radius: 50%;
+        margin-right: 0.18rem;
+      }
+      // 타이틀 문구
+      .overview-title-text {
+        width: 13rem;
+        margin-top: 0.375rem;
+        color: $color-Overview-title;
+        font-family: "AppleSDGothicNeoUL";
+        font-weight: $--weight-bold;
+        font-size: 1.9rem;
+      }
+      // 타이블 배경이미지
+      .overview-title-bg {
+        background-image: url(../imgs/Overview_img/Overview_bg.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: cover;
+        top: 1.3rem;
+        z-index: -1;
+        width: 13.625rem;
+        height: 5.8rem;
+        border-radius: 1.875rem;
+      }
+    }
+    .overview-bar-section {
+      margin-left: 1rem;
+      display: flex;
+      margin-top: 0.93rem;
+      .overview-bar {
+        display: flex;
+        width: 3rem;
+        height: 0.07rem;
+        background: $color-Overview-bar-color;
+        margin-top: 0.3rem;
+      }
+      .overview-bar-circle {
+        width: 0.9375rem;
+        height: 1rem;
+        border: 0.07rem solid $color-Overview-bar-color;
+        border-radius: 50%;
+        margin-right: 0.1875rem;
+      }
+    }
+    .overview-content {
+      margin-left: 2.5rem;
+      font-family: "AppleSDGothicNeoUL";
+      color: $color-font-lightgray;
+      font-size: 1.3rem;
+      font-weight: $--weight-semi-bold;
+      line-height: 2rem;
+      width: 40rem;
+      word-break: keep-all;
+      .overview-content-bold {
+        color: $color-Overview-content;
+        font-size: 1.8rem;
+        font-weight: $--weight-super-bold;
+        font-family: "AppleSDGothicNeoUL";
+      }
+    }
   }
 }
 
-.overview {
-  // 타이틀 영역
-  display: flex;
-  height: 10rem;
-  margin: 1rem auto 1rem auto;
-  width: 56rem;
-  .overview-title {
-    display: flex;
-    width: 14.5rem;
-    height: -20rem;
-    margin-left: 0.625rem;
-    position: relative;
-    // 타이틀 강조 원
-    .overview-title-circle {
-      width: 0.9375rem;
-      height: 0.9375rem;
-      background: $color-monitLogo;
-      border-radius: 50%;
-      margin-right: 0.18rem;
-    }
-    // 타이틀 문구
-    .overview-title-text {
-      width: 13rem;
-      margin-top: 0.375rem;
-      color: $color-Overview-title;
-      font-family: "AppleSDGothicNeoUL";
-      font-weight: $--weight-bold;
-      font-size: 1.9rem;
-    }
-    // 타이블 배경이미지
-    .overview-title-bg {
-      background-image: url(../imgs/Overview_img/Overview_bg.png);
-      background-repeat: no-repeat;
-      position: absolute;
-      background-size: cover;
-      top: 1.3rem;
-      z-index: -1;
-      width: 13.625rem;
-      height: 5.8rem;
-      border-radius: 1.875rem;
-    }
-  }
-  .overview-bar {
-    margin-left: 0.625rem;
-    display: flex;
-    margin-top: 0.9375rem;
-    .overview-bar {
-      display: flex;
-      width: 3rem;
-      height: 0.07rem;
-      background: $color-Overview-bar-color;
-    }
-    .overview-bar-circle {
-      width: 0.9375rem;
-      height: 1rem;
-      border: 0.07rem solid $color-Overview-bar-color;
-      border-radius: 50%;
-      margin-right: 0.1875rem;
-      margin-top: 0.5rem;
-    }
-  }
-  .overview-content {
-    margin-left: 2.5rem;
-    font-family: "AppleSDGothicNeoUL";
-    color: $color-font-lightgray;
-    font-size: 1.1rem;
-    font-weight: $--weight-semi-bold;
-    line-height: 1.8rem;
-    .overview-content-b {
-      color: $color-Overview-content;
-      font-size: 1.8rem;
-      font-weight: $--weight-super-bold;
-      font-family: "AppleSDGothicNeoUL";
+@media all and (max-width: 640px) {
+  .overview {
+    height: 120rem;
+    margin: 5rem auto;
+    min-width: 320px;
+    .overview-main-section {
+      flex-direction: column;
+      height: 30%;
+      align-items: center;
+      .overview-title {
+        font-size: 2rem;
+        width: 80%;
+        justify-content: center;
+        align-items: start;
+        margin-bottom: 7rem;
+        .overview-title-text {
+          width: 15rem;
+        }
+        .overview-title-bg {
+          width: 60%;
+          height: 200%;
+        }
+      }
+      .overview-bar-section {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        width: 70%;
+        .overview-bar {
+          width: 0.07rem;
+          height: 4rem;
+        }
+        .overview-bar-circle {
+          margin-right: 0;
+          margin-top: 0;
+        }
+      }
+      .overview-content {
+        width: 80%;
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        margin-left: 0rem;
+      }
     }
   }
 }

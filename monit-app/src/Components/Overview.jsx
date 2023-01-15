@@ -11,21 +11,21 @@ const Overview = () => {
     img: "SubHeader-Img",
   };
   return (
-    <div>
+    <>
       <SubHeader title={title} />
-      <div className="map-title">
-        overivew <br />
-        <p>기업 이념</p>
+        <div className="map-title">
+          overivew <br />
+          <p>기업 이념</p>
+        </div>
+      <div className="overview">
+          <div className="overivew-bg-img"></div>
+          {/* vision */}
+          <Vision />
+          <div className="overview-middlebar" data-aos="fadeInUp"></div>
+          {/* spinoff story */}
+          <Spinoff />
       </div>
-      <div className="overview-section">
-        <div className="overivew-bg"></div>
-        {/* vision */}
-        <Vision />
-        <div className="overview-middlebar" data-aos="fadeInUp"></div>
-        {/* spinoff story */}
-        <Spinoff />
-      </div>
-    </div>
+    </>
   );
 };
 
