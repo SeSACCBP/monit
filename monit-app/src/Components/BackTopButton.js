@@ -28,16 +28,21 @@ function BackTopButton() {
             position: 'fixed',
             bottom: '3.125rem',
             right: '3.125rem',
-            height: '3.125rem',
-            width: '3.125rem',
-            fontSize: '3.125rem',
-            borderRadius: '10px',
             zIndex: '2',
             cursor: 'pointer',
+            border: 'none',
+            background: 'transparent',
           }}
           onClick={scrollUp}
         >
-          ^
+          <img
+            src="peng.png"
+            style={{
+              height: '4.375rem',
+              weight: '4.375rem',
+              objectFit: 'cover',
+            }}
+          ></img>
         </button>
       )}
     </div>

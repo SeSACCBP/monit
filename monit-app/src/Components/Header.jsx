@@ -84,12 +84,15 @@ const Header = () => {
               <input type="checkbox" id="accordion-menu-1" />
               <label htmlFor="accordion-menu-1">
                 회사 소개
-                <em>
+                <p className="accordion-button">
                   <AiFillDownCircle />
+                </p>
+                <em>
+                  <AiFillUpCircle />
                 </em>
               </label>
               <div className="accordion-menu-list">
-                <Link to="/overview"> 기업 이념 </Link>
+                <Link to="/overview">기업 이념</Link>
                 <Link to="/introduction">사업 개요</Link>
                 <Link to="/history">회사 연혁</Link>
                 <Link to="/location">오시는 길</Link>
@@ -97,8 +100,11 @@ const Header = () => {
               <input type="checkbox" id="accordion-menu-2" />
               <label htmlFor="accordion-menu-2">
                 제품 소개
-                <em>
+                <p>
                   <AiFillDownCircle />
+                </p>
+                <em>
+                  <AiFillUpCircle />
                 </em>
               </label>
               <div className="accordion-menu-list">
@@ -109,8 +115,11 @@ const Header = () => {
               <input type="checkbox" id="accordion-menu-4" />
               <label htmlFor="accordion-menu-4">
                 문의 하기
-                <em>
+                <p>
                   <AiFillDownCircle />
+                </p>
+                <em>
+                  <AiFillUpCircle />
                 </em>
               </label>
               <div className="accordion-menu-list">
