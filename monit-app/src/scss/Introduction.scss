@@ -4,9 +4,10 @@
   width: 2 * $size;
   height: $size;
 }
-
-$responsive-default-fontsize: 1.8rem;
-$responsive-emphasis-fontsize: 2rem;
+$responsive-body-fontsize: 1.3rem; //본문폰트크기
+$responsive-emphasis-fontsize: 1.5rem; //강조폰트크기
+$responsive-subheading-fontsize: 1.8rem; //소제목폰트크기
+$responsive-title-fontsize: 2rem; //제목폰트크기
 
 // 전체 폰트, 브라우저 호환
 * {
@@ -65,8 +66,8 @@ $responsive-emphasis-fontsize: 2rem;
 
   // 중앙 큰 원의 배치,모양,크기,색
   .centerC {
-    width: 18rem;
-    height: 18rem;
+    width: 19rem;
+    height: 19rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,18 +252,18 @@ $responsive-emphasis-fontsize: 2rem;
 
     .introduction-title-discription {
       color: black;
-      font-size: $responsive-default-fontsize;
+      font-size: $responsive-subheading-fontsize;
     }
     .introduction-title-discription-fontcolor {
       color: $color-monitLogo;
-      font-size: $responsive-emphasis-fontsize;
+      font-size: $responsive-title-fontsize;
     }
   }
 
   /*---------introduction-index---------*/
   .introduction-index-wrapper {
     margin-bottom: 2rem;
-    font-size: $responsive-default-fontsize;
+    font-size: $responsive-subheading-fontsize;
     line-height: 2.2rem;
 
     .introduction-index-fontcolor {
@@ -425,7 +426,7 @@ $responsive-emphasis-fontsize: 2rem;
 
     //연결 선 - 각도와 위치
     .responsive-center {
-      width: 300rem;
+      width: 500rem;
       transform: rotate(90deg);
       display: flex;
       top: 32.5rem; //  lines-wrapper의 top: |-65rem|; 나누기 2
