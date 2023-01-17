@@ -2,6 +2,8 @@ import React from "react";
 import SubHeader from "./SubHeader";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 import { RiNumber2, RiNumber4, RiMailLine, RiPhoneLine } from "react-icons/ri";
+import { BiBus } from "react-icons/bi";
+import { IoIosSubway } from "react-icons/io";
 import logo from "../imgs/Fragment_img/monitLogo_white.png";
 import "../scss/MapComponent.scss";
 
@@ -87,6 +89,7 @@ function MyComponent() {
             <div>350번, 461번, 641번 종로교회앞 하차</div>
             <div>서초06번 방배반딧불센터 하차</div>
           </div>
+          <BiBus className="map-Box-Two-iconBus" />
         </div>
         <div className="map-Box-Two-Box">
           <div className="map-Box-Two-sub"></div>
@@ -102,6 +105,7 @@ function MyComponent() {
               방배역 2번 출구에서 820m
             </div>
           </div>
+          <IoIosSubway className="map-Box-Two-iconSub" />
         </div>
       </div>
     </div>
