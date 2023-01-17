@@ -87,6 +87,17 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
       height: 2rem;
       margin-bottom: 1.5rem;
     }
+
+    .logo-img {
+      display: flex;
+      align-items: center;
+      width: 8rem;
+      height: 2rem;
+      margin-bottom: 1.5rem;
+      background: url(../imgs/Footer_img/monitLogo_pointColor.png) no-repeat;
+      background-size: 100% auto;
+      background-position-y: center;
+    }
     p {
       line-height: 1.5rem;
     }
