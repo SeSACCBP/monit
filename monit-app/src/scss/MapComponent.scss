@@ -77,6 +77,10 @@
     .map-Box-Two-Box {
       display: flex;
       margin: 0.5rem 0.5rem 2.3rem 0.5rem;
+      .map-Box-Two-iconBus,
+      .map-Box-Two-iconSub {
+        display: none;
+      }
 
       .map-Box-Two-bus,
       .map-Box-Two-sub {
@@ -141,6 +145,8 @@
   }
 }
 
+// 모바일 반응형 시작!!!
+
 @media (max-width: 640px) {
   .MapComponent {
     .map-Box-One {
@@ -150,7 +156,7 @@
       width: 95%;
       .map-Box-One-right {
         img {
-          width: 13rem;
+          width: 16rem;
           height: 4rem;
         }
         p {
@@ -158,8 +164,8 @@
         }
       }
       .map-Box-One-left {
-        height: 80%;
-        width: 99%;
+        height: 70%;
+        width: 95%;
         flex-direction: column;
         justify-content: space-evenly;
         font-size: 2rem;
@@ -220,7 +226,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 435px) {
   .MapComponent {
     .map-Box-One {
       .map-Box-One-left {
@@ -237,9 +243,18 @@
     .map-Box-Two {
       width: 98%;
       .map-Box-Two-Box {
+        position: relative;
         .map-Box-Two-bus,
         .map-Box-Two-sub {
           display: none;
+        }
+        .map-Box-Two-iconBus,
+        .map-Box-Two-iconSub {
+          position: absolute;
+          right: 10px;
+          display: block;
+          font-size: 150px;
+          color: rgba(128, 128, 128, 0.192);
         }
         .map-Box-Two-arr-B {
           font-size: 1.8rem;
