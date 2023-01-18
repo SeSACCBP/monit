@@ -25,7 +25,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 /*---------introduction-title---------*/
 
 .introduction-title-wrapper {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   line-height: 2rem;
 
   .introduction-title-discription {
@@ -46,6 +46,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
   .introduction-index-fontcolor {
     color: $color-Overview-title;
+    font-weight: bold;
   }
 }
 
@@ -152,11 +153,11 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
   }
 
   //윗 반원 - 이미지들 삽입
-  .img03 {
+  .img02 {
     background-image: url("../imgs/Introduction_img/PetCare.jpg");
   }
 
-  .img02 {
+  .img03 {
     background-image: url("../imgs/Introduction_img/Spare2.jpg");
   }
 
@@ -258,8 +259,8 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
   /*---------introduction-title---------*/
 
   .introduction-title-wrapper {
-    margin-bottom: 3rem;
-    line-height: 2rem;
+    margin-bottom: 6rem;
+    line-height: 3rem;
 
     .introduction-title-discription {
       color: black;
@@ -273,12 +274,13 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
   /*---------introduction-index---------*/
   .introduction-index-wrapper {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     font-size: $responsive-subheading-fontsize;
-    line-height: 2.2rem;
+    line-height: 3rem;
 
     .introduction-index-fontcolor {
       color: $color-Overview-title;
+      font-weight: bold;
     }
   }
 
@@ -378,10 +380,10 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     }
 
     //윗 반원 - 이미지들 삽입
-    .img03 {
+    .img02 {
       background-image: url("../imgs/Introduction_img/PetCare.jpg");
     }
-    .img02 {
+    .img03 {
       background-image: url("../imgs/Introduction_img/Spare2.jpg");
     }
 
