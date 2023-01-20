@@ -1,4 +1,4 @@
-@import '../scss/style.scss';
+@import "../scss/style.scss";
 
 .header-line {
   width: 100%;
@@ -74,7 +74,7 @@
 }
 
 .header-title > a:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -2px;
@@ -154,7 +154,7 @@
   align-items: center;
   width: 100px;
   height: 50px;
-  background: url('../imgs/Header_img/samsung_logo.png') no-repeat;
+  background: url("../imgs/Header_img/samsung_logo.png") no-repeat;
   background-size: 100% auto;
   background-position-y: center;
 }
@@ -233,11 +233,11 @@
     z-index: 60;
   }
 
-  input[id='hamburger'] {
+  input[id="hamburger"] {
     display: none;
   }
 
-  input[id='hamburger'] + label {
+  input[id="hamburger"] + label {
     display: block;
     width: 1.875rem;
     height: 1.5625rem;
@@ -246,13 +246,13 @@
     cursor: pointer;
   }
 
-  input[id='hamburger']:checked + label {
+  input[id="hamburger"]:checked + label {
     z-index: 2;
     position: fixed;
     margin-right: 3.125rem;
   }
 
-  input[id='hamburger'] + label span {
+  input[id="hamburger"] + label span {
     display: block;
     position: absolute;
     width: 100%;
@@ -262,34 +262,34 @@
     transition: all 350ms;
   }
 
-  input[id='hamburger'] + label span:nth-child(1) {
+  input[id="hamburger"] + label span:nth-child(1) {
     top: 0;
   }
 
-  input[id='hamburger']:checked + label span:nth-child(1) {
+  input[id="hamburger"]:checked + label span:nth-child(1) {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
   }
 
-  input[id='hamburger'] + label span:nth-child(2) {
+  input[id="hamburger"] + label span:nth-child(2) {
     top: 50%;
     transform: translateY(-50%);
   }
 
-  input[id='hamburger']:checked + label span:nth-child(2) {
+  input[id="hamburger"]:checked + label span:nth-child(2) {
     opacity: 0;
   }
 
-  input[id='hamburger'] + label span:nth-child(3) {
+  input[id="hamburger"] + label span:nth-child(3) {
     bottom: 0;
   }
 
-  input[id='hamburger']:checked + label span:nth-child(3) {
+  input[id="hamburger"]:checked + label span:nth-child(3) {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
   }
 
-  input[id='hamburger']:checked + label + .hamburger-sidebar {
+  input[id="hamburger"]:checked + label + .hamburger-sidebar {
     right: 0px;
   }
 
@@ -306,10 +306,10 @@
     padding-top: 6.125rem;
   }
 
-  input[id*='accordion'] {
+  input[id*="accordion"] {
     display: none;
   }
-  input[id*='accordion'] + label {
+  input[id*="accordion"] + label {
     display: block;
     position: relative;
     padding: 20px;
@@ -320,7 +320,7 @@
     font-weight: bold;
     font-size: 1.625rem;
   }
-  input[id*='accordion'] + label p {
+  input[id*="accordion"] + label p {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -331,12 +331,12 @@
     transition: all 400ms;
   }
 
-  input[id*='accordion']:checked + label p {
+  input[id*="accordion"]:checked + label p {
     display: none;
     transition: all 400ms;
   }
 
-  input[id*='accordion'] + label em {
+  input[id*="accordion"] + label em {
     display: none;
     position: absolute;
     top: 50%;
@@ -348,12 +348,12 @@
     transition: all 400ms;
   }
 
-  input[id*='accordion']:checked + label em {
+  input[id*="accordion"]:checked + label em {
     display: block;
     transition: all 400ms;
   }
 
-  input[id*='accordion'] + label + .accordion-menu-list {
+  input[id*="accordion"] + label + .accordion-menu-list {
     max-height: 0;
     transition: all 400ms;
     overflow: hidden;
@@ -361,12 +361,12 @@
     font-size: 0.75rem;
   }
 
-  input[id*='accordion'] + label + .accordion-menu-list a {
+  input[id*="accordion"] + label + .accordion-menu-list a {
     display: inline-block;
     padding: 20px;
   }
 
-  input[id*='accordion']:checked + label + .accordion-menu-list {
+  input[id*="accordion"]:checked + label + .accordion-menu-list {
     max-height: 500px;
   }
 
