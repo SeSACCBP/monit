@@ -380,11 +380,21 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     }
 
     //윗 반원 - 이미지들 삽입
+    .img01 {
+      background-image: url("../imgs/Introduction_img/BabyMonitor.jpg");
+      // @include circle-box-default(5rem);
+      // border-radius: 5rem 5rem 0 0;
+    }
     .img02 {
       background-image: url("../imgs/Introduction_img/PetCare.jpg");
     }
     .img03 {
       background-image: url("../imgs/Introduction_img/Spare2.jpg");
+    }
+    .img04 {
+      background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
+      // @include circle-box-default(5rem);
+      //  border-radius: 5rem 5rem 0 0;
     }
 
     //아래 반원 - 글씨 위치
@@ -399,20 +409,11 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     }
 
     // 원 5rem. bottom-right circle 관련 - (시니어 케어 시스템 원)
-    .img01 {
-      background-image: url("../imgs/Introduction_img/BabyMonitor.jpg");
-      @include circle-box-default(5rem);
-      border-radius: 5rem 5rem 0 0;
-    }
-    .img04 {
-      background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
-      @include circle-box-default(5rem);
-      border-radius: 5rem 5rem 0 0;
-    }
+
     .lower-half-ver2 {
-      @include circle-box-default(5rem);
+      @include circle-box-default(4rem);
       background-color: $color-Overview-title;
-      border-radius: 0 0 5rem 5rem;
+      border-radius: 0 0 4rem 4rem;
     }
   }
 
