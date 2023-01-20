@@ -186,11 +186,11 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
   // 원 5rem. bottom-right circle 관련 - (시니어 케어 시스템 원)
 
-  .lower-half-ver2 {
-    @include circle-box-default(5rem);
-    background-color: $color-Overview-title;
-    border-radius: 0 0 5rem 5rem;
-  }
+  // .lower-half-ver2 {
+  //   @include circle-box-default(5rem);
+  //   background-color: $color-Overview-title;
+  //   border-radius: 0 0 5rem 5rem;
+  // }
 }
 
 /*---------introduction-lines-wrapper---------*/
@@ -410,11 +410,11 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
     // 원 5rem. bottom-right circle 관련 - (시니어 케어 시스템 원)
 
-    .lower-half-ver2 {
-      @include circle-box-default(4rem);
-      background-color: $color-Overview-title;
-      border-radius: 0 0 4rem 4rem;
-    }
+    // .lower-half-ver2 {
+    //   @include circle-box-default(4rem);
+    //   background-color: $color-Overview-title;
+    //   border-radius: 0 0 4rem 4rem;
+    // }
   }
 
   /*---------introduction-lines-wrapper---------*/
