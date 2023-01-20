@@ -57,18 +57,21 @@ $circle-size: 8rem;
 
 // 원과 선의 wrapper
 .introduction-circles-wrapper {
-  width: 45rem;
-  min-width: 45rem;
-  height: 40rem;
+  // width: 45rem;
+  // min-width: 45rem;
+  // height: 40rem;
   display: flex;
   position: relative;
   align-items: center;
   margin: 0 auto;
   z-index: 2;
-  font-size: 2rem;
+  font-size: $responsive-body-fontsize;
+  background-color: aquamarine;
 
   // 중앙 큰 원의 배치,모양,크기,색
   .centerC {
+    position: relative; //test
+
     width: 24rem;
     height: 24rem;
     display: flex;
@@ -84,18 +87,11 @@ $circle-size: 8rem;
     outline-width: 0.5rem;
     outline-color: $color-Overview-title;
 
-    //모닛로고 이미지
-    img {
-      width: 8rem;
-      height: 2rem;
-      margin-bottom: 1.5rem;
-    }
-
     .logo-img {
       display: flex;
       align-items: center;
-      width: 8rem;
-      height: 2rem;
+      width: 13rem;
+      height: 3rem;
       margin-bottom: 1.5rem;
       background: url(../imgs/Footer_img/monitLogo_pointColor.png) no-repeat;
       background-size: 100% auto;
@@ -185,6 +181,11 @@ $circle-size: 8rem;
   .letter-in-circle-ver2 {
     margin-bottom: 2.6rem;
   }
+}
+.introduction-circles-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /*---------introduction-lines-wrapper---------*/
@@ -278,7 +279,6 @@ $circle-size: 8rem;
     }
   }
 
-  // 🟢컴포넌트 : IntroductionMindmap.jsx
   /*---------introduction-cicles---------*/
 
   // 원과 선의 wrapper
@@ -316,10 +316,15 @@ $circle-size: 8rem;
       outline-color: $color-Overview-title;
 
       //모닛로고 이미지
-      img {
-        width: 8rem;
-        height: 2rem;
+      .logo-img {
+        display: flex;
+        align-items: center;
+        width: 13rem;
+        height: 3rem;
         margin-bottom: 1.5rem;
+        background: url(../imgs/Footer_img/monitLogo_pointColor.png) no-repeat;
+        background-size: 100% auto;
+        background-position-y: center;
       }
       p {
         line-height: 1.5rem;
@@ -388,7 +393,7 @@ $circle-size: 8rem;
       background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
     }
 
-    //아래 반원 - 글씨 위치
+    //아래 반원 - 글자 위치
     .bebefit-in-circle {
       margin-bottom: 1rem;
     }
