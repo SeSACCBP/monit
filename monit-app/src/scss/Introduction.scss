@@ -9,6 +9,8 @@ $responsive-emphasis-fontsize: 1.5rem; //강조폰트크기
 $responsive-subheading-fontsize: 1.8rem; //소제목폰트크기
 $responsive-title-fontsize: 2rem; //제목폰트크기
 
+$circle-size: 8rem;
+
 // 전체 폰트, 브라우저 호환
 * {
   font-family: "AppleSDGothicNeoUL";
@@ -128,7 +130,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
   //작은 원들 - 공통 모양
   .circle {
-    @include circle-box-default(4rem);
+    @include circle-box-default(5.5rem);
     display: flex;
     position: relative;
     flex-direction: column;
@@ -145,10 +147,10 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
   //공통적인 반원 - 크기(2개)
   .upper-half {
-    border-radius: 4rem 4rem 0 0;
+    border-radius: 5.5rem 5.5rem 0 0;
   }
   .lower-half {
-    border-radius: 0 0 4rem 4rem;
+    border-radius: 0 0 5.5rem 5.5rem;
     background-color: $color-Overview-title;
   }
 
@@ -183,14 +185,6 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
   .letter-in-circle-ver2 {
     margin-bottom: 2.6rem;
   }
-
-  // 원 5rem. bottom-right circle 관련 - (시니어 케어 시스템 원)
-
-  // .lower-half-ver2 {
-  //   @include circle-box-default(5rem);
-  //   background-color: $color-Overview-title;
-  //   border-radius: 0 0 5rem 5rem;
-  // }
 }
 
 /*---------introduction-lines-wrapper---------*/
@@ -274,7 +268,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
   /*---------introduction-index---------*/
   .introduction-index-wrapper {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     font-size: $responsive-subheading-fontsize;
     line-height: 3rem;
 
@@ -292,7 +286,8 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     margin: 3rem 0 3rem 0; // top 과 bottom 에 같은값을 주어야 원과 선 중앙배치 잘됨.
     // width: 50rem;
     // min-width: 50rem;
-    height: 65rem;
+    background-color: aquamarine;
+    height: 120rem;
     display: flex;
     position: relative;
     margin: 0 auto;
@@ -305,8 +300,8 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
     // 중앙 큰 원의 배치,모양,크기,색
     .centerC {
-      width: 24rem;
-      height: 24rem;
+      width: 29rem;
+      height: 29rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -315,7 +310,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
       border-radius: 50%;
       background-color: $color-Overview-title;
       color: white;
-      border: 2rem solid #fff;
+      border: 2.5rem solid #fff;
       outline: solid;
       outline-width: 0.5rem;
       outline-color: $color-Overview-title;
@@ -355,7 +350,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
     //작은 원들 - 공통 모양
     .circle {
-      @include circle-box-default(4rem);
+      @include circle-box-default($circle-size);
       display: flex;
       position: relative;
       flex-direction: column;
@@ -372,18 +367,16 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
     //공통적인 반원 - 크기(2개)
     .upper-half {
-      border-radius: 4rem 4rem 0 0;
+      border-radius: $circle-size $circle-size 0 0;
     }
     .lower-half {
-      border-radius: 0 0 4rem 4rem;
+      border-radius: 0 0 $circle-size $circle-size;
       background-color: $color-Overview-title;
     }
 
     //윗 반원 - 이미지들 삽입
     .img01 {
       background-image: url("../imgs/Introduction_img/BabyMonitor.jpg");
-      // @include circle-box-default(5rem);
-      // border-radius: 5rem 5rem 0 0;
     }
     .img02 {
       background-image: url("../imgs/Introduction_img/PetCare.jpg");
@@ -393,8 +386,6 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     }
     .img04 {
       background-image: url("../imgs/Introduction_img/SeniorCare.jpg");
-      // @include circle-box-default(5rem);
-      //  border-radius: 5rem 5rem 0 0;
     }
 
     //아래 반원 - 글씨 위치
@@ -407,14 +398,6 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     .letter-in-circle-ver2 {
       margin-bottom: 2.6rem;
     }
-
-    // 원 5rem. bottom-right circle 관련 - (시니어 케어 시스템 원)
-
-    // .lower-half-ver2 {
-    //   @include circle-box-default(4rem);
-    //   background-color: $color-Overview-title;
-    //   border-radius: 0 0 4rem 4rem;
-    // }
   }
 
   /*---------introduction-lines-wrapper---------*/
@@ -422,14 +405,15 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     margin: 3rem 0 3rem 0; //introduction-circles-wrapper 값과 같게.
     // width: 50rem; // introduction-circles-wrapper 값과 같게.
     // min-width: 50rem;
-    top: -65rem; // circles-wrapper의 height 값과 같게.
+    top: -120rem; // circles-wrapper의 height 값과 같게.
     display: flex;
     position: relative;
     align-items: center;
     text-align: center;
-    z-index: -1;
+    z-index: 10;
     margin: 0 auto;
     justify-content: center; // 자식중앙정렬
+    background-color: yellow;
 
     //연결 선 - 공통 모양
     .line {
@@ -440,10 +424,11 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
     //연결 선 - 각도와 위치
     .responsive-center {
-      width: 500rem;
+      width: 10000rem;
+      // height: 1000rem;
       transform: rotate(90deg);
       display: flex;
-      top: 32.5rem; //  lines-wrapper의 top: |-65rem|; 나누기 2
+      top: 60rem; //  lines-wrapper의 top: |-120rem|; 나누기 2
     }
   }
 }
