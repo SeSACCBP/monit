@@ -151,15 +151,12 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
   }
 
   //작은 원들 - 각각의 아래 반원 - 글자 위치
-  .bebefit-in-circle {
-    margin-bottom: 1rem;
-  }
   .letter-in-circle {
     margin-bottom: 2rem;
   }
-  .letter-in-circle-ver2 {
-    margin-bottom: 2.6rem;
-  }
+  // .letter-in-circle-ver2 {
+  //   margin-bottom: 2.6rem;
+  // }
 
   // 작은 원들 - 위치
   .cicle-top-left {
@@ -282,8 +279,8 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     margin: 3rem 0 3rem 0; // top 과 bottom 에 같은값을 주어야 원과 선 중앙배치 잘됨.
     // width: 50rem;
     // min-width: 50rem;
-    background-color: aquamarine;
-    height: 120rem;
+    // background-color: aquamarine;
+    height: 130rem;
     display: flex;
     position: relative;
     margin: 0 auto;
@@ -367,15 +364,13 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     }
 
     //작은 원들 - 각각의 아래 반원 - 글자 위치
-    .bebefit-in-circle {
-      margin-bottom: 1rem;
-    }
+
     .letter-in-circle {
       margin-bottom: 2rem;
     }
-    .letter-in-circle-ver2 {
-      margin-bottom: 2.6rem;
-    }
+    // .letter-in-circle-ver2 {
+    //   margin-bottom: 2.6rem;
+    // }
 
     // 작은 원들 - 위치
     .cicle-top-left {
@@ -405,7 +400,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     margin: 3rem 0 3rem 0; //introduction-circles-wrapper 값과 같게.
     // width: 50rem; // introduction-circles-wrapper 값과 같게.
     // min-width: 50rem;
-    top: -120rem; // circles-wrapper의 height 값과 같게.
+    top: -130rem; // circles-wrapper의 height 값과 같게.
     display: flex;
     position: relative;
     align-items: center;
@@ -424,11 +419,11 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
     //연결 선 - 각도와 위치
     .responsive-center {
-      width: 10000rem; //길이..왜 안늘어나지
+      width: 10000000rem; //길이..왜 안늘어나지
       // height: 1000rem;
       transform: rotate(90deg);
       display: flex;
-      top: 60rem; //  lines-wrapper의 top: |-120rem|; 나누기 2
+      top: 65rem; //  lines-wrapper의 top: |-120rem|; 나누기 2
     }
   }
 }
