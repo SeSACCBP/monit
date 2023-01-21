@@ -22,7 +22,6 @@ const IntroductionMindmap = () => {
 
         <div>
           <div className="centerC">
-            {/* <img src={logo} alt="" /> */}
             <div className="logo-img"></div>
             <p>AI 데이터 분석 기반 </p>
             <p> 디지털 헬스케어 플랫폼</p>
