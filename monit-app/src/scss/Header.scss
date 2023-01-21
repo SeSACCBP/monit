@@ -273,10 +273,6 @@ input[id='hamburger'] + label {
   cursor: pointer;
 }
 
-input[id='hamburger']:checked + .header-opacity {
-  display: block;
-}
-
 input[id='hamburger']:checked + label {
   z-index: 2;
   position: fixed;
