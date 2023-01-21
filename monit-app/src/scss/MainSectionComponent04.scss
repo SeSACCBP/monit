@@ -1,24 +1,9 @@
 @import "./style.scss";
 @import "./MainSectionCommon.scss";
 
-// 가이드
-// .main-section-component04,
-// .main-section-component04-contact-wrapper,
-// .main-section-component04-contact,
-// .main-section-component04-contact-inquiry-wrapper {
-//   border: 1px solid red;
-// }
-
-// .main-section-component04-contact-inquiry {
-//   border: 1px solid blue;
-// }
-
-// main font size 모음
-.main-section-component04-container {
-}
-
 .main-section-component04 {
   background-image: url(../imgs/2023.png);
+  padding: 10rem 0;
   background-size: cover;
   background-position: top;
   width: 100%;
@@ -92,10 +77,10 @@
             margin-bottom: 1rem;
           }
           p {
-            font-size: 1.2rem;
-            line-height: 2rem;
+            font-size: 1.3rem;
+            line-height: 2.5rem;
             word-break: keep-all;
-            width: 24rem;
+            width: 25rem;
           }
 
           .main-section-component04-contact-inquiry-shortcut {
@@ -114,7 +99,9 @@
               padding: 0 0.5rem;
               border: 1px solid #fff;
               margin: 0 2rem;
-              min-width: 70px;
+              width: 10rem;
+              border-radius: 4rem;
+              text-align: center;
             }
 
             // 바로가기 버튼 background-color
@@ -131,13 +118,10 @@
 @media screen and (max-width: 640px) {
   .main-section-component04-container {
     width: 100%;
-    height: 90vh;
-
     .main-section-component04 {
       .main-section-component04-contact-wrapper {
         justify-content: space-evenly;
         width: 100%;
-        height: 90vh;
 
         .main-section-component04-contact {
           font-size: 4rem;
@@ -166,6 +150,10 @@
               a {
                 margin: 2rem 0 2rem 6rem;
                 text-align: center;
+              }
+
+              p {
+                font-size: 1.5rem;
               }
             }
           }

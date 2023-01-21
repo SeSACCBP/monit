@@ -4,16 +4,8 @@
   box-sizing: border-box;
 }
 
-// 부모가이드
-.main-section-component03,
-.main-section-component03-text-wrapper,
-.main-section-component03-text,
-.main-section-component03-circle-wrapper {
-  // border: 1px solid red;
-}
-
 .main-section-component03 {
-  padding: 5rem;
+  padding: 14rem 0;
   width: 100%;
   min-width: 320px;
   display: flex;
@@ -68,7 +60,7 @@
       margin: 0 1rem;
 
       .main-section-component03-circle01-inner {
-        border: 0.05rem solid $color-white;
+        border: 0.15rem solid $color-white;
         width: 80%;
         height: 80%;
         border-radius: 50%;
@@ -79,14 +71,18 @@
         flex-direction: column;
         color: #fff;
 
-        .main-section-component03-circle01-inner-nb {
+        .main-section-component03-circle01-inner-nb,
+        .main-section-component03-circle01-inner-nb03 {
           width: 3rem;
           height: 2rem;
           text-align: center;
-          font-size: 1.5rem;
+          font-size: 2rem;
           text-decoration: underline;
           text-underline-position: under;
           margin-bottom: 3rem;
+        }
+        .main-section-component03-circle01-inner-nb03 {
+          padding-top: 1rem;
         }
 
         h3 {
