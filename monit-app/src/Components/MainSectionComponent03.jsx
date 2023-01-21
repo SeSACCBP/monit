@@ -41,7 +41,7 @@ const MainSectionComponent03 = () => {
           </div>
           <div className="main-section-component03-circle01">
             <div className="main-section-component03-circle01-inner">
-              <div className="main-section-component03-circle01-inner-nb">
+              <div className="main-section-component03-circle01-inner-nb03">
                 03
               </div>
               <h3>
