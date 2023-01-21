@@ -406,7 +406,7 @@ body,
 
 /*---------introduction-title---------*/
 .introduction-title-wrapper {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   line-height: 2rem;
 }
 .introduction-title-wrapper .introduction-title-discription {
@@ -426,23 +426,24 @@ body,
 }
 .introduction-index-wrapper .introduction-index-fontcolor {
   color: #496895;
+  font-weight: bold;
 }
 
 /*---------introduction-cicles---------*/
 .introduction-circles-wrapper {
-  width: 50rem;
-  min-width: 50rem;
+  width: 45rem;
+  min-width: 45rem;
   height: 40rem;
   display: flex;
   position: relative;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 0 auto;
   z-index: 2;
 }
 .introduction-circles-wrapper .centerC {
-  width: 18rem;
-  height: 18rem;
+  width: 19rem;
+  height: 19rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -460,6 +461,16 @@ body,
   width: 8rem;
   height: 2rem;
   margin-bottom: 1.5rem;
+}
+.introduction-circles-wrapper .centerC .logo-img {
+  display: flex;
+  align-items: center;
+  width: 8rem;
+  height: 2rem;
+  margin-bottom: 1.5rem;
+  background: url(../imgs/Footer_img/monitLogo_pointColor.png) no-repeat;
+  background-size: 100% auto;
+  background-position-y: center;
 }
 .introduction-circles-wrapper .centerC p {
   line-height: 1.5rem;
@@ -507,11 +518,14 @@ body,
   border-radius: 0 0 4rem 4rem;
   background-color: #496895;
 }
-.introduction-circles-wrapper .img03 {
+.introduction-circles-wrapper .img02 {
   background-image: url("../imgs/Introduction_img/PetCare.jpg");
 }
-.introduction-circles-wrapper .img02 {
+.introduction-circles-wrapper .img03 {
   background-image: url("../imgs/Introduction_img/Spare2.jpg");
+}
+.introduction-circles-wrapper .bebefit-in-circle {
+  margin-bottom: 1rem;
 }
 .introduction-circles-wrapper .letter-in-circle {
   margin-bottom: 2rem;
@@ -540,14 +554,16 @@ body,
 
 /*---------introduction-lines-wrapper---------*/
 .introduction-lines-wrapper {
-  width: 50rem;
-  min-width: 50rem;
+  width: 45rem;
+  min-width: 45rem;
   display: flex;
   position: relative;
   align-items: center;
   top: -40rem;
   margin: 0 auto;
   z-index: -1;
+  text-align: center;
+  justify-content: center;
 }
 .introduction-lines-wrapper .line {
   width: 20rem;
@@ -564,17 +580,17 @@ body,
 .introduction-lines-wrapper .bottom-left {
   transform: rotate(140deg);
   top: 27rem;
-  left: -3rem;
+  left: 1rem;
 }
 .introduction-lines-wrapper .top-right {
   transform: rotate(140deg);
-  top: 11rem;
-  left: 6rem;
+  top: 12rem;
+  left: 8rem;
 }
 .introduction-lines-wrapper .bottom-right {
   transform: rotate(40deg);
-  top: 25rem;
-  left: -8rem;
+  top: 26rem;
+  left: -3rem;
 }
 .introduction-lines-wrapper .responsive-center {
   display: none;
@@ -593,8 +609,8 @@ body,
 
   /*---------introduction-title---------*/
   .introduction-title-wrapper {
-    margin-bottom: 3rem;
-    line-height: 2rem;
+    margin-bottom: 6rem;
+    line-height: 3rem;
   }
   .introduction-title-wrapper .introduction-title-discription {
     color: black;
@@ -607,19 +623,18 @@ body,
 
   /*---------introduction-index---------*/
   .introduction-index-wrapper {
-    margin-bottom: 2rem;
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
   }
   .introduction-index-wrapper .introduction-index-fontcolor {
     color: #496895;
+    font-weight: bold;
   }
 
   /*---------introduction-cicles---------*/
   .introduction-circles-wrapper {
     margin: 3rem 0 3rem 0;
-    width: 50rem;
-    min-width: 50rem;
     height: 65rem;
     display: flex;
     position: relative;
@@ -629,7 +644,7 @@ body,
     text-align: center;
     flex-direction: column;
     z-index: 2;
-    font-size: 0.8rem;
+    font-size: 2rem;
   }
   .introduction-circles-wrapper .centerC {
     width: 18rem;
@@ -698,11 +713,14 @@ body,
     border-radius: 0 0 4rem 4rem;
     background-color: #496895;
   }
-  .introduction-circles-wrapper .img03 {
+  .introduction-circles-wrapper .img02 {
     background-image: url("../imgs/Introduction_img/PetCare.jpg");
   }
-  .introduction-circles-wrapper .img02 {
+  .introduction-circles-wrapper .img03 {
     background-image: url("../imgs/Introduction_img/Spare2.jpg");
+  }
+  .introduction-circles-wrapper .bebefit-in-circle {
+    margin-bottom: 1rem;
   }
   .introduction-circles-wrapper .letter-in-circle {
     margin-bottom: 2rem;
@@ -732,8 +750,6 @@ body,
   /*---------introduction-lines-wrapper---------*/
   .introduction-lines-wrapper {
     margin: 3rem 0 3rem 0;
-    width: 50rem;
-    min-width: 50rem;
     top: -65rem;
     display: flex;
     position: relative;
@@ -749,7 +765,7 @@ body,
     background-color: #d3d5d6;
   }
   .introduction-lines-wrapper .responsive-center {
-    width: 300rem;
+    width: 500rem;
     transform: rotate(90deg);
     display: flex;
     top: 32.5rem;
