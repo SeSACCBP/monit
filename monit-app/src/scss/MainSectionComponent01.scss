@@ -96,6 +96,7 @@ body {
         font-size: 1.6rem;
         color: #4d4d4d;
         padding-bottom: 0.5rem;
+        line-height: 4rem;
       }
 
       h3 {
@@ -137,12 +138,12 @@ body {
           height: 100%;
           border-radius: 4rem;
           line-height: 3rem;
+          border: 2px solid #517ea7;
         }
-
         a:hover {
           color: #517ea7;
           background-color: #fff;
-          border: 3px solid #517ea7;
+          border: 2px solid #517ea7;
         }
       }
     }
@@ -175,12 +176,16 @@ body {
       .main-section-component01-circle-inner {
         border-radius: 0;
         width: initial;
+        height: 100%;
 
         .main-section-component-text-wrapper {
           align-items: center;
 
           h4 {
             font-size: 2rem;
+          }
+          h3 {
+            font-size: 2.5rem;
           }
           p {
             font-size: 1.8rem;
@@ -200,11 +205,11 @@ body {
   // 롤링 화살표 사이즈
   .swiper-button-next:after,
   .swiper-rtl .swiper-button-prev:after {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   // 롤링 화살표 사이즈
   .swiper-button-prev:after,
   .swiper-rtl .swiper-button-next:after {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }
