@@ -1,15 +1,19 @@
-import React, { useState } from "react";
-import "../scss/Header.scss";
-import { Link } from "react-router-dom";
-import BackTopButton from "./BackTopButton";
-import { AiFillDownCircle } from "react-icons/ai";
-import { AiFillUpCircle } from "react-icons/ai";
+import React, { useState } from 'react';
+import '../scss/Header.scss';
+import { Link } from 'react-router-dom';
+import BackTopButton from './BackTopButton';
+import { AiFillDownCircle } from 'react-icons/ai';
+import { AiFillUpCircle } from 'react-icons/ai';
 
 const Header = () => {
   const [headerOn, setHeaderOn] = useState(false);
-
+  const [opacOn, setOpacOn] = useState(true);
+  const headerOpac = () => {
+    setOpacOn((opacOn) => !opacOn); // on,off 개념 boolean
+  };
   return (
     <div className="header-line">
+      <div className={opacOn ? 'header-opacity' : 'header-opacity-on'}></div>
       <nav className="header-area">
         <a className="header-imgArea" href="/"></a>
         <ul
@@ -66,19 +70,20 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className={headerOn ? "header-back-active" : "header-back"}></div>
-
+      <div className={headerOn ? 'header-back-active' : 'header-back'}></div>
       <nav className="header-area-m">
         <div className="header-imgArea-m">
           <a className="header-img-m" href="/"></a>
         </div>
+
         <div className="hamburger-area">
-          <input type="checkbox" id="hamburger" />
+          <input type="checkbox" id="hamburger" onClick={() => headerOpac()} />
           <label htmlFor="hamburger">
             <span></span>
             <span></span>
             <span></span>
           </label>
+
           <div className="hamburger-sidebar">
             <div className="accordion">
               <input type="checkbox" id="accordion-menu-1" />
@@ -132,7 +137,7 @@ const Header = () => {
       </nav>
       <ul className="header-title-samsung">
         <li className="header-samsung">
-          Accelerated by
+          <p> Accelerated by </p>
           <div className="header-samsung-logo" />
         </li>
       </ul>
