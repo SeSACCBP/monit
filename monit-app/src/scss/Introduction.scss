@@ -1,15 +1,17 @@
 @import "../scss/style.scss";
 
+//원 사이즈
 @mixin circle-box-default($size) {
   width: 2 * $size;
   height: $size;
 }
+$circle-size: 8rem;
+
+//폰트 사이즈
 $responsive-body-fontsize: 1.3rem; //본문폰트크기
 $responsive-emphasis-fontsize: 1.5rem; //강조폰트크기
 $responsive-subheading-fontsize: 1.8rem; //소제목폰트크기
 $responsive-title-fontsize: 2rem; //제목폰트크기
-
-$circle-size: 8rem;
 
 // 전체 폰트, 브라우저 호환
 * {
@@ -84,7 +86,7 @@ $circle-size: 8rem;
     color: white;
     border: 2rem solid #fff;
     outline: solid;
-    outline-width: 0.5rem;
+    outline-width: 0.4rem; //원 외부선
     outline-color: $color-Overview-title;
 
     .logo-img {
@@ -132,7 +134,7 @@ $circle-size: 8rem;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 4px solid $color-Overview-title;
+    border: 0.4rem solid $color-Overview-title; //원 4개 외부선
     border-bottom: none;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -300,8 +302,8 @@ $circle-size: 8rem;
 
     // 중앙 큰 원의 배치,모양,크기,색
     .centerC {
-      width: 29rem;
-      height: 29rem;
+      width: 30rem;
+      height: 30rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -312,7 +314,7 @@ $circle-size: 8rem;
       color: white;
       border: 2.5rem solid #fff;
       outline: solid;
-      outline-width: 0.5rem;
+      outline-width: 0.4rem;
       outline-color: $color-Overview-title;
 
       //모닛로고 이미지
@@ -361,7 +363,7 @@ $circle-size: 8rem;
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      border: 4px solid $color-Overview-title;
+      border: 0.4rem solid $color-Overview-title;
       border-bottom: none;
       border-radius: 50%;
       background-repeat: no-repeat;
@@ -429,7 +431,7 @@ $circle-size: 8rem;
 
     //연결 선 - 각도와 위치
     .responsive-center {
-      width: 10000rem;
+      width: 10000rem; //길이..
       // height: 1000rem;
       transform: rotate(90deg);
       display: flex;
