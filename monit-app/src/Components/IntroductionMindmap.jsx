@@ -16,7 +16,11 @@ const IntroductionMindmap = () => {
         <div className="cicle-bottom-left">
           <div className="circle upper-half img03"></div>
           <div className="circle lower-half">
-            <p className="letter-in-circle">베베핏 스마트 기어</p>
+            <p className="letter-in-circle">
+              베베핏
+              <br />
+              스마트 기어
+            </p>
           </div>
         </div>
 
@@ -38,7 +42,11 @@ const IntroductionMindmap = () => {
         <div className="cicle-bottom-right">
           <div className="circle upper-half img04"></div>
           <div className="circle lower-half">
-            <p className="letter-in-circle">시니어 케어 시스템</p>
+            <p className="letter-in-circle">
+              시니어
+              <br />
+              케어 시스템
+            </p>
           </div>
         </div>
       </div>
