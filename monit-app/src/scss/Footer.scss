@@ -16,10 +16,10 @@
   align-items: center;
   width: 11.25rem;
   height: 6.25rem;
-  margin-right: 3.125rem;
   background: url(../imgs/Footer_img/monitLogo_pointColor.png) no-repeat;
   background-size: 100% auto;
   background-position-y: center;
+  margin-left: 1.25rem;
 }
 
 .footer-imgArea img {
@@ -34,6 +34,7 @@
   height: 12.5rem;
   line-height: 1.5625rem;
   list-style: none;
+  margin-left: 3.125rem;
 }
 .footer-list .footer-title {
   color: $color-white;
@@ -68,6 +69,6 @@
   }
   .footer-list .footer-title {
     font-size: 0.875rem;
-    line-height: 2.5625rem;
+    line-height: 1.875rem;
   }
 }
