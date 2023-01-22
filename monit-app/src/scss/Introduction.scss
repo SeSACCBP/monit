@@ -6,7 +6,7 @@
   height: $size;
 }
 $circle-size: 6rem; //640~1080 공통원 사이즈
-$circle-responsive-size: 8.5rem; //640px 이하 반응형에서 공통원 사이즈
+$circle-responsive-size: 9rem; //640px 이하 반응형에서 공통원 사이즈
 
 //폰트 사이즈
 $responsive-body-fontsize: 1.3rem; //본문폰트크기
@@ -60,22 +60,25 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
 // 원과 선의 wrapper
 .introduction-circles-wrapper {
-  width: 45rem;
-  min-width: 45rem;
-  height: 40rem;
+  // width: 45rem;
+  // min-width: 45rem;
+  // height: 40rem;
   display: flex;
   position: relative;
   align-items: center;
   margin: 0 auto;
   z-index: 2;
+  background-color: aquamarine;
+
   font-size: $responsive-body-fontsize;
-  // background-color: aquamarine;
 
   // 중앙 큰 원의 배치,모양,크기,색
   .centerC {
     width: 24rem;
     height: 24rem;
     display: flex;
+    top: 50%;
+    left: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -146,7 +149,8 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
   //작은 원들 - 각각의 아래 반원 - 글자 위치
   .letter-in-circle {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
   }
 
   // 작은 원들 - 위치
@@ -270,7 +274,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     margin: 3rem 0 3rem 0; // top 과 bottom 에 같은값을 주어야 원과 선 중앙배치 잘됨.
     // width: 50rem;
     // min-width: 50rem;
-    // background-color: aquamarine;
+    background-color: yellowgreen;
     height: 137rem;
     display: flex;
     position: relative;
@@ -304,13 +308,13 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
         align-items: center;
         width: 15rem;
         height: 3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         background: url(../imgs/Footer_img/monitLogo_pointColor.png) no-repeat;
         background-size: 100% auto;
         background-position-y: center;
       }
       p {
-        line-height: 2.4rem;
+        line-height: 3rem;
       }
     }
 
@@ -357,11 +361,9 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     //작은 원들 - 각각의 아래 반원 - 글자 위치
 
     .letter-in-circle {
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+      line-height: 3rem;
     }
-    // .letter-in-circle-ver2 {
-    //   margin-bottom: 2.6rem;
-    // }
 
     // 작은 원들 - 위치
     .cicle-top-left {
@@ -392,24 +394,31 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     // width: 50rem; // introduction-circles-wrapper 값과 같게.
     // min-width: 50rem;
     top: -137rem; // circles-wrapper의 height 값과 같게.
+    margin: 0 auto;
     display: flex;
     position: relative;
     align-items: center;
     text-align: center;
-    z-index: -1;
-    margin: 0 auto;
+    z-index: 11;
     justify-content: center; // 자식중앙정렬
-    // background-color: yellow;
+    background-color: violet;
+    flex-direction: column;
 
     //연결 선 - 공통 모양
     .line {
       position: relative;
       background-color: $color-Overview-line-color;
     }
+    .top-left,
+    .bottom-left,
+    .top-right,
+    .bottom-right {
+      display: none;
+    }
 
     //연결 선 - 각도와 위치
     .responsive-center {
-      width: 10000000rem; //길이..왜 안늘어나지
+      width: 100rem;
       transform: rotate(90deg);
       display: flex;
       top: 68.5rem; //  lines-wrapper의 top: |-137rem|; 나누기 2
