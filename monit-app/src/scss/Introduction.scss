@@ -5,7 +5,7 @@
   width: 2 * $size;
   height: $size;
 }
-$circle-size: 6rem; //640~1080 공통원 사이즈
+$circle-size: 6.7rem; //640~1080 공통원 사이즈
 $circle-responsive-size: 9rem; //640px 이하 반응형에서 공통원 사이즈
 
 //폰트 사이즈
@@ -60,22 +60,21 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
 
 // 원과 선의 wrapper
 .introduction-circles-wrapper {
-  // width: 45rem;
-  // min-width: 45rem;
-  // height: 40rem;
+  width: 45rem;
+  min-width: 45rem;
+  height: 40rem;
   display: flex;
   position: relative;
   align-items: center;
   margin: 0 auto;
   z-index: 2;
-  background-color: aquamarine;
-
-  font-size: $responsive-body-fontsize;
+  font-size: $responsive-emphasis-fontsize;
+  // background-color: aquamarine;
 
   // 중앙 큰 원의 배치,모양,크기,색
   .centerC {
-    width: 24rem;
-    height: 24rem;
+    width: 26rem;
+    height: 26rem;
     display: flex;
     top: 50%;
     left: 50%;
@@ -86,7 +85,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     border-radius: 50%;
     background-color: $color-Overview-title;
     color: white;
-    border: 2rem solid #fff;
+    border: 2.3rem solid #fff;
     outline: solid;
     outline-width: 0.4rem; //원 외부선
     outline-color: $color-Overview-title;
@@ -94,15 +93,15 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     .logo-img {
       display: flex;
       align-items: center;
-      width: 13rem;
-      height: 3rem;
-      margin-bottom: 1.5rem;
+      width: 12rem;
+      height: 2.5rem;
+      margin-bottom: 2rem;
       background: url(../imgs/Footer_img/monitLogo_pointColor.png) no-repeat;
       background-size: 100% auto;
       background-position-y: center;
     }
     p {
-      line-height: 1.5rem;
+      line-height: 1.6em;
     }
   }
 
@@ -150,7 +149,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
   //작은 원들 - 각각의 아래 반원 - 글자 위치
   .letter-in-circle {
     margin-bottom: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.2rem;
   }
 
   // 작은 원들 - 위치
@@ -188,6 +187,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
   z-index: -1;
   text-align: center;
   justify-content: center; // 자식중앙정렬
+  background-color: bisque;
 
   //연결 선 - 공통 모양
   .line {
@@ -274,7 +274,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     margin: 3rem 0 3rem 0; // top 과 bottom 에 같은값을 주어야 원과 선 중앙배치 잘됨.
     // width: 50rem;
     // min-width: 50rem;
-    background-color: yellowgreen;
+    // background-color: yellowgreen;
     height: 137rem;
     display: flex;
     position: relative;
@@ -283,7 +283,7 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     align-items: center;
     text-align: center;
     flex-direction: column;
-    z-index: 2;
+    z-index: 1;
     font-size: 2rem;
 
     // 중앙 큰 원의 배치,모양,크기,색
@@ -322,6 +322,8 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     .circle {
       @include circle-box-default($circle-responsive-size);
       display: flex;
+      // left: 50%;
+      // top: 50%;
       position: relative;
       flex-direction: column;
       justify-content: center;
@@ -399,9 +401,9 @@ $responsive-title-fontsize: 2rem; //제목폰트크기
     position: relative;
     align-items: center;
     text-align: center;
-    z-index: 11;
+    z-index: -1;
     justify-content: center; // 자식중앙정렬
-    background-color: violet;
+    // background-color: violet;
     flex-direction: column;
 
     //연결 선 - 공통 모양
