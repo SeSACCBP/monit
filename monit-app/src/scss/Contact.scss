@@ -31,11 +31,12 @@
         rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
       border-radius: 4rem;
       .Contact-Thi-img {
-        background-image: url(../imgs/Contact-img/monit-img1.png);
+        background-image: url(../imgs/Contact-img/contact-product.jpg);
         width: 15rem;
         height: 100%;
-        background-size: 115%;
-        background-position: right top;
+        border-radius: 4rem 0 0 4rem;
+        background-size: cover;
+        background-position: 50%;
         background-repeat: no-repeat;
       }
       .form {

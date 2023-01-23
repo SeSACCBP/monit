@@ -8,8 +8,10 @@ const Contact = (props) => {
   return (
     <>
       <div className="Contact">
-        <div className="Contact-Sec">{text}</div>
-        <div className="Contact-body">
+        <div className="Contact-Sec" data-aos="fadeInUp">
+          {text}
+        </div>
+        <div className="Contact-body" data-aos="fadeInUp">
           <div className="Contact-Thi">
             <div className="Contact-Thi-img"></div>
             <div className="form">
