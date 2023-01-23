@@ -195,7 +195,9 @@ const HistoryChange = (props) => {
         "",
         "",
         "",
-        "삼성전자 C-Lab Spinoff 및 법인 설립(서울 서초구)",
+        "삼성전자 C-Lab Spinoff 및 법인 설립",
+        "",
+        "(서울 서초구)",
       ],
     },
   ];
