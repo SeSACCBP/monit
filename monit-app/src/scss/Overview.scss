@@ -109,8 +109,13 @@
 
 @media all and (max-width: 640px) {
   .overview {
-    height: 120rem;
+    height: 100rem;
     margin: 5rem auto;
+    .overview-middlebar {
+      width: 90%;
+      border: 0.0313rem solid rgb(195, 195, 195);
+      margin: 10rem auto;
+    }
     .overview-main-section {
       flex-direction: column;
       height: 30%;
