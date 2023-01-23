@@ -4,7 +4,7 @@ import React from "react";
 
 const IntroductionMindmap = () => {
   return (
-    <div className="introduction-mindmap">
+    <div className="introduction-mindmap" data-aos="fadeInUp">
       <div className="introduction-circles-wrapper">
         <div className="center-line"></div>
         <div className="cicle-top-left">
