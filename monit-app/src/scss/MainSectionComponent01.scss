@@ -169,6 +169,17 @@ body {
   background-position: center;
 }
 
+// 롤링 화살표 사이즈
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  padding-right: 2rem;
+}
+// 롤링 화살표 사이즈
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  padding-left: 2rem;
+}
+
 @media all and (max-width: 680px) {
   .main-section-component01-img01 {
     width: initial;
