@@ -4,9 +4,11 @@ import React from "react";
 
 const IntroductionMindmap = () => {
   return (
-    <div>
+    <div className="introduction-mindmap" data-aos="fadeInUp">
       <div className="introduction-circles-wrapper">
+        <div className="center-line"></div>
         <div className="cicle-top-left">
+          <div className="circle-line line-top-left"></div>
           <div className="circle upper-half img01"></div>
           <div className="circle lower-half">
             <p className="letter-in-circle">베이비 모니터</p>
@@ -14,6 +16,7 @@ const IntroductionMindmap = () => {
         </div>
 
         <div className="cicle-bottom-left">
+          <div className="circle-line line-bottom-left"></div>
           <div className="circle upper-half img03"></div>
           <div className="circle lower-half">
             <p className="letter-in-circle">
@@ -23,8 +26,7 @@ const IntroductionMindmap = () => {
             </p>
           </div>
         </div>
-
-        <div>
+        <div className="centerC-wrapper">
           <div className="centerC">
             <div className="logo-img"></div>
             <p>AI 데이터 분석 기반 </p>
@@ -33,6 +35,7 @@ const IntroductionMindmap = () => {
         </div>
 
         <div className="circle-top-right">
+          <div className="circle-line line-top-right"></div>
           <div className="circle upper-half img02"></div>
           <div className="circle lower-half">
             <p className="letter-in-circle">펫 케어</p>
@@ -40,6 +43,7 @@ const IntroductionMindmap = () => {
         </div>
 
         <div className="cicle-bottom-right">
+          <div className="circle-line line-bottom-right"></div>
           <div className="circle upper-half img04"></div>
           <div className="circle lower-half">
             <p className="letter-in-circle">
@@ -51,13 +55,13 @@ const IntroductionMindmap = () => {
         </div>
       </div>
 
-      <div className="introduction-lines-wrapper">
+      {/* <div className="introduction-lines-wrapper">
         <div className="line top-left"></div>
         <div className="line bottom-left"></div>
         <div className="line top-right"></div>
         <div className="line bottom-right"></div>
         <div className="line responsive-center"></div>
-      </div>
+      </div> */}
     </div>
   );
 };

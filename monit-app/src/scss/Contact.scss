@@ -4,146 +4,147 @@
   display: flex;
   flex-direction: column;
   margin: 0rem 10rem 5rem 10rem;
+  .Contact-Sec {
+    width: 100%;
+    height: 7rem;
+    color: $color-font-lightgray;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: left;
+    font-weight: 500;
+  }
   .Contact-body {
     width: 100%;
     // background-color: $color-Overview-border;
     height: 35rem;
     display: flex;
     align-items: center;
-  }
-
-  .Contact-Sec {
-    width: 100%;
-    height: 5rem;
-    color: $color-font-lightgray;
-    font-size: 1.05rem;
-  }
-
-  .Contact-Thi {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 1rem auto;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
-    border-radius: 30px;
-    .Contact-Thi-img {
-      border: 1px solid #000;
-      background-image: url(../imgs/Contact-img/monit-img1.png);
-      width: 15rem;
-      height: 100%;
-      background-size: 115%;
-      background-position: right top;
-      background-repeat: no-repeat;
-    }
-    .form {
+    .Contact-Thi {
       display: flex;
-      flex: 1;
-      flex-direction: column;
-      height: 100%;
-      padding: 2.5rem 4rem;
-      .input-section {
-        width: 100%;
-        display: flex;
-        position: relative;
-        margin-bottom: 2rem;
-        label {
-          position: absolute;
-          width: 3rem;
-          line-height: 2.2rem;
-          display: flex;
-          align-items: center;
-          margin-left: 1rem;
-          color: $color-line-gray;
-          height: 70%;
-          .contact-icon {
-            margin-right: 1rem;
-            font-size: 1.25rem;
-            font-weight: 300;
-          }
-          .input-warning-icon {
-            color: $color-font-skyblue;
-            font-weight: bold;
-            margin-left: 0.2rem;
-            font-size: 1.2rem;
-          }
-        }
-        input {
-          border: none;
-          width: 100%;
-          height: 2.2rem;
-          border-bottom: 1px solid $color-line-gray;
-          margin: 0.3rem 0rem 1rem 0;
-          padding-left: 3.5rem;
-        }
+      width: 100%;
+      height: 96%;
+      margin: 1rem auto;
+      justify-content: space-between;
+      align-items: flex-end;
+      background-color: white;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 4rem;
+      .Contact-Thi-img {
+        background-image: url(../imgs/Contact-img/contact-product.jpg);
+        width: 15rem;
+        height: 100%;
+        border-radius: 4rem 0 0 4rem;
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
       }
-      .textarea-section {
-        label {
-          position: absolute;
-          flex: 1;
-          line-height: 2.7rem;
-          height: 100%;
+      .form {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        height: 100%;
+        padding: 2.5rem 4rem;
+        .input-section {
+          width: 100%;
           display: flex;
-          align-items: center;
-          margin-left: 1rem;
-          color: $color-contct-text;
-          .contact-icon {
-            margin-right: 1rem;
-            font-size: 20px;
-            font-weight: 300;
+          position: relative;
+          margin-bottom: 2rem;
+          label {
+            position: absolute;
+            width: 3rem;
+            line-height: 2.2rem;
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            color: $color-line-gray;
+            height: 70%;
+            .contact-icon {
+              margin-right: 1rem;
+              font-size: 1.25rem;
+              font-weight: 300;
+            }
+            .input-warning-icon {
+              color: $color-font-skyblue;
+              font-weight: bold;
+              margin-left: 0.2rem;
+              font-size: 1.2rem;
+            }
+          }
+          input {
+            border: none;
+            width: 100%;
+            height: 2.2rem;
+            border-bottom: 1px solid $color-line-gray;
+            margin: 0.3rem 0rem 1rem 0;
+            padding-left: 3.5rem;
+          }
+        }
+        .textarea-section {
+          label {
+            position: absolute;
+            flex: 1;
             line-height: 2.7rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+            color: $color-contct-text;
+            .contact-icon {
+              margin-right: 1rem;
+              font-size: 20px;
+              font-weight: 300;
+              line-height: 2.7rem;
+            }
+            .input-warning-icon {
+              color: $color-font-skyblue;
+              font-weight: bold;
+              margin-left: 0.2rem;
+              font-size: 1.2rem;
+            }
           }
-          .input-warning-icon {
+          textarea {
+            border: 1px solid $color-line-gray;
+            width: 100%;
+            height: 10rem;
+            resize: none;
+            margin: 0.3rem 0 0 0;
+            padding: 1rem 1rem;
+          }
+        }
+        .input-warning-text {
+          margin-top: 0;
+          margin-bottom: 2rem;
+          color: $color-contct-text;
+          span {
             color: $color-font-skyblue;
             font-weight: bold;
-            margin-left: 0.2rem;
-            font-size: 1.2rem;
+            margin-right: 0.3rem;
           }
         }
-        textarea {
-          border: 1px solid $color-line-gray;
+        .input-submit {
           width: 100%;
-          height: 10rem;
-          resize: none;
-          margin: 0.3rem 0 0 0;
-          padding: 1rem 1rem;
-        }
-      }
-      .input-warning-text {
-        margin-top: 0;
-        margin-bottom: 2rem;
-        color: $color-contct-text;
-        span {
-          color: $color-font-skyblue;
-          font-weight: bold;
-          margin-right: 0.3rem;
-        }
-      }
-      .input-submit {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        .Contact-Thi-Submit {
-          border-radius: 20px;
-          border: none;
-          width: 14rem;
-          height: 3rem;
-          margin: 1.5rem 0 0 0;
-          font-size: 1.1rem;
-          background-color: $color-main-blue;
-          font-weight: $--weight-bold;
-          color: white;
-          box-shadow: rgba(203, 203, 203, 0.25) 1px 1px 1px 1px,
-            rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-          cursor: pointer;
-          &:hover {
-            color: $color-main-blue;
-            background-color: $color-white;
-            border: 2px solid $color-main-blue;
+          display: flex;
+          justify-content: center;
+          .Contact-Thi-Submit {
+            border-radius: 4rem;
+            border: none;
+            width: 9.5rem;
+            height: 3rem;
+            margin: 1.5rem 0 0 0;
+            font-size: 1.1rem;
+            background-color: $color-main-blue;
+            font-weight: $--weight-bold;
+            color: white;
+            box-shadow: rgba(203, 203, 203, 0.25) 1px 1px 1px 1px,
+              rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            cursor: pointer;
+            &:hover {
+              color: $color-main-blue;
+              background-color: $color-white;
+              border: 0.15rem solid $color-main-blue;
+              transition: 0.3s;
+            }
           }
         }
       }
@@ -153,10 +154,11 @@
 
 @media all and (max-width: 640px) {
   .Contact {
-    margin: 0rem 5rem 10rem 5rem;
+    margin: 0rem 3rem 10rem 3rem;
     .Contact-Sec {
       font-size: 1.8rem;
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
+      padding: 4rem;
     }
     .Contact-body {
       height: 60rem;
@@ -185,7 +187,8 @@
           }
           .input-submit {
             .Contact-Thi-Submit {
-              height: 4.5rem;
+              width: 15rem;
+              height: 5rem;
               font-size: 2rem;
             }
           }
