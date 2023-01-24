@@ -1,12 +1,13 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const path = require("path");
 const cors = require("cors");
 
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors({ origin: "https://monit.herokuapp.com/", credentials: true }));
 
 app.post("/api/forma", (req, res) => {
