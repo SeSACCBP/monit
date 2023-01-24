@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "monit homepage",
   "main": "index.js",
-  "scripts": {
+   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server \" \"npm run client \""
+    "start:dev": "cross-env NODE_PATH=src react-scripts start",
+    "build": "cross-env NODE_PATH=src react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "cross-env NODE_PATH=src npm run build"
   },
   "keywords": [
     "monit"
