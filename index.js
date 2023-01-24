@@ -9,10 +9,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({ origin: "https://monit.herokuapp.com/", credentials: true }));
 
-app.get("/", () => {
-  resizeBy.send("welcome to monit");
-});
-
 app.post("/api/forma", (req, res) => {
   let data = req.body;
   let smtpTransport = nodemailer.createTransport({
@@ -54,4 +50,8 @@ const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
   console.log(`server starting at port ${PORT}`);
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/client/public/index.html"));
 });
