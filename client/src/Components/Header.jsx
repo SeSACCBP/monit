@@ -7,7 +7,7 @@ import { AiFillUpCircle } from "react-icons/ai";
 
 const Header = () => {
   const [headerOn, setHeaderOn] = useState(false);
-  
+
   const [hambugerStyle, sethambugerStyle] = useState({
     opacOn: true,
     checkOption: false,
@@ -34,7 +34,7 @@ const Header = () => {
           onMouseOut={() => setHeaderOn(false)}
         >
           <li className="header-title">
-            <a href="#">회사 소개</a>
+            <Link to="#">회사 소개</Link>
             <ul className="header-sub-list">
               <li className="header-sub-title">
                 <Link to="/overview"> 기업 이념 </Link>
@@ -51,25 +51,23 @@ const Header = () => {
             </ul>
           </li>
           <li className="header-title">
-            <a href="#">제품 소개</a>
+            <Link to="#">제품 소개</Link>
             <ul className="header-sub-list">
               <li className="header-sub-title">
-                <a href="#">맥스 자세히 보기</a>
+                <Link to="/">맥스 자세히 보기</Link>
               </li>
             </ul>
           </li>
           <li className="header-title">
-            <a href="#">구매 하기</a>
+            <Link to="#">구매 하기</Link>
             <ul className="header-sub-list">
               <li className="header-sub-title">
-                <a className="blank" href="#">
-                  　
-                </a>
+                <Link className="blank" to="/"></Link>
               </li>
             </ul>
           </li>
           <li className="header-title">
-            <a href="#">문의 하기</a>
+            <Link to="#">문의 하기</Link>
             <ul className="header-sub-list">
               <li className="header-sub-title">
                 <Link to="/product">제품 문의</Link>
@@ -85,7 +83,7 @@ const Header = () => {
       <div className={headerOn ? "header-back-active" : "header-back"}></div>
       <nav className="header-area-m">
         <div className="header-imgArea-m">
-          <a className="header-img-m" href="/"></a>
+          <Link className="header-img-m" to="/"></Link>
         </div>
 
         <div className="hamburger-area">
@@ -141,9 +139,9 @@ const Header = () => {
                 </em>
               </label>
               <div className="accordion-menu-list">
-                <a href="#" onClick={headerOpac}>
+                <Link to="#" onClick={headerOpac}>
                   맥스 자세히 보기
-                </a>
+                </Link>
               </div>
               <input type="checkbox" id="accordion-menu-3" />
               <label htmlFor="accordion-menu-3">구매 하기</label>
