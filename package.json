@@ -1,0 +1,25 @@
+{
+  "name": "monit",
+  "version": "1.0.0",
+  "description": "monit homepage",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client \""
+  },
+  "keywords": [
+    "monit"
+  ],
+  "author": "buksango",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.0",
+    "nodemon": "^2.0.20"
+  }
+}
