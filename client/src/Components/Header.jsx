@@ -7,13 +7,12 @@ import { AiFillUpCircle } from "react-icons/ai";
 
 const Header = () => {
   const [headerOn, setHeaderOn] = useState(false);
-  // const [opacOn, setOpacOn] = useState(true);
+  
   const [hambugerStyle, sethambugerStyle] = useState({
     opacOn: true,
     checkOption: false,
   });
 
-  console.log(hambugerStyle);
   const headerOpac = () => {
     sethambugerStyle({
       ...hambugerStyle,
