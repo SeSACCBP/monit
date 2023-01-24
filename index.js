@@ -7,7 +7,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({ origin: "https://monit.herokuapp.com/", credentials: true }));
 
 app.get("/", () => {
   resizeBy.send("welcome to monit");
