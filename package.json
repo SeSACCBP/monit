@@ -7,8 +7,8 @@
     "start": "node index.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "server" : "nodemon index.js",
-    "client" : "npm start --prefix client",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
     "heroku-postbuild": "cross-env NODE_PATH=src npm run dev",
     "dev": "concurrently \"npm run server \" \"npm run client \""
   },
@@ -24,7 +24,8 @@
     "cross-env": "^7.0.3",
     "express": "^4.18.2",
     "nodemailer": "^6.9.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "react-scripts": "^5.0.1"
   },
   "engines": {
     "node": "19.3.0",
