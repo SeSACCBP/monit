@@ -39,7 +39,7 @@ const Contact = (props) => {
       Swal.fire({
         position: "top-center",
         icon: "success",
-        title: "접수가 완료되었습니다",
+        title: "문의사항이 접수되었습니다",
         showConfirmButton: false,
         timer: 3000,
       });

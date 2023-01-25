@@ -35,9 +35,7 @@ export default function App() {
                   <h3>스마트한 기저귀 케어 시스템</h3>
                   <h2>MECS 맥스</h2>
                   <div className="main-section-component01-bt">
-                    <a href="#">
-                      자세히 보기
-                    </a>
+                    <a href="#">자세히 보기</a>
                   </div>
                   <p>
                     어르신의 기저귀 교체 시험을 앱을 통해 쉽고 간편하게
