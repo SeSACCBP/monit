@@ -1,0 +1,15 @@
+{
+  "name": "mont",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-build": "cd client && npm ci && npm run build && cd ../",
+    "server-build": "cd server && npm ci --dev && npm run build && cd ../",
+    "heroku-prebuild": "npm run client-build && npm run server-build && mv ./client/build ./server/dist/",
+    "start": "cd server && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
