@@ -33,13 +33,13 @@ function MyComponent() {
     img: "SubHeader-Img",
   };
 
-  const key = process.env.REACT_APP_API_KEY;
+  const key = process.env.REACT_APP_MAP_API_KEY;
 
   console.log(key);
 
   const { isLoaded } = useJsApiLoader({
     id: "MapsAPIKey",
-    googleMapsApiKey: key,
+    googleMapsApiKey: "AIzaSyA87G_IaGjf0IeBsCJzZaww0efrYdHSWek",
   });
 
   return isLoaded ? (
