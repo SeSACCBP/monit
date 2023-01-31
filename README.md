@@ -1,19 +1,16 @@
-# MONIT MECS with SeSSAC
+# 🌱MONIT MECS with SeSSAC
 * 개요 <br>
-| 청년취업사관학교 새싹 DT 프론트엔드 과정(2기)의 기업연계형 프로젝트
-<br >
-https://sesac.seoul.kr/course/active/detail.do?courseActiveSeq=1498&srchCategoryTypeCd=CATEGORY_TYPE 
-<br><br>| 모닛 맥스(MONIT MECS)의 홈페이지 리뉴얼 프로젝트
-<br >
-http://www.monitcorp.com/<br ><br >
+| [청년취업사관학교 새싹 DT 프론트엔드 과정(2기)](https://sesac.seoul.kr/course/active/detail.do?courseActiveSeq=1498&srchCategoryTypeCd=CATEGORY_TYPE )의 기업연계형 프로젝트
+<br><br>| [모닛 맥스(MONIT MECS)](http://www.monitcorp.com/)의 홈페이지 리뉴얼 프로젝트
+<br ><br >
 
 
 * 프로젝트 기간 <br> | 2022. 12. 08 ~ 2023. 01. 25
  <br> <br>
+
 * 리뉴얼 방향 <br > 1. 가독성 <br> - 주 사용자(40대 이상)의 연령대를 고려해 글자크기, 자간 등을 설정 <br><br> 2. 컬러감 <br>- Blue Tone의 키컬러를 활용해 사용자에게 신뢰감을 제공하고 통일성을 부여. 안정적이고 신뢰를 주는 느낌을 제공
 <br ><br>
-3.디자인 <br>-  트렌디한 디자인으로 메인 페이지를 구성하여 직관적으로 당사의 주력제품을 소개 <br >
-<br ><br >
+3.디자인 <br>-  트렌디한 디자인으로 메인 페이지를 구성하여 직관적으로 당사의 주력제품을 소개 <br ><br ><br >
 # 🖇️ 링크
 ### 🔗 [배포](https://monit.herokuapp.com/)
 무료 클라우드 서비스로 재배포 준비중 (update. 2023.01.31)
@@ -29,7 +26,6 @@ http://www.monitcorp.com/<br ><br >
 <br >
 
 ###  🔗 [발표자료](https://drive.google.com/file/d/1oEacWtU3JJhc6V3-3MjZsquIqJSDX0u0/view?usp=share_link)
-
 
 <br ><br >
 
@@ -52,21 +48,17 @@ http://www.monitcorp.com/<br ><br >
 ### 🖥️ Client 
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/Sass-CC6699?style=flat-square&logo=Sass&logoColor=white"/> <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=Javascript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white"/>
-
-<br>
+<br><br>
 
 ### 📭 Server 
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/>
 <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=Express&logoColor=white"/>
 <img src="https://img.shields.io/badge/Axios-5A29E4?style=flat-square&logo=Axios&logoColor=white"/>
-<br>
-
-<br>
+<br><br>
 
 ### ⚙️ Deploy
 <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=Netlify&logoColor=white"/> <img src="https://img.shields.io/badge/Heroku-430098?style=flat-square&logo=Heroku&logoColor=white"/>
-<br>
-<br>
+<br><br>
 
 ### 🎨 Design
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"/>
